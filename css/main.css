@@ -78,7 +78,7 @@
 {
     padding: 6px 20px 5px 20px;
     margin: 0px;
-    margin-left: 110px;
+    margin-left: 15%;
     margin-right: 110px;
 }
 
@@ -265,9 +265,9 @@ div.search-form
     display: block;
     position: relative;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 25%;
     float: right;
-    top: 0px;
+    top: -10px;
     right: 0px; 
 }
 .twitter
@@ -278,7 +278,7 @@ div.search-form
     display: block;
     position: relative;
     float: right;
-    top: 0px;
+    top: -10px;
     right: -13px;
 }
 .blogspot
@@ -289,12 +289,12 @@ div.search-form
     display: block;
     position: relative;
     float: right;
-    top: 0px;
-    right: px;
+    top: -10px;
+    right: 0px;
 }
   div.rowWraper {
 	    float: right;
-	    width: 50%;
+	    width: 55%;
 	    margin-right: 80px;
     }    
     div.rowWraper2 {
@@ -302,52 +302,52 @@ div.search-form
         width: 34%;
         margin-right: 6%;
     }
-		div.row
-            {
-            margin: 0 auto;
-            width: 150px;
-            margin-bottom: 8px;
-            height: 24px;
-            float: left;
-            }
-            div.row1
-            {
-			    margin: 0 auto;
-			    width: 150px;
-			    margin-bottom: 8px;
-			    height: 34px;
-			    float: right;
-            }
-            div.row2
-            {
-                margin: 0 auto;
-                width: 100%;
-                margin-top: 10px;
-            }
-            div.row input, div.row1 input
-            {
-            width: 100%;  
-            max-width: 160px;
-            box-sizing: border-box;
-            height: 25px;
-            line-height: 23px;
-            text-indent: 5px;
-            border: 0;
-            font-weight: bold;
-            color:    #0580A9;
-            }
-            div.row2 input
-            {
-            width: 100%;  
-            max-width: 500px;
-            box-sizing: border-box;
-            height: 130px;
-            line-height: 23px;
-            text-indent: 5px;
-            border: 0;
-            font-weight: bold;
-            color:    #0580A9;
-            }
+div.row
+    {
+    margin: 0 auto;
+    width: 150px;
+    margin-bottom: 8px;
+    height: 24px;
+    float: left;
+    }
+    div.row1
+    {
+	    margin: 0 auto;
+	    width: 150px;
+	    margin-bottom: 8px;
+	    height: 34px;
+	    float: right;
+    }
+    div.row2
+    {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+    div.row input, div.row1 input
+    {
+    width: 100%;  
+    max-width: 160px;
+    box-sizing: border-box;
+    height: 25px;
+    line-height: 23px;
+    text-indent: 5px;
+    border: 0;
+    font-weight: bold;
+    color:    #0580A9;
+    }
+    div.row2 input
+    {
+    width: 100%;  
+    max-width: 500px;
+    box-sizing: border-box;
+    height: 130px;
+    line-height: 23px;
+    text-indent: 5px;
+    border: 0;
+    font-weight: bold;
+    color:    #0580A9;
+    }
 .boton {
     width: 80px;
     height: 30px;
@@ -385,14 +385,52 @@ div.subtitulo1 {
 }
 .info1 {
     width: 199px;
-    margin-left: 120px;
+    margin-left: 90px;
     display: block;
     float: left;
 
 }
 .info2 {
     width: 199px;
-    margin-left: 100px;
+    margin-left: 90px;
     display: block;
     float: right;
+}
+
+
+/*header*/
+.buscador {
+    width: 190px;
+    height: 25px;
+    position: relative;
+    background-color: #ffffff;
+    left: 930px;
+    border: 1px inset #B6B6B6;
+    top:-10px;
+}
+.buscador input
+            {
+            width: 100%;  
+            max-width: 160px;
+            box-sizing: border-box;
+            height: 25px;
+            line-height: 23px;
+            text-indent: 5px;
+            border: 0;
+            font-weight: bold;
+            color:    #0580A9;
+            }
+.lupa {
+    background-color: #E50C39;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -27px;
+    left: 1122px;
+    border: 1px solid #E50C39;
+    background-image: url("../images/lupa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top:-37px;
+    display:block ;
 }

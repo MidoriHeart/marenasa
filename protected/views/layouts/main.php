@@ -23,10 +23,12 @@
 <div class="container" id="page">
 
 	<div id="header">
+		<label class="lheader">¡S&iacute;guenos!</label>
 		<div id="logo"></div>
 		<div class="facebook"></div>
 		<div class="twitter"></div>
 		<div class="blogspot"></div>
+		<div class="buscador"></div><div class="lupa"></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
