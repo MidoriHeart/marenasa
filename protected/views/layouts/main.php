@@ -74,7 +74,7 @@
 	    <div class="correo">
             <form method="POST" name="Contacto">
                 <div class="rowWraper">
-                	<div class="ltitulo1">Escribenos</div>
+                	<div class="ltitulo1">Escr&iacute;benos</div>
                     <div class="row">
                         <div class="inputField">
                             <input type="text" name="nombre" autocomplete="off">
