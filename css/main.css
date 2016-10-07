@@ -24,8 +24,8 @@
 
 #page
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	background: white;
 	border: 1px solid #C9E0ED;
 }
@@ -55,7 +55,7 @@
     text-align: center;
     border-top: 7px solid #E80033;
     background-color: #2E73B2;
-    padding-bottom: 30%;
+    padding-bottom: 350px;
 }
 
 #logo
@@ -71,7 +71,8 @@
     height: 35px;
     display: block;
     position: absolute;
-    width: 100%;
+    width: 99.9%;
+    z-index: 9;
 }
 
 #mainmenu ul
@@ -261,36 +262,38 @@ div.search-form
 {
     width: 25px;
     height: 25px;
-    background-image: url("../images/facebook.png");
+    background-image: url(../images/facebook.png);
     display: block;
-    position: relative;
+    position: absolute;
     margin-left: 25px;
-    margin-right: 25%;
     float: right;
-    top: -10px;
-    right: 0px; 
+    top: 30px;
+    right: 0px;
+    margin-right: 319px; 
 }
 .twitter
 {
     width: 25px;
     height: 25px;
-    background-image: url("../images/twitter.png");
+    background-image: url(../images/twitter.png);
     display: block;
-    position: relative;
+    position: absolute;
     float: right;
-    top: -10px;
-    right: -13px;
+    top: 30px;
+    right: 0px;
+    margin-right:286px;
 }
 .blogspot
 {	
     width: 25px;
     height: 25px;
-    background-image: url("../images/rss.png");
+    background-image: url(../images/rss.png);
     display: block;
-    position: relative;
+    position: absolute;
     float: right;
-    top: -10px;
+    top: 30px;
     right: 0px;
+    margin-right:  253px;
 }
   div.rowWraper {
 	    float: right;
@@ -358,15 +361,16 @@ div.row
     right: 92px;
 }
 .informacion {
-	width: 50%;
+    width: 45%;
+    height: 320px;
     display: block;
     float: left;
-    margin: 0 auto;   
+    margin: 0 auto;  
 }
 .correo {
     display: block;
     float: right;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;  
 }
 div.ltitulo1 {
@@ -384,15 +388,14 @@ div.subtitulo1 {
     text-align: left;
 }
 .info1 {
-    width: 199px;
-    margin-left: 90px;
+    width: 150px;
+        margin-left: 40%;
     display: block;
     float: left;
-
 }
 .info2 {
-    width: 199px;
-    margin-left: 90px;
+width: 150px;
+    margin-right: 0%;
     display: block;
     float: right;
 }
@@ -402,11 +405,12 @@ div.subtitulo1 {
 .buscador {
     width: 190px;
     height: 25px;
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
-    left: 930px;
+    right: 0px;
     border: 1px inset #B6B6B6;
-    top:-10px;
+    top: 30px;
+    margin-right: 47px;
 }
 .buscador input
             {
@@ -421,16 +425,25 @@ div.subtitulo1 {
             color:    #0580A9;
             }
 .lupa {
-    background-color: #E50C39;
+background-color: #E50C39;
     width: 25px;
     height: 25px;
-    position: relative;
-    top: -27px;
-    left: 1122px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
     border: 1px solid #E50C39;
-    background-image: url("../images/lupa.png");
+    background-image: url(../images/lupa.png);
     background-repeat: no-repeat;
     background-position: center;
-    top:-37px;
-    display:block ;
+    display: block;
+    margin-right: 21px;
+}
+label.lheader {
+    color: #000000;
+    display: block;
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    margin-right: 371px;
+    font-size: 16px;
 }
