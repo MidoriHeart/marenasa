@@ -1,0 +1,29 @@
+
+#mainmenu ul li a:hover, 
+#mainmenu ul li.active a {
+    color: #4D1965;
+    background: #D6B0CE;
+}
+label.titulo1 {
+    font-family: 'Century GBold';
+    font-size: 28pt;
+    color: #4e1950;
+}
+label.titulo2 {
+    font-family: 'Century Gothic';
+    font-size: 28pt;
+    color: #8f5b92;
+}
+
+.container1 {
+    margin-top: 54px;
+    margin-bottom: 37.6pt;
+}
+.container2 {
+    width: 855.7px;
+    text-align: justify;
+    font-family: 'Century Gothic';
+    font-size: 12pt;
+    margin-bottom: 49px;
+    color: #4e1950;
+}

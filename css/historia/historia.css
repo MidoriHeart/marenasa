@@ -1,0 +1,53 @@
+.container-historia1 {
+    width: 100%;
+    padding-bottom: 26%;
+    background-color: #454545;
+    z-index: 9;
+}
+.titulos1 {
+    color: #000000;
+    font-size: 31px;
+    z-index: 99999;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.subtitulos1 {
+    color: #E7D69E;
+    font-size: 31px;
+    z-index: 99999;
+    width: 22%;
+    position: absolute;
+    top: 110px;
+    margin-top: 16.5%;
+    margin-left: 10%;
+}
+.container-historia2 {
+    width: 100%;
+    padding-bottom: 20%;
+    background-color: #ececec;
+}
+.container-texto {
+    width: 59%;
+    font-size: 26px;
+    text-align: justify;
+    margin-left: 51px;
+    top: 98px;
+    position: relative;
+}
+.container-historia3 {
+    border-top: 15px solid #E80033;
+    width: 100%;
+    padding-bottom: 15%;
+    background-color: #ececec;
+}
+.carousel {
+    width: 80%;
+    background-color: blue;
+    height: 180px;
+    position: relative;
+    top: 118px;
+    left: 150px;
+}

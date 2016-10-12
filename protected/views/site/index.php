@@ -27,7 +27,7 @@ $this->pageTitle=Yii::app()->name;
 		     		<div class="imagenOferta"></div>
 		     		<div class="botonVerde">Ver más...</div>
 		     </div>		 
-		     	<label class="letrerosl2">Productos Estreslla</label>
+		     	<label class="letrerosl2">Productos Estrella</label>
 		 <div class="carousel-wrapper">
 
 		 	<div class="flechaISl2"></div>
@@ -38,7 +38,6 @@ $this->pageTitle=Yii::app()->name;
 		</div>
 	</div> 	
  </div>
-</div>
 <div class="container3">
 	<div class="pContainer">
 		<div class="categoriasl">
@@ -66,32 +65,34 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 </div>
 <div class="container4">
-	<div class="pContainer">
-		<div class ="titulares4">
-			<label class="titulo41">Nosotros</label>
-			<label class="titulo42">Subtitulo</label>
-			<div class="linea41"></div>
-			<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit </label>
-			<label class="titulo44">Leer más</label>
+	<div class="content-wrapper">
+		<div class="pContainer">
+			<div class ="titulares4">
+				<label class="titulo41">Nosotros</label>
+				<label class="titulo42">Subtitulo</label>
+				<div class="linea41"></div>
+				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit </label>
+				<label class="titulo44">Leer más</label>
+			</div>
+			<div class ="titulares4">
+				<label class="titulo41">Nosotros</label>
+				<label class="titulo42">Subtitulo</label>
+				<div class="linea41"></div>
+				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit  </label>
+				<label class="titulo44">Leer más</label></div>
+			<div class ="titulares4">
+				<label class="titulo41">Nosotros</label>
+				<label class="titulo42">Subtitulo</label>
+				<div class="linea41"></div>
+				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit</label>
+				<label class="titulo44">Leer más</label></div>
+			<div class ="titulares4">
+	    		<label class="titulo41">Nosotros</label>
+				<label class="titulo42">Subtitulo</label>
+				<div class="image411"></div>
+				<label class="titulo44">Leer más</label></div>
 		</div>
-		<div class ="titulares4">
-			<label class="titulo41">Nosotros</label>
-			<label class="titulo42">Subtitulo</label>
-			<div class="linea41"></div>
-			<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit  </label>
-			<label class="titulo44">Leer más</label></div>
-		<div class ="titulares4">
-			<label class="titulo41">Nosotros</label>
-			<label class="titulo42">Subtitulo</label>
-			<div class="linea41"></div>
-			<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit</label>
-			<label class="titulo44">Leer más</label></div>
-		<div class ="titulares4">
-    		<label class="titulo41">Nosotros</label>
-			<label class="titulo42">Subtitulo</label>
-			<div class="image411"></div>
-			<label class="titulo44">Leer más</label></div>
+	</div>
 	</div>
 </div>
-
 
