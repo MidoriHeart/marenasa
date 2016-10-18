@@ -1,0 +1,12 @@
+.container-rigut-pf {
+    width: 70%;
+    background-color: blue;
+    padding-bottom: 30%;
+    float: right;
+}
+.container-left-pf {
+    width: 30%;
+    background-color: pink;
+    padding-bottom: 30%;
+    float: left;
+}

@@ -23,11 +23,17 @@ $baseUrl = Yii::app()->baseUrl;
 		    tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
 		     Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
 		 </div>
-		<div class"figura-hist"></div>
+		<div class="figura-hist"></div>
 	</div>
 </div>
 <div class="container-historia3">
 	<div class="content-wrapper">
-		<div class="carousel"></div>
+		<div class="carousel">
+			<div class="flechaDerecha"></div>
+				<div class="img imag1"></div>
+				<div class="img imag2"></div>
+				<div class="img imag3"></div>
+			<div class="flechaIzquierda"></div>
+		</div>
 	</div>
 </div>

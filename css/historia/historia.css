@@ -8,7 +8,7 @@
     color: #000000;
     font-size: 31px;
     z-index: 99999;
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 110px;
     margin-top: 15%;
@@ -26,7 +26,7 @@
 }
 .container-historia2 {
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     background-color: #ececec;
 }
 .container-texto {
@@ -40,14 +40,61 @@
 .container-historia3 {
     border-top: 15px solid #E80033;
     width: 100%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
     background-color: #ececec;
 }
 .carousel {
-    width: 80%;
-    background-color: blue;
+    width: 100%;
     height: 180px;
     position: relative;
     top: 118px;
-    left: 150px;
+}
+.figura-hist {
+    width: 31%;
+    height: 350px;
+    float: right;
+    background-image: url(../../images/Numero1.png);
+    background-size: 56%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: relative;
+    margin-top: -270px;
+}
+.flechaDerecha {
+    background-image: url(../../images/flechaIzqSlider2.png);
+    width: 60px;
+    height: 180px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+.flechaIzquierda {
+    background-image: url(../../images/flechaDerSlider2.png);
+    width: 60px;
+    height: 180px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+}
+.img
+{
+    background-size: 100%;
+    width: 316px;
+    height: 180px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    background-position: center;
+    float: left;
+}
+.imag1 {
+    background-image: url(../../images/foto1.png);
+  
+}
+.imag2 {
+    background-image: url(../../images/foto2.png);
+}
+.imag3 {
+    background-image: url(../../images/foto3.png);
 }

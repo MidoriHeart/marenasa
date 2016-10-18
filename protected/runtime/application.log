@@ -53,3 +53,48 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/marenasa/index.php/historia/index
 ---
+2016/10/13 18:19:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "..images/Numero1.png".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('..images/Numero...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/..images/Numero1.png
+HTTP_REFERER=http://localhost/marenasa/index.php/historia
+---
+2016/10/13 19:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "..../images/flechaIzqSlider2.png".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('..../images/fle...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/..../images/flechaIzqSlider2.png
+HTTP_REFERER=http://localhost/marenasa/index.php/historia
+---
+2016/10/13 19:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ".../images/flechaIzqSlider2.png".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('.../images/flec...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/.../images/flechaIzqSlider2.png
+HTTP_REFERER=http://localhost/marenasa/index.php/historia
+---
+2016/10/13 19:35:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "..../images/foto1.png".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('..../images/fot...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/..../images/foto1.png
+HTTP_REFERER=http://localhost/marenasa/index.php/historia
+---
+2016/10/13 19:35:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request ".../images/foto1.png".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('.../images/foto...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/.../images/foto1.png
+HTTP_REFERER=http://localhost/marenasa/index.php/historia
+---
