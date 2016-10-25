@@ -1,23 +1,41 @@
 <?php
 
 /**
- * This is the model class for table "marenasa_historia".
+ * This is the model class for table "marenasa_quienesomos".
  *
- * The followings are the available columns in table 'marenasa_historia':
+ * The followings are the available columns in table 'marenasa_quienesomos':
  * @property string $id
  * @property string $titulo
  * @property string $subtitulo
  * @property string $imagen
  * @property string $descripcion
  */
-class MarenasaHistoria extends CActiveRecord
+class MarenasaQuienesomos extends MActiveRecord
 {
+    public $adminNames=array('¿Quiénes somos?','¿quiénes somos?','¿quiénes somos?'); // admin interface, singular, plural
+    public $downloadExcel=false; // Download Excel
+    public $downloadMsCsv=false; // Download MS CSV
+    public $downloadCsv=false; // Download CSV
+    public $nombre_anterior;
+    public $nombre_anterior2;
+    public $hideCreateAction = false;
+    public $hideListAction = true;
+    public $hideDeleteAction = true;  
+
+    function behaviors() {
+        return array(
+            'file' => array(
+                'class'=>'application.modules.ycm.behaviors.FileBehavior',
+            ),
+        );
+    }
+
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'marenasa_historia';
+		return 'marenasa_quienesomos';
 	}
 
 	/**
@@ -53,7 +71,6 @@ class MarenasaHistoria extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
 			'titulo' => 'Titulo',
 			'subtitulo' => 'Subtitulo',
 			'imagen' => 'Imagen',
@@ -94,10 +111,64 @@ class MarenasaHistoria extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return MarenasaHistoria the static model class
+	 * @return MarenasaQuienesomos the static model class
 	 */
+
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
+	}    
+	/*
+	* Funcion que regresa los widgets de cada elemento 
+	* de la tabla
+	* 
+	*/
+	public function attributeWidgets()
+    {
+        return array
+        (
+            array('titulo', 'textField'),
+            array('subtitulo', 'textField'),
+            array('imagen', 'image'),
+            array('descripcion', 'textArea'),
+        );
+    }
+    public function getImagen($nombre)
+    {
+        $b = Yii::app()->baseUrl;
+        return "<div class='imgQuienes' style='background-image: url($b/uploads/marenasaquienesomos/imagen/$nombre)'></div>";
+    }
+    public function adminSearch()
+    {
+        return array
+        (
+            'columns'=> array
+            (
+                array
+                (
+                    'name'=>'titulo',
+                    'value'=>'$data->titulo',
+                ),
+                array
+                (
+                    'filter' => '',
+                    'name'=>'subtitulo',
+                    'value'=>'$data->subtitulo',
+                ),
+                array
+                (
+                    'name'=>'imagen',
+                    'type' => 'raw',
+                    'value'=>'MarenasaQuienesomos::model()->getImagen($data->imagen)',
+                    'filter' => ''
+                ),
+                array
+                (
+                    'filter' => '',
+                    'name'=>'descripcion',
+                    'value'=>'$data->descripcion',
+                ),
+            )
+        );
+    }
 }

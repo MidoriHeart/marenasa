@@ -1,0 +1,173 @@
+@font-face
+{
+    font-family: "Roboto-Regular";
+    src: url(../../fonts/Roboto-Regular.ttf); 
+}
+@font-face
+{
+    font-family: "Roboto-Light";
+    src: url(../../fonts/Roboto-Light.ttf); 
+}    
+@font-face{
+	font-family:'Philosopher-Italic';
+	src:url(../../fonts/Philosopher-Italic.ttf);
+} 
+.hero-unit {
+    padding: 20px 20px 40px !important;
+    max-width: 1080px;
+    min-width: 900px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+
+.container-fluid {
+  padding: 30px 10px 10px !important;
+}
+.btn-group
+{
+    padding: 0;
+    padding-bottom: 5px;
+    width: 271px;
+    display: block;
+    margin: 0 auto;
+    font-family: "Roboto-Regular";
+    color: WHITE;
+}
+/*    .btn-toolbar
+{
+    display:none;
+}*/
+.btn-group + .btn-group
+{
+    margin-left: auto;
+}
+a.btn .tooltip {
+  text-shadow: none;
+  font-weight: normal;
+}
+	
+a.btn .tooltip.hide {
+  display: none !important;
+}
+
+a.btn:hover > .tooltip.hide {
+  display: block !important;
+}
+
+div.principal
+{
+    width:100%;
+  /*  max-width: 760px;*/
+    margin: 0 auto;
+}
+div.secciones
+{
+    float: left;
+    width: 33%;  
+	max-width: 330px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+    box-shadow: 0 0 10px 2px gainsboro;
+    background-color: WHITE;
+    min-height: 250px;
+}
+div.secciones:nth-child(3n+1) {
+	clear: right;
+	margin-right: 15px;
+}
+div.secciones:nth-child(3n-1) {
+	margin-left: 15px;
+}
+div.fila
+{
+    margin-top: 15px;
+    width: 100%;
+}
+div.contenedorIzq, div.contenedorMed, div.contenedorDer
+{
+    width: 30%;
+    float: left;
+    margin: 15px 1% 0;
+}
+div.contenedorIzq {
+    margin-left: 2%
+}
+div.contenedorDer
+{
+    margin-right: 0;
+}
+div.contenedorGraDer, div.contenedorGraIzq
+{
+    width: 30%;
+    margin: 6.6666%;
+    float: left;
+    padding-top: 22px;
+}
+div.contenedorGraIzq {
+    clear: left;
+    margin-left: 13.333333%;
+}
+div.contenedorGraDer > div.fila > div.btn-group , div.contenedorGraIzq > div.fila > div.btn-group
+{
+    /*margin-left: 75px;*/
+}
+a.btn.btn-primary {
+    min-width: 166px;
+}
+div.contenedorGraDer
+{
+    margin-right: 0;
+}
+div.cabezera
+{
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+}
+.tituloprin
+{
+    font-family: "Philosopher-Italic";
+    font-size: 40px;
+    text-align: center;
+    background-color: #6C1911;
+    border-top: 17px solid  #AE1118;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
+    color: #F0E3C9;
+}
+.subtituloYCM
+{
+    font-family: "Roboto-Light";
+    font-size: 30px;
+    color: #6F8A98;
+    margin: 15px auto 20px;
+    text-align: center;
+}
+div.titulo
+{
+    font-family: "Roboto-Light";
+    font-size: 30px;
+    height: 50px;
+    color: #6F8A98;
+    text-align: center;
+    line-height: 50px;
+}
+div.vacio
+{
+    width: 5px;
+    height: 10px;
+    float: left;
+}
+div.principal:after,
+div.secciones:after,
+div.cabezera:after,
+div.secciones:after,
+div.fila:after,
+div.vacio:after,
+div.hero-unit:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}

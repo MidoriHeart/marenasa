@@ -1,0 +1,71 @@
+#preview, #preview1, #preview2 
+{
+/*    height: 1200px;
+    width: 478px;*/
+    overflow: hidden;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 15px;
+}
+#preview
+{
+    width: 439px;
+    height: 312px;
+}
+#preview1
+{
+    width: 367px;
+    height: 150px;
+}
+#preview2
+{
+    width: 367px;
+    height: 208px;
+}
+#image_ToCrop,
+#preview img,
+#preview1 img,
+#preview2 img
+{
+    max-width: none;
+}
+#getimage
+{
+    float: left;
+}
+#fancybox-content
+{
+    background-color: #FFF;
+}
+.fancy-content:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+#getCrop, #getCrop1, #getCrop2 {
+margin-left: 30px;
+margin-top: 30px;
+}
+#miniButton{
+	margin: 0 auto;
+}
+#miniPreview {
+	width:312px;height:439px;overflow:hidden; margin-left: 30px;
+	margin: 0 auto;
+}
+#miniPreview1 {
+	width:367px;height:150px;overflow:hidden; margin-left: 30px;
+	margin: 0 auto;
+}
+#miniPreview2 {
+	width:367px;height:208px;overflow:hidden; margin-left: 30px;
+	margin: 0 auto;
+}
+.jcrop-holder {
+	background-color: transparent !important;
+        margin: 0 auto;
+}
+#image_container {
+    margin-bottom: 10px;
+}
