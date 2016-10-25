@@ -51,7 +51,17 @@ return array(
 		
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
-
+	    'clientScript'=>array(
+			'packages'=>array(
+				'jquery'=>array(
+					'baseUrl'=>'http://code.jquery.com/',
+					'js'=>array(
+						'jquery-1.11.2.min.js',
+						'jquery-migrate-1.1.0.min.js'
+					),
+				),
+			),
+		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

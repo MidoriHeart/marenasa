@@ -3,44 +3,26 @@
 	padding:0;
 }
 /* */
+/* --------  MODIFICAR  --------- */
+
+/*  --------- CARRUCEL ---------- */
 .container1 {
     width: 100%;
-   padding-bottom:32.57%;
     background-color:#ECECEC;
     position: relative;
 }
-.container11 {
-    position: relative;
-    width: 400px;
-    top: 80px;
-    left: 180px;
-    z-index: 9;
-}
-.image1-carousel {
-    width: 100%;
-    padding-bottom:34.57%;
-    background-image: url(../../images/Slider.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    top: 30px;
-}
-/* --------  MODIFICAR  --------- */
-.image2-carousel
+.carousel-wrapper
 {
-    width: 100%;
-    padding-bottom: 34%;
-    background-image: url(../../images/Slider.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    position: relative;
 }
-/*  -------------------- */
+
+
 .flechaIzq
 {
     position: absolute;
     width: 30px;
     height: 45px;
-    top: 165px;
+    top: 285px;
     left: 30px;
     background-image: url(../../images/flechaIzqSlider.png);
     background-repeat: no-repeat;
@@ -57,11 +39,38 @@
     background-image: url(../../images/flechaDerSlider.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 165px;
+    top: 285px;
     right: 30px;
     z-index: 9;
 }
+.container11 {
+    position: relative;
+    width: 400px;
+    top: 138px;
+    left: 180px;
+    z-index: 9;
+}
+.image1-carousel {
+    width: 100%;
+    padding-bottom:38.57%;
+    background-image: url(../../images/Slider.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
+
+
+
+/*  --------- CARRUCEL ---------- */
+
+.carousel-wrapper
+{
+ width: 504px;
+    height: 160px;
+    position: relative;
+    top: 0px;
+    left: 233px;
+}
 .container2 {
     width: 100%;
     padding-bottom: 7%;
@@ -70,14 +79,19 @@
 }
 .container3 {
     width: 100%;
-    height:511px;
+    min-height:511px;
     background-color: #2E73B2;
-     border-top: 7px solid #E80033;
+    border-top: 7px solid #E80033;
+}
+.contenerdor-tercero {
+    overflow: hidden;
+       height: 335px;
 }
 .container4 {
     width: 100%;
     height: 355px;
     background-color: #ECECEC;
+    padding-bottom: 6%;
 }
 .titulares4 {
     width: 189px;
@@ -86,7 +100,7 @@
     border: 2px outset #EFEFEF;
     float: left;
     margin-left: 3%;
-    margin-top: 55px;
+    margin-top: 15px;
 }
 .titulares4:first-child
 {
@@ -97,6 +111,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
 .categoriasl 
@@ -106,8 +121,7 @@
     height: 136px;
     float: left;
     margin-left: 183px;
-    position: relative;
-    top: 60px;
+   
 }
 
 .categoriasl:nth-child(2n)
@@ -120,7 +134,7 @@
     height: 182px;
     background-color: white;
     position: relative;
-    top: 40px;
+    top: 0px;
     margin-right: 139px;
     background-position: 100% 100%;
     float: right;
@@ -145,10 +159,7 @@
     text-align: center;
     line-height: 51px;
 }
-.jcimage
-{
 
-}
 label.titulo1 {
     display: block;
     color: #ffffff;
@@ -170,13 +181,6 @@ label.subitutlo1 {
     color: rgba(255, 255, 255, 0.69);
     text-align: center;
     line-height: 37px;
-}
-.carousel-wrapper {
-    width: 504px;
-    height: 160px;
-    position: relative;
-    top: 51px;
-   left: 233px;
 }
 label.subtitulo21 {
     font-size: 16px;
@@ -214,7 +218,6 @@ label.subtitulo22 {
     height: 143px;
     border-radius: 12px;
     float: left;
-    margin: 10px;
 }
 .images1 {
     background-image: url(../../images/amortiguadores.jpg);
@@ -277,7 +280,7 @@ label.letrerosl2 {
     font-size: 21px;
     color: #2A6BA7;
     position: relative;
-    top: 40px;
+    top: 0px;
 }
 .imagenCat {
     background-image: url(../../images/llantas.png);
@@ -286,6 +289,7 @@ label.letrerosl2 {
     height: 120px;
     margin-top: 13px;
     background-repeat: no-repeat;
+    float: left;
 }
 .imagenCat1{
     background-image: url(../../images/autopartes.jpg);
@@ -294,6 +298,7 @@ label.letrerosl2 {
     background-repeat: no-repeat;
     width: 170px;
     height: 120px;
+    float: left;
    }
 .imagenCat2 {
     background-image: url(../../images/limpiadores.jpg);
@@ -302,6 +307,7 @@ label.letrerosl2 {
     height: 120px;
     background-repeat: no-repeat;
     background-size: 100%;
+    float: left;
 }
    .imagenCat3 {
     background-image: url(../../images/bujias.jpg);
@@ -310,36 +316,33 @@ label.letrerosl2 {
     width: 170px;
     height: 120px;
     background-repeat: no-repeat;
+    float: left;
 }
 label.letreroCat {
     display: block;
     font-size: 25px;
     color: #426688;
-    left: 180px;
-    top: 39px;
-    position: absolute;
-    margin-left: 40px;
+    margin:0 auto;
+    margin-top: 30px;    
+
 }
 .botonVerdeC {
     background-color: #A1D25C;
     width: 134px;
     height: 38px;
-    position: absolute;
-    top: 80px;
-    right: 90px;
     box-shadow: 1px 2px 8px #716969;
-    margin-right: -30px;
     color: #63734c;
     font-size: 19px;
     text-align: center;
+    margin: 0 auto; 
     line-height: 41px;
+        margin-top: 16px;
+    
 }
 label.letrarofCat {
     color: #ffffff;
     display: block;
-    position: relative;
-    top: 407px;
-    right: 507px;
+    text-align: center;
     font-size: 15px;
 }
 
@@ -348,12 +351,12 @@ label.letrarofCat {
     background-repeat: no-repeat;
     width: 57px;
     height: 100px;
-    position: relative;
-    top: 390px;
-    left: 585px;
+    margin: 0 auto;
     background-position: 20px;
     background-size: 67%;
+    transform:rotate(0deg);
 }
+
 label.titulo41 {
     font-size: 15px;
     color: #62B9E8;
@@ -421,6 +424,67 @@ label.titulo44 {
     width: 160px;
     height: 148px;
 }
+#main-carousel {
+    width: 100%;
+    height: 478px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    top: -39px;
+}
+#main-carousel ul {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
+}
+#main-carousel ul li {
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+#main-carousel ul li .img-carousel {
+    width: 100%;
+    height: 478px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#second-carousel
+{
+    width: 100%;
+    height: 186px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    top: 0px;
+}
+#second-carousel ul
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    z-index: 4;
+
+}
+#second-carousel ul li {
+    padding: 0;
+    float: left;
+    width: 30%;
+        margin: 7px;
+}
+.categoriasd {
+    float: left;
+    margin-left: 15px;
+}
+.newflecha
+{
+    transform:rotate(180deg);
+}
 
 .titulares4:after,
 .categoriasl:after,
@@ -428,7 +492,8 @@ label.titulo44 {
 div.container4:after,
 div.container3:after,
 div.container2:after,
-div.container1:after
+div.container1:after,
+.contenerdor-tercero:after
 {
     clear: both;
     content: '';

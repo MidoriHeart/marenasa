@@ -29,10 +29,12 @@
 }
 .container-historia2 {
     width: 100%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
     background-color: #ececec;
 }
-
+.container-historia2 {
+    padding-bottom: 15%;
+}
 .container-texto {
     width: 59%;
     font-size: 26px;
@@ -44,7 +46,7 @@
 .container-historia3 {
     border-top: 15px solid #E80033;
     width: 100%;
-    padding-bottom: 4%;
+    padding-bottom: 15%;
     background-color: #ececec;
 }
 .carousel {
@@ -53,12 +55,6 @@
     position: relative;
     top: 118px;
     overflow: hidden;
-}
-
-.f-carousel {
-    width: 100%;
-    position: relative;
-    margin-top: 50px;
 }
 .figura-hist {
     width: 31%;
@@ -73,27 +69,21 @@
 }
 .flechaDerecha {
     background-image: url(../../images/flechaIzqSlider2.png);
-    width: 50px;
+    width: 60px;
     height: 180px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     float: left;
-
-
 }
 .flechaIzquierda {
     background-image: url(../../images/flechaDerSlider2.png);
-    width: 50px;
+    width: 60px;
     height: 180px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     float: right;
-    position: absolute;
-    right:10px;
-    top:20px;
-
 }
 .img
 {
@@ -107,8 +97,6 @@
 }
 .imag1 {
     background-image: url(../../images/foto1.png);
-    margin-left: 0px;
-
   
 }
 .imag2 {
@@ -116,48 +104,4 @@
 }
 .imag3 {
     background-image: url(../../images/foto3.png);
-
-}
-#carousell
-{
-    width: 90%;
-    height: 186px;
-    z-index: 0;
-    margin: 0 auto;
-    position: absolute;
-    top: -1px;
-    left: 62px;
-    overflow: hidden;
-}
-#carousell ul
-{
-    position: absolute;
-    top:0;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    z-index: 4;
-}
-#carousell ul li {
-    padding: 0;
-    float: left;
-    width: 100%;
-    margin-left: 30px;
-}
-#carousell ul li:nth-child(1n),
-#carousell ul li:nth-child(4n)
-{
-    margin-left: 10px
-}
-#carousell ul li:nth-child(3n),
-#carousell ul li:nth-child(6n)
-{
-    margin-right: 30px
-}
-
-.f-carousel:after
-{
-    clear: both;
-    content: '';
-    display: block;
 }

@@ -98,3 +98,19 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/.../images/foto1.png
 HTTP_REFERER=http://localhost/marenasa/index.php/historia
 ---
+2016/10/25 00:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "frecuentes".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('frecuentes')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/frecuentes
+---
+2016/10/25 00:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "frecuentes/index".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('frecuentes/inde...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/frecuentes/index
+---

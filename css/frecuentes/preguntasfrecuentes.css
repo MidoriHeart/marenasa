@@ -10,3 +10,28 @@
     padding-bottom: 30%;
     float: left;
 }
+.container-imagen {
+    width: 100%;
+    padding-bottom: 30%;
+    background-color: green;
+}
+.cont-categoria {
+    color: white;
+    margin-top: 31px;
+    margin-left: 55px;
+    margin-bottom: 27px;
+    font-size: 20px;
+}
+.preguntas {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 90px;
+    font-size: 15px;
+}
+.respuestas {
+    font-size: 15px;
+    color: white;
+    margin-left: 93px;
+    margin-right: 15px;
+    text-align: justify;
+}
