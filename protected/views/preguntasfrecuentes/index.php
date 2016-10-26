@@ -3,93 +3,83 @@ $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/frecuentes/preguntasfrecuentes.css');
+    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core.js');
+    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core_plugin.js');
+    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
+    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
+     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes.js');
 ?>
 		<div class="content-wrapper">
-			<div class="container-left-pf">
-				<div class="container-izq-cat">	
-					<div class="titulo1">Preguntas Frecuentes</div>
-						<div class="cont-izq-lista">
-
-							<div class="tipo-categoria">
-								<div class="tipo-letra-cat">
-									Categoria 1	
+			<div class="izquierdo">
+				<div class="categorias-wraper>">	
+							<div class="titulo1">Preguntas Frecuentes</div>
+							<div class="categoria-wraper activo" >
+								<div class="tipo-letra-cat">Categoria 1	</div>
+								<div class="preguntas-wraper">
+									<ul>
+										<li>pregunta 1</li>
+										<li>pregunta 2</li>
+										<li>pregunta 3</li>
+										<li>pregunta 4</li>
+										<li>pregunta 5</li>
+									</ul>
 								</div>
-
 							</div>
-							<div class="contenedor1-preguntas">
-								<ul>
-									<li>pregunta 1</li>
-									<li>pregunta 2</li>
-									<li>pregunta 3</li>
-									<li>pregunta 4</li>
-									<li>pregunta 5</li>
-								</ul>
-							</div>
-
 							<div class="linea"></div>		
-							<div class="tipo-categoria">
-								<div class="tipo-letra-cat">
-									Categoria 2
+							<div class="categoria-wraper">
+								<div class="tipo-letra-cat">Categoria 2</div>
+								<div class="preguntas-wraper">
+									<ul>
+										<li>pregunta 1</li>
+										<li>pregunta 2</li>
+										<li>pregunta 3</li>
+										<li>pregunta 4</li>
+										<li>pregunta 5</li>
+									</ul>
 								</div>
 							</div>	
-								<div class="contenedor1-preguntas">
-								<ul>
-									<li>pregunta 1</li>
-									<li>pregunta 2</li>
-									<li>pregunta 3</li>
-									<li>pregunta 4</li>
-									<li>pregunta 5</li>
-								</ul>
-							</div>
 							<div class="linea"></div>
-							<div class="tipo-categoria">	
-								<div class="tipo-letra-cat">
-									Categoria 3
+							<div class="categoria-wraper">	
+								<div class="tipo-letra-cat">Categoria 3</div>
+								<div class="preguntas-wraper">
+									<ul>
+										<li>pregunta 1</li>
+										<li>pregunta 2</li>
+										<li>pregunta 3</li>
+										<li>pregunta 4</li>
+										<li>pregunta 5</li>
+									</ul>
 								</div>
 							</div>	
-								<div class="contenedor1-preguntas">
-								<ul>
-									<li>pregunta 1</li>
-									<li>pregunta 2</li>
-									<li>pregunta 3</li>
-									<li>pregunta 4</li>
-									<li>pregunta 5</li>
-								</ul>
-							</div>
 							<div class="linea"></div>
-							<div class="tipo-categoria">
-								<div class="tipo-letra-cat">
-									Categoria 4
+							<div class="categoria-wraper">
+								<div class="tipo-letra-cat">Categoria 4</div>
+								<div class="preguntas-wraper">
+									<ul>
+										<li>pregunta 1</li>
+										<li>pregunta 2</li>
+										<li>pregunta 3</li>
+										<li>pregunta 4</li>
+										<li>pregunta 5</li>
+									</ul>
 								</div>
 							</div>	
-								<div class="contenedor1-preguntas">
-								<ul>
-									<li>pregunta 1</li>
-									<li>pregunta 2</li>
-									<li>pregunta 3</li>
-									<li>pregunta 4</li>
-									<li>pregunta 5</li>
-								</ul>
-							</div>
 							<div class="linea"></div>
-							<div class="tipo-categoria">
-								<div class="tipo-letra-cat">
-									Categoria 5
-								</div></div>
-									<div class="contenedor1-preguntas">
-								<ul>
-									<li>pregunta 1</li>
-									<li>pregunta 2</li>
-									<li>pregunta 3</li>
-									<li>pregunta 4</li>
-									<li>pregunta 5</li>
-								</ul>
+							<div class="categoria-wraper">
+								<div class="tipo-letra-cat">Categoria 5</div>
+									<div class="preguntas-wraper">
+										<ul>
+											<li>pregunta 1</li>
+											<li>pregunta 2</li>
+											<li>pregunta 3</li>
+											<li>pregunta 4</li>
+											<li>pregunta 5</li>
+										</ul>
+									</div>
+								</div>			
 							</div>
-						
-						</div>
 				</div>
-			</div>
-			<div class="container-rigut-pf">	
+			<div class="derecha">	
 				<div class="container-imagen">
 						<div class="newImage">
 							<div class="titulo-transparente"><div class="titulocat">Preguntas Frecuentes</div></div>
