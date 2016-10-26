@@ -81,11 +81,13 @@
     font-weight: bold;
 }
 .newImage {
-    background-color: pink;
+    background-image: url(../../images/FAQllantas.jpg);
     width: 95%;
     height: 250px;
     margin: 0 auto;
+    background-repeat: no-repeat;
     margin-top: 54px;
+    background-size: 100%;
 }
 .titulo-transparente {
     background-color: rgba(48, 117, 180, 0.56);
@@ -93,6 +95,11 @@
     height: 110px;
     position: relative;
     top: 140px;
+}
+.contenedor1-preguntas {
+    width: 100%;
+    visibility: hidden;
+    height: 0px;
 }
 .titulocat {
     width: 30px;
