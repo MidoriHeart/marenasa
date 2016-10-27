@@ -102,6 +102,7 @@
     height: 0;
     transition: height 1s;
     overflow: hidden;
+    padding-left: 46px;
 }
 .titulocat {
     width: 30px;
@@ -120,6 +121,15 @@
 .categoria-wraper.activo > .preguntas-wraper
 {
    height: auto; 
+}
+li {
+    list-style-type: none;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+
 }
 
 .container-rigut-pf:after,
