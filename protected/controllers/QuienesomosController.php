@@ -1,9 +1,10 @@
 <?php
 
-class HistoriaController extends Controller
+class QuienesomosController extends Controller
 {
 	public function actionIndex()
 	{
+		$model = Quienesomos::model()->findAll();
 		$this->render('index');
 	}
 
