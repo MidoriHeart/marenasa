@@ -13,73 +13,36 @@ $baseUrl = Yii::app()->baseUrl;
 			<div class="izquierdo">
 				<div class="categorias-wraper>">	
 					<div class="titulo1">Preguntas Frecuentes</div>
-						<?php foreach($categotia as $data)?> 
-							<div class="categoria-wraper activo" >
-								<?php if($contar[$data['id']] == 0):?><?php ?>
+					<?php $first = false; ?>
+						<?php foreach($categorias as $data):?> 
+						    <?php if($first == false):?>
+								<div class="categoria-wraper activo" >
+									<?php $first = true;?>
+								<?php else: ?>
+								<div class="categoria-wraper" >
+								<?php endif;?>
+								 <?php // if($contar[$data['id']] == 0):?><?php //endif;?>
 								<div class="tipo-letra-cat"> <?php echo $data['categoria'];?></div>
-								<div class="preguntas-wraper">
-									<ul>
-										<li>pregunta 1</li>
-										<li>pregunta 2</li>
-										<li>pregunta 3</li>
-										<li>pregunta 4</li>
-										<li>pregunta 5</li>
-									</ul>
-								</div>
-							</div>
-							<div class="linea"></div>
-							<?php endforeach?>	
-							<!--<div class="categoria-wraper">
-								<div class="tipo-letra-cat">Categoria 2</div>
-								<div class="preguntas-wraper">
-									<ul>
-										<li>pregunta 1</li>
-										<li>pregunta 2</li>
-										<li>pregunta 3</li>
-										<li>pregunta 4</li>
-										<li>pregunta 5</li>
-									</ul>
-								</div>
-							</div>	
-							<div class="linea"></div>
-							<div class="categoria-wraper">	
-								<div class="tipo-letra-cat">Categoria 3</div>
-								<div class="preguntas-wraper">
-									<ul>
-										<li>pregunta 1</li>
-										<li>pregunta 2</li>
-										<li>pregunta 3</li>
-										<li>pregunta 4</li>
-										<li>pregunta 5</li>
-									</ul>
-								</div>
-							</div>	
-							<div class="linea"></div>
-							<div class="categoria-wraper">
-								<div class="tipo-letra-cat">Categoria 4</div>
-								<div class="preguntas-wraper">
-									<ul>
-										<li>pregunta 1</li>
-										<li>pregunta 2</li>
-										<li>pregunta 3</li>
-										<li>pregunta 4</li>
-										<li>pregunta 5</li>
-									</ul>
-								</div>
-							</div>	
-							<div class="linea"></div>
-							<div class="categoria-wraper">
-								<div class="tipo-letra-cat">Categoria 5</div>
+								<?php $pregunta  = false;?>
 									<div class="preguntas-wraper">
 										<ul>
-											<li>pregunta 1</li>
-											<li>pregunta 2</li>
-											<li>pregunta 3</li>
-											<li>pregunta 4</li>
-											<li>pregunta 5</li>
+										<?php foreach($pregunta as $data):?>
+										 		<?php if($pregunta == false):?>
+														<li>	
+															<div class="selected"> 
+																<?php echo $data['pregunta'];?>
+															</div>
+														</li>
+													<?php $pregunta = true;?>
+												<?php else:?>
+												    <li><?php echo $data['pregunta'];?></li>
+												<?php endif;?>
+ 										 <?php endforeach;?>
 										</ul>
 									</div>
-								</div>	-->		
+							</div>
+							<div class="linea"></div>
+						<?php endforeach;?>	
 							</div>
 				</div>
 			<div class="derecha">	
@@ -87,7 +50,6 @@ $baseUrl = Yii::app()->baseUrl;
 						<div class="newImage">
 							<div class="titulo-transparente"><div class="titulocat">Preguntas Frecuentes</div></div>
 						</div>
-						
 				</div>
 				<div class="container-info">
 					<div class="container-Preguntas">

@@ -71,6 +71,7 @@
     margin-left: 36px;
 
 }
+.categoria-wraper.activo > .tipo-letra-cat,
 .categoria-wraper > .tipo-letra-cat:hover
 {
     background-color: #5388B7;
@@ -136,7 +137,9 @@
     padding: 0;
 
 }
-.preguntas-wraper > ul >li:hover{
+.preguntas-wraper > ul >li:hover,
+.selected
+{
  font-family: 'Roboto-Regular';
 }
 
