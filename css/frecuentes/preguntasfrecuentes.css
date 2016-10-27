@@ -100,7 +100,7 @@
 }
 .preguntas-wraper{
     height: 0;
-    transition: height 1s;
+    transition: height 4s;
     overflow: hidden;
     padding-left: 46px;
 }
@@ -122,14 +122,22 @@
 {
    height: auto; 
 }
-li {
+.preguntas-wraper > ul >li {
     list-style-type: none;
+    height: 50px;
+    width: 240px;
+    line-height: 39px;
+    font-family: 'roboto-thinitalic';
+    font-size: 16px;
 }
-ul
+.preguntas-wraper > ul
 {
     margin: 0;
     padding: 0;
 
+}
+.preguntas-wraper > ul >li:hover{
+ font-family: 'Roboto-Regular';
 }
 
 .container-rigut-pf:after,
