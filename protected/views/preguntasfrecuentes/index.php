@@ -12,9 +12,11 @@ $baseUrl = Yii::app()->baseUrl;
 		<div class="content-wrapper">
 			<div class="izquierdo">
 				<div class="categorias-wraper>">	
-							<div class="titulo1">Preguntas Frecuentes</div>
+					<div class="titulo1">Preguntas Frecuentes</div>
+						<?php foreach($categotia as $data)?> 
 							<div class="categoria-wraper activo" >
-								<div class="tipo-letra-cat">Categoria 1	</div>
+								<?php if($contar[$data['id']] == 0):?><?php ?>
+								<div class="tipo-letra-cat"> <?php echo $data['categoria'];?></div>
 								<div class="preguntas-wraper">
 									<ul>
 										<li>pregunta 1</li>
@@ -25,8 +27,9 @@ $baseUrl = Yii::app()->baseUrl;
 									</ul>
 								</div>
 							</div>
-							<div class="linea"></div>		
-							<div class="categoria-wraper">
+							<div class="linea"></div>
+							<?php endforeach?>	
+							<!--<div class="categoria-wraper">
 								<div class="tipo-letra-cat">Categoria 2</div>
 								<div class="preguntas-wraper">
 									<ul>
@@ -76,7 +79,7 @@ $baseUrl = Yii::app()->baseUrl;
 											<li>pregunta 5</li>
 										</ul>
 									</div>
-								</div>			
+								</div>	-->		
 							</div>
 				</div>
 			<div class="derecha">	
