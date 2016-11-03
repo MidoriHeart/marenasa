@@ -1,11 +1,11 @@
 .derecha{
-    width: 70%;
+    width: 65%;
     background-image: url(../../images/textura.png);
     padding-bottom: 17%;
     float: right;
 }
 .izquierdo{
-    width: 26%;
+    width: 27%;
     background-color: #D1D2CD;
     padding-bottom: 35%;
     float: left;
@@ -114,11 +114,7 @@
     top: 7px;
     font-family: 'roboto-thinitalic';
 }
-.activo
-{
-     height: auto !important;
-     visibility: visible;
-}
+
 .categoria-wraper.activo > .preguntas-wraper
 {
    height: auto; 
@@ -142,7 +138,16 @@
 {
  font-family: 'Roboto-Regular';
 }
+.container-Preguntas {
+    width: 100%;
+    display:none;
 
+}
+.activo
+{
+     height: auto !important;
+     display:block;
+}
 .container-rigut-pf:after,
 .container-left-pf:after,
 .cont-categoria:after,

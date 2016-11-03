@@ -352,7 +352,7 @@ label.letrarofCat {
     width: 57px;
     height: 100px;
     margin: 0 auto;
-    background-position: 20px;
+    background-position: center;
     background-size: 67%;
     transform:rotate(0deg);
 }

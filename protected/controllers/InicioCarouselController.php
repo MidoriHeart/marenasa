@@ -1,15 +1,11 @@
 <?php
 
-class PreguntasfrecuentesController extends Controller
+class InicioCarouselController extends Controller
 {
 	public function actionIndex()
 	{
-		$categorias = MarenasaPreguntasCategoria::model()->findAll();
-		$preguntas = MarenasaPreguntas::model()->findAll();
-		$this->render('index', array('categorias'=>$categorias,'preguntas_freq'=>$preguntas));
-
+		$this->render('index');
 	}
-
 
 	// Uncomment the following methods and override them if needed
 	/*
