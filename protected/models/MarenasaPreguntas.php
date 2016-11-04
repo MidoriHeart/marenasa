@@ -11,6 +11,23 @@
  */
 class MarenasaPreguntas extends CActiveRecord
 {
+	public $adminNames=array('¿Quiénes somos?','¿quiénes somos?','¿quiénes somos?'); // admin interface, singular, plural
+    public $downloadExcel=false; // Download Excel
+    public $downloadMsCsv=false; // Download MS CSV
+    public $downloadCsv=false; // Download CSV
+    public $nombre_anterior;
+    public $nombre_anterior2;
+    public $hideCreateAction = false;
+    public $hideListAction = true;
+    public $hideDeleteAction = true;  
+
+    function behaviors() {
+        return array(
+            'file' => array(
+                'class'=>'application.modules.ycm.behaviors.FileBehavior',
+            ),
+        );
+    }
 	/**
 	 * @return string the associated database table name
 	 */

@@ -1,11 +1,11 @@
 .derecha{
-    width: 70%;
+    width: 65%;
     background-image: url(../../images/textura.png);
     padding-bottom: 17%;
     float: right;
 }
 .izquierdo{
-    width: 26%;
+    width: 27%;
     background-color: #D1D2CD;
     padding-bottom: 35%;
     float: left;
@@ -71,6 +71,7 @@
     margin-left: 36px;
 
 }
+.categoria-wraper.activo > .tipo-letra-cat,
 .categoria-wraper > .tipo-letra-cat:hover
 {
     background-color: #5388B7;
@@ -100,7 +101,7 @@
 }
 .preguntas-wraper{
     height: 0;
-    transition: height 1s;
+    transition: height 4s;
     overflow: hidden;
     padding-left: 46px;
 }
@@ -113,25 +114,40 @@
     top: 7px;
     font-family: 'roboto-thinitalic';
 }
-.activo
-{
-     height: auto !important;
-     visibility: visible;
-}
+
 .categoria-wraper.activo > .preguntas-wraper
 {
    height: auto; 
 }
-li {
+.preguntas-wraper > ul >li {
     list-style-type: none;
+    height: 50px;
+    width: 240px;
+    line-height: 39px;
+    font-family: 'roboto-thinitalic';
+    font-size: 16px;
 }
-ul
+.preguntas-wraper > ul
 {
     margin: 0;
     padding: 0;
 
 }
+.preguntas-wraper > ul >li:hover,
+.selected
+{
+ font-family: 'Roboto-Regular';
+}
+.container-Preguntas {
+    width: 100%;
+    display:none;
 
+}
+.activo
+{
+     height: auto !important;
+     display:block;
+}
 .container-rigut-pf:after,
 .container-left-pf:after,
 .cont-categoria:after,

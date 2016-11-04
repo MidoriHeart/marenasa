@@ -4,8 +4,12 @@ class PreguntasfrecuentesController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$categorias = MarenasaPreguntasCategoria::model()->findAll();
+		$preguntas = MarenasaPreguntas::model()->findAll();
+		$this->render('index', array('categorias'=>$categorias,'preguntas_freq'=>$preguntas));
+
 	}
+
 
 	// Uncomment the following methods and override them if needed
 	/*

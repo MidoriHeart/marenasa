@@ -7,8 +7,25 @@
  * @property integer $id
  * @property string $categoria
  */
-class MarenasaPreguntasCategoria extends CActiveRecord
+class MarenasaPreguntasCategoria extends MActiveRecord
 {
+	public $adminNames=array('Preguntas Categoria','preguntas categoria','preguntas categoria'); // admin interface, singular, plural
+    public $downloadExcel=false; // Download Excel
+    public $downloadMsCsv=false; // Download MS CSV
+    public $downloadCsv=false; // Download CSV
+    public $nombre_anterior;
+    public $nombre_anterior2;
+    public $hideCreateAction = false;
+    public $hideListAction = true;
+    public $hideDeleteAction = true; 
+
+    function behaviors() {
+    return array(
+        'file' => array(
+            'class'=>'application.modules.ycm.behaviors.FileBehavior',
+           ),
+        );
+    }
 	/**
 	 * @return string the associated database table name
 	 */
@@ -50,7 +67,6 @@ class MarenasaPreguntasCategoria extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
 			'categoria' => 'Categoria',
 		);
 	}
@@ -91,4 +107,26 @@ class MarenasaPreguntasCategoria extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function attributeWidgets()
+    {
+        return array
+        (
+            array('categoria', 'textField'),
+        );
+    }
+       public function adminSearch()
+    {
+        return array
+        (
+            'columns'=> array
+            (
+                array
+                (
+                    'name'=>'categoria',
+                    'value'=>'$data->categoria',
+                ),
+            )
+        );
+    }
 }
