@@ -9,9 +9,9 @@
  * @property string $pregunta
  * @property string $respuesta
  */
-class MarenasaPreguntas extends CActiveRecord
+class MarenasaPreguntas extends MActiveRecord
 {
-	public $adminNames=array('¿Quiénes somos?','¿quiénes somos?','¿quiénes somos?'); // admin interface, singular, plural
+	public $adminNames=array('Preguntas','pregunta','preguntas'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV

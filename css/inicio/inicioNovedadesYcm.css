@@ -1,0 +1,26 @@
+div.imagenNovedad, div.imagenNovedad1, div.imagenNovedad2 
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.imagenNovedad
+{
+    width: 156px;
+    height: 219.5px;
+}
+div.imagenNovedad1
+{
+    width: 183.5px;
+    height: 75px;
+}
+div.imagenNovedad2
+{
+    width: 183.5px;
+    height: 104px;
+}
+table.items.table.table-striped.table-bordered.table-condensed, div.summary, div.btn-toolbar
+{
+    max-width: 731px;
+    margin: auto;
+}
