@@ -37,12 +37,14 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
-				array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Quienes Somos', 'url'=>array('/quienesomos')),
+				array('label'=>'Preguntas Frecuentes', 'url'=>array('/preguntasfrecuentes'))
+			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Productos', 'url'=>array('/site/contact')),
 				array('label'=>'Promociones', 'url'=>array('/site/contact')),
 				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
      			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),			),
+				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		),
 		)); ?>
 	</div>
 	</div><!-- mainmenu -->
