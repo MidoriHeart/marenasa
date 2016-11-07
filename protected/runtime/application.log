@@ -921,3 +921,39 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/ycm
 ---
 >>>>>>> 01c5285354a96458a86182fb1b3badef95a04024
+2016/11/07 23:29:46 [error] [php] include(Quienesomos.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/QuienesomosController.php(7): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): QuienesomosController->actionIndex()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): QuienesomosController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): QuienesomosController->runActionWithFilters()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): QuienesomosController->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/quienesomos
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/QuienesomosController.php (7)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/07 23:29:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "historia".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('historia')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/historia
+---
+2016/11/07 23:29:57 [error] [php] include(Quienesomos.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/QuienesomosController.php(7): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): QuienesomosController->actionIndex()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): QuienesomosController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): QuienesomosController->runActionWithFilters()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): QuienesomosController->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/quienesomos
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/QuienesomosController.php (7)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)

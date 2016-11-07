@@ -10,5 +10,10 @@ return array(
 	'username' => 'root',
 	'password' => '',
 	'charset' => 'utf8',
+	// 'connectionString' => 'mysql:host=localhost;dbname=u225787282_mrsa',
+	// 'emulatePrepare' => true,
+	// 'username' => 'u225787282_mrsa',
+	// 'password' => 'mrsa16',
+	// 'charset' => 'utf8',
 
 );
