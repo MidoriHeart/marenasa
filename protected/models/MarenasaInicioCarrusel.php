@@ -7,7 +7,7 @@
  * @property integer $id
  * @property string $imagen
  */
-class MarenasaInicioCarrusel extends  MOActiveRecord
+class MarenasaInicioCarrusel extends  MActiveRecord
 {
 	public $adminNames=array('Carrusel de inicio','imagen','imagenes'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
@@ -112,7 +112,9 @@ class MarenasaInicioCarrusel extends  MOActiveRecord
     {
         return array
         (
-            array('imagen', 'image'),
+            array('imagen', 'image'), 
+        );
+    }
       
 
 
