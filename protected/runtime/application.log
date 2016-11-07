@@ -114,6 +114,16 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/marenasa/index.php/frecuentes/index
 ---
+<<<<<<< HEAD
+2016/10/27 08:00:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "historia".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('historia')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/marenasa/index.php/historia
+---
+=======
 2016/10/27 20:00:08 [error] [php] Undefined variable: categotia (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/preguntasfrecuentes/index.php:16)
 Stack trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): PreguntasfrecuentesController->renderFile()
@@ -690,6 +700,7 @@ REQUEST_URI=/marenasa/index.php/preguntasfrecuentes/index
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/preguntasfrecuentes/index.php (67)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/PreguntasfrecuentesController.php (9)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+<<<<<<< HEAD
 2016/11/04 18:53:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yvm".' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
 Stack trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('yvm')
@@ -871,3 +882,6 @@ REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaInicioCarrusel/pk/
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaInicioCarrusel.php (282)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (418)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+=======
+>>>>>>> b3b487e21a4bcdf63aa76d0fa2d2b2c5130071f4
+>>>>>>> 4443ebed411b2fc3af5df9a1f8375e4698c97e61

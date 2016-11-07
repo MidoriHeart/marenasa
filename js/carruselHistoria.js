@@ -1,4 +1,4 @@
-local$(document).ready(function() {
+$(document).ready(function() {
     var ch  = $('#carousell ul').children().length;
     var wul = ch*58;
     var wli =58/ch;

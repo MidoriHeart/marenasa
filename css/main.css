@@ -494,3 +494,9 @@ label.lheader {
     top: 4px;
     left: 60px;
 }
+#mainmenu ul {
+    padding: 6px 20px 5px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 890px;
+}
