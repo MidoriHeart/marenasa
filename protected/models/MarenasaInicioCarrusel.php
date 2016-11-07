@@ -25,6 +25,11 @@ class MarenasaInicioCarrusel extends  MActiveRecord
 	{
 		return 'marenasa_inicio_carrusel';
 	}
+  public function getModelName() 
+        {
+            return 'inicio';
+        }
+
    function behaviors() {
         return array(
             'file' => array(
@@ -89,7 +94,7 @@ class MarenasaInicioCarrusel extends  MActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('imagen',$this->imagen,true);
 
 		return new CActiveDataProvider($this, array(
@@ -112,6 +117,7 @@ class MarenasaInicioCarrusel extends  MActiveRecord
     {
         return array
         (
+
             array('imagen', 'image'),
         );
     }

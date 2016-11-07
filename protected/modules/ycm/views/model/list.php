@@ -12,6 +12,8 @@ $this->pageTitle=$title;
 
 <div class="btn-toolbar">
 	<?php
+	$model->css();
+    $model->js();
 	if ($this->module->getHideCreate($model) === false) {
 		$this->widget('bootstrap.widgets.TbButtonGroup',array(
 			'type'=>'',

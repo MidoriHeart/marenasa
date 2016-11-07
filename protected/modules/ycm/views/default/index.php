@@ -1,6 +1,10 @@
 <?php
 /* @var $this DefaultController */
 /* @var $models array */
+$baseUrl = Yii::app()->baseUrl;
+    $cs = Yii::app()->getClientScript();
+    $cs->registerCoreScript('jquery');
+    $cs->registerCssFile($baseUrl.'/css/ycm/index.css');
 
 $this->pageTitle=Yii::t('YcmModule.ycm','Administration');
 ?>

@@ -884,4 +884,40 @@ in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controll
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
 =======
 >>>>>>> b3b487e21a4bcdf63aa76d0fa2d2b2c5130071f4
+<<<<<<< HEAD
 >>>>>>> 4443ebed411b2fc3af5df9a1f8375e4698c97e61
+=======
+2016/11/07 04:31:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_productos_marca' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_productos_marca`.
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/11/07 04:31:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_productos_marcas' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_productos_marcas`.
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/11/07 04:31:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_productos_marcas' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_productos_marcas`.
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/11/07 04:56:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_inicio_carrusel' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_inicio_carrusel`.
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\YcmModule.php (743)
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\views\default\index.php (10)
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\DefaultController.php (12)
+2016/11/07 04:56:56 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_inicio_carrusel" for active record class "MarenasaInicioCarrusel" cannot be found in the database.' in C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(MarenasaInicioCarrusel))
+#1 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('MarenasaInicioC...')
+#2 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\marenasa\protected\modules\ycm\YcmModule.php(743): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\marenasa\protected\modules\ycm\views\default\index.php(10): YcmModule->getAdminName('MarenasaInicioC...')
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\DefaultController.php(12): CController->render('index', Array)
+#10 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ycm')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/marenasa/index.php/ycm
+---
+>>>>>>> 01c5285354a96458a86182fb1b3badef95a04024

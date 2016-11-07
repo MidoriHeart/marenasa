@@ -9,6 +9,7 @@
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
     $cs->registerScriptFile($baseUrl.'/js/carruselindex.js');
+        $carrusel = MarenasaInicioCarrusel::model()->findAll();
 
 $this->pageTitle=Yii::app()->name;
 ?>
@@ -23,12 +24,11 @@ $this->pageTitle=Yii::app()->name;
 
 	<div id="main-carousel">
 		<ul>
-			<li>
-				<div class ="image1-carousel"></div>	
-			</li>
-			<li>
-				<div class ="image1-carousel"></div>	
-			</li>
+            <?php foreach($carrusel as $data):?>
+                <li>
+                    <div class="image1-carousel" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasainiciocarrusel/imagen/'.$data['imagen'];?>');">
+                </li>
+            <?php endforeach;?>
 		</lu>
 	</div>
 	<a href="#" class="flechaIzq"></a>

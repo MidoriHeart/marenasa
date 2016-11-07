@@ -1,11 +1,10 @@
 <?php
 
-class QuienesomosController extends Controller
+class ProductosController extends Controller
 {
 	public function actionIndex()
 	{
-		$model = Quienesomos::model()->findAll();
-		$this->render('index', array('model' => $model, ));
+		$this->render('index');
 	}
 
 	// Uncomment the following methods and override them if needed

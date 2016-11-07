@@ -6,6 +6,7 @@ $baseUrl=$this->module->assetsUrl;
 $base= Yii::app()->baseUrl;
 $cs->registerCoreScript('jquery');
 $cs->registerCssFile($baseUrl.'/css/styles.css');
+$cs->registerCssFile($baseUrl.'/css/styles.css');
 $cs->registerCssFile($base.'/css/ycm/main.css');
 	?>
 <!DOCTYPE html>

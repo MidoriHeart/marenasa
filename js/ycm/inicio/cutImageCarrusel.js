@@ -19,7 +19,7 @@ jQuery(function($) {
         },
         onComplete:function(){
             //tamaño inicial seleccionado de la imagen
-            jcrop_api.setSelect([0,0,1200,478]);
+            jcrop_api.setSelect([0,0,1024,354]);
             //variable que almacena el tamaño que tendra fancybox
             var w_width = $(window).width()-($(window).width()*0.15)-255;
             
@@ -83,8 +83,8 @@ jQuery(function($) {
     {
         if (parseInt(c.w) > 0)
         {
-            var rx = 1200 / c.w;
-            var ry = 478 / c.h;
+            var rx = 1024 / c.w;
+            var ry = 354 / c.h;
 
             $('#preview').css({
                 width: Math.round(rx * boundx) + 'px',
@@ -122,7 +122,7 @@ jQuery(function($) {
                     boxHeight: $(window).height()-($(window).height()*0.20),
                     onChange: updatePreview,
                     onSelect: updatePreview,
-                    aspectRatio: 600/239
+                    aspectRatio: 512/177
                 },function(){
                     // Use the API to get the real image size
                     var bounds = this.getBounds();
