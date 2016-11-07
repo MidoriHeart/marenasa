@@ -4,8 +4,8 @@ class QuienesomosController extends Controller
 {
 	public function actionIndex()
 	{
-		$model = Quienesomos::model()->findAll();
-		$this->render('index', array('model' => $model, ));
+	//	$model = Quienesomos::model()->findAll();
+		$this->render('index');
 	}
 
 	// Uncomment the following methods and override them if needed
