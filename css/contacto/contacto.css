@@ -1,0 +1,76 @@
+.superior-cnt {
+    width: 100%;
+    padding-bottom: 31%;
+    margin: 0 auto;
+    background-image: url(../../images/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.inferior-cnt {
+    padding-bottom: 45%;
+    width: 100%;
+    
+    background-color: #ececec;
+}
+.titulo-cnt {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    margin-top: 250px;
+    margin-left: 819px;
+    text-shadow: 3px 3px rgb(85, 85, 85);
+}
+.izquierda-cnt {
+    width: 50%;
+    float: left;
+     margin-top:10%;
+}
+.derecha-cnt {
+    width: 50%;
+    float: right;
+    margin-top: 10%;
+}
+.descripcion-cnt
+{
+    font-size: 19px;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 10%;
+
+    margin-bottom: 30px;
+}
+.informacion-cnt {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.ltitulo11 {
+    color: #000000 !important;
+    font-family: 'Roboto-Bold';
+        font-size: 18px;
+}
+
+.lmensaje {
+    margin-bottom: 20px;
+}
+.boton {
+    width: 90px;
+    height: 30px;
+    background-color: #A1D25C;
+    border: none;
+    margin-top: 15px;
+    position: relative;
+    left: 243px;
+    font-size: 14px;
+}
+input[type="text"] {
+    border: 1px inset #ececec !important;
+}
+.superior-cnt:after
+{
+	clear: both;
+    content: '';
+    display: block;
+}

@@ -38,13 +38,17 @@
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
 				array('label'=>'Quienes Somos', 'url'=>array('/quienesomos')),
-				array('label'=>'Preguntas Frecuentes', 'url'=>array('/preguntasfrecuentes'))
+				array('label'=>'Preguntas Frecuentes', 'url'=>array('/preguntasfrecuentes')),
+				array('label'=>'Contacto', 'url'=>array('/contacto')),
+				array('label'=>'Mision y Vision', 'url'=>array('/misionvision')),
+
+				),
 			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Productos', 'url'=>array('/site/contact')),
 				array('label'=>'Promociones', 'url'=>array('/site/contact')),
 				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
      			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		),
+				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		
 		)); ?>
 	</div>
 	</div><!-- mainmenu -->
@@ -80,7 +84,7 @@
 				</div>
 			</div>
 
-
+<?php if($this->id!='contacto'):?>
 		    <div class="correo">
 	            <form method="POST" name="Contacto">
 	                <div class="rowWraper">
@@ -106,6 +110,7 @@
 				 </div> 
 	            </form>
 	        </div>
+	       <?php endif;?> 
 		</div><!-- footer -->
 	</div>
 

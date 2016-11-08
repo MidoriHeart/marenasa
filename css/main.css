@@ -393,7 +393,7 @@ div.row
     font-size:14px; 
 }
 .informacion {
-    width: 600px;
+    width:45%;
     height: 320px;
     display: block;
     float: left;
@@ -402,7 +402,7 @@ div.row
 .correo {
     display: block;
     float: right;
-    width: 600px;
+    width: 52%;
     margin: 0 auto;
 }
 div.ltitulo1 {
