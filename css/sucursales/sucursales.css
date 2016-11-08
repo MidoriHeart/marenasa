@@ -1,0 +1,14 @@
+.banner-scl {
+    width: 100%;
+    height: 100px;
+    background-color: #ececec;
+    border-bottom: 2px solid #da1717;
+}
+.titulo1-scl {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Roboto-Bold';
+    position: relative;
+    top: 60px;
+    left: 150px;
+}
