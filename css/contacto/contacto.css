@@ -1,12 +1,10 @@
 .superior-cnt {
-	width: 100%;
-	padding-bottom: 25%;
-	margin: 0 auto;
-    background-image: url(../../images/Slider.jpg);
+    width: 100%;
+    padding-bottom: 31%;
+    margin: 0 auto;
+    background-image: url(../../images/contacto.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-
-
+    background-size: 100%;
 }
 .inferior-cnt {
     padding-bottom: 45%;
@@ -16,11 +14,11 @@
 }
 .titulo-cnt {
     color: white;
-    position: relative;
+    position: absolute;
     font-size: 50px;
-    top: 310px;
-    left: 970px;
-    text-shadow: 3px 3px #000000;
+    margin-top: 250px;
+    margin-left: 819px;
+    text-shadow: 3px 3px rgb(85, 85, 85);
 }
 .izquierda-cnt {
     width: 50%;

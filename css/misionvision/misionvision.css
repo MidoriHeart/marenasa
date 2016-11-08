@@ -1,0 +1,93 @@
+.superior-mv {
+    background-image: url(../../images/myv.jpg);
+    width: 100%;
+    padding-bottom: 30%;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.inferior-mv {
+    width: 100%;
+    padding-bottom: 44%;
+    background-color: #ececec;
+    padding-top: 68px;
+}
+.arriba-mv {
+    width: 100%;
+    margin: 0 auto;
+}
+.abajo-mv {
+     width: 100%;
+     margin: 0 auto;
+ }
+.mision-des {
+    font-size: 18px;
+    text-align: justify;
+    width: 45%;
+    max-width: 550px;
+    line-height: 26px;
+    padding-left: 5%;
+    float: left;
+}
+.vision-des {
+    margin: 0 15% 0 0;
+    margin-top: 230px;
+    width: 80%;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+}
+.titulo-mv {
+    width: 100%;
+    color: #2B76AF;
+    font-size: 32px;
+    font-family: 'Roboto-Regular';
+    padding: 10px;
+}
+.tituloprimero-mv {
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 260px;
+    width: 71px;
+    text-align: center;
+    right: 490px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.73);
+}
+.img-montania {
+    width: 45%;
+    max-width: 430px;
+    background-image: url(../../images/Montana.png);
+    background-size: cover;
+    height: 290px;
+    background-repeat: no-repeat;
+    background-position: 0px -66px;
+    right: 120px;
+    top: 0;
+    position: absolute;
+}
+.img-foco{
+	 width: 100%;
+    background-image: url(../../images/foco.png);
+    background-size: 53%;
+        background-repeat: no-repeat;
+    background-position: 102% -30%;
+
+}
+.izquierda-arr-mv {
+    width: 45%;
+    padding-left: 5%;
+    padding-bottom: 24%;
+    float: left;
+}
+.derecha-arr-mv
+{
+	width: 45%;
+	padding-right:5%;
+	    padding-bottom: 24%;
+}
+.abajo-mv:after,
+.arriba-mv:after {
+	content:"";
+	display: block;
+	clear: both;
+};
