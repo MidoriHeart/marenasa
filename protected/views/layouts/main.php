@@ -80,7 +80,7 @@
 				</div>
 			</div>
 
-
+<?php if($this->id!='contacto'):?>
 		    <div class="correo">
 	            <form method="POST" name="Contacto">
 	                <div class="rowWraper">
@@ -106,6 +106,7 @@
 				 </div> 
 	            </form>
 	        </div>
+	       <?php endif;?> 
 		</div><!-- footer -->
 	</div>
 
