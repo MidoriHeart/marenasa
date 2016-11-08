@@ -7,7 +7,6 @@
 }
 .inferior-mv {
     width: 100%;
-    padding-bottom: 44%;
     background-color: #ececec;
     padding-top: 68px;
 }
@@ -29,12 +28,14 @@
     float: left;
 }
 .vision-des {
-    margin: 0 15% 0 0;
-    margin-top: 230px;
-    width: 80%;
-    font-size: 17px;
+    margin-top: 50px;
+    width: 45%;
+    max-width: 550px;
+    font-size: 18px;
     text-align: justify;
     line-height: 26px;
+    float: right;
+    padding-right: 5%;
 }
 .titulo-mv {
     width: 100%;
@@ -62,15 +63,19 @@
     background-repeat: no-repeat;
     background-position: 0px -66px;
     right: 120px;
-    top: 0;
+    top: 410px;
     position: absolute;
 }
 .img-foco{
-	 width: 100%;
+    width: 45%;
+    max-width: 430px;
     background-image: url(../../images/foco.png);
-    background-size: 53%;
-        background-repeat: no-repeat;
-    background-position: 102% -30%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 273px;
+    top: 25px;
+    height: 290px;
 
 }
 .izquierda-arr-mv {
