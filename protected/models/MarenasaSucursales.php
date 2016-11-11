@@ -135,7 +135,7 @@ class MarenasaSucursales extends MActiveRecord
     public function getImagenYcm($nombre)
     {
         $b = Yii::app()->baseUrl;
-        return "<div class='imagenCarrusel' style='background-image: url($b/uploads/marenasasucursal/imagen/$nombre)'></div>";
+        return "<div class='imagenCarrusel' style='background-image: url($b/uploads/marenasasucursales/imagen/$nombre)'></div>";
     }
       public function adminSearch()
     {
@@ -149,7 +149,38 @@ class MarenasaSucursales extends MActiveRecord
                     'type' => 'raw',
                     'value'=>'MarenasaSucursales::model()->getImagenYcm($data->imagen)',
                     'filter' => ''
-                )
+                ),
+                array
+                (
+                    'name'=>'nombre',
+                    'value'=>'$data->nombre',
+                ),
+                array
+                (
+                    'name'=>'direccion',
+                    'value'=>'$data->direccion',
+                ),
+                array
+                (
+                    'name'=>'horarios',
+                    'value'=>'$data->horarios',
+                ),
+                array
+                (
+                    'name'=>'telefono1',
+                    'value'=>'$data->telefono1',
+                ),
+                array
+                (
+                    'name'=>'telefono2',
+                    'value'=>'$data->telefono2',
+                ),
+                 array
+                (
+                    'name'=>'email',
+                    'value'=>'$data->email',
+                ),
+
             )
         );
     }
