@@ -6,10 +6,12 @@ class QuienesomosController extends Controller
 	{
 	//	$model = Quienesomos::model()->findAll();
 		$somos = MarenasaQuienesomos::model()->findAll();
+		$qs=MarenasaCarruselQS::model()->findAll();
 		//print_r($somos);
 		$this->render('index',array
 			(
-				 'somos'=>$somos));
+				 'somos'=>$somos,
+				 'qs' => $qs));
 	}
 
 	// Uncomment the following methods and override them if needed

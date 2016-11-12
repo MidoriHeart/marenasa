@@ -9,7 +9,7 @@
  */
 class MarenasaCarruselQS extends MActiveRecord
 {
-	public $adminNames=array('Carrusel_QS','imagen','imagenes'); // admin interface, singular, plural
+	public $adminNames=array('carrusel quienes somos','imagen','imagenes'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
@@ -127,7 +127,7 @@ class MarenasaCarruselQS extends MActiveRecord
                 (
                     'name'=>'imagen',
                     'type' => 'raw',
-                    'value'=>'MarenasaInicioCarrusel::model()->getImagenYcm($data->imagen)',
+                    'value'=>'MarenasaCarruselQS::model()->getImagenYcm($data->imagen)',
                     'filter' => ''
                 )
             )
@@ -155,8 +155,8 @@ class MarenasaCarruselQS extends MActiveRecord
         $cs = Yii::app()->getClientScript();
         $cs->registerCssFile($baseUrl.'/css/plugins/JCrop/jquery.Jcrop.min.css');
         $cs->registerCssFile($baseUrl.'/js/plugins/ColorBox/colorbox.css');
-        $cs->registerCssFile($baseUrl.'/css/ycm/inicio/cutImageCarruselQS.css');
-        $cs->registerCssFile($baseUrl.'/css/historia/carruselQSYcm.css');
+        $cs->registerCssFile($baseUrl.'/css/ycm/historia/cutImageCarruselQS.css');
+        $cs->registerCssFile($baseUrl.'/css/historia/CarruselQSYcm.css');
     }
       public function extraPhpBeforeSaveValidate($model='',$post='',$paths='',$module='')
     {      

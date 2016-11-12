@@ -1,11 +1,10 @@
 <?php
 
-class Carrusel_QSController extends Controller
+class Producto_categoriaController extends Controller
 {
 	public function actionIndex()
 	{
-		$qs = MarenasaCarruselQS::model()->findAll();
-		$this->render('index', array('qs'=> $qs));
+		$this->render('index');
 	}
 
 	// Uncomment the following methods and override them if needed

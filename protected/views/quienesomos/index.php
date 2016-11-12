@@ -30,11 +30,12 @@ $baseUrl = Yii::app()->baseUrl;
 				<a href="#" class="flechaDerecha"></a>
 					 <div id="carousell">
 					 	<ul>
+					 	<?php foreach($qs as $data):?>
 							<li>
-								<div class="img imag1">
-									
+								<div class="img imag1" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasacarruselqs/imagen/'.$data['imagen'];?>');">
 								</div>
 							</li>
+						<?php endforeach;?>
 						</ul>
 					</div>
 				<a href="#" class="flechaIzquierda"></a>

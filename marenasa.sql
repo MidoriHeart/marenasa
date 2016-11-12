@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-11-2016 a las 17:49:14
+-- Tiempo de generación: 12-11-2016 a las 20:27:41
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.5.24
 
@@ -19,6 +19,29 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `marenasa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `marenasa_carrusel_QS`
+--
+
+CREATE TABLE IF NOT EXISTS `marenasa_carrusel_QS` (
+  `id` int(11) NOT NULL,
+  `imagen` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `marenasa_carrusel_QS`
+--
+
+INSERT INTO `marenasa_carrusel_QS` (`id`, `imagen`) VALUES
+(1, '93bfda614fe2936ef6cc868c93b9f917.png'),
+(2, 'd187cbac40c17710d3326983e0d3bb7d.jpg'),
+(3, '7c8c1547e29c55715512b8cbd8a5199e.png'),
+(4, '00373a0355dd160906ce530160c8e403.png'),
+(5, '42be74937963e2a1f02f33932a128aa1.png'),
+(6, 'c8b080e3a8659863c5962449022a6066.png');
 
 -- --------------------------------------------------------
 
@@ -153,9 +176,15 @@ CREATE TABLE IF NOT EXISTS `marenasa_quienesomos` (
   `id` int(11) unsigned NOT NULL,
   `titulo` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `subtitulo` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `imagen` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `descripcion` text CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `marenasa_quienesomos`
+--
+
+INSERT INTO `marenasa_quienesomos` (`id`, `titulo`, `subtitulo`, `descripcion`) VALUES
+(1, 'Quienes somos?', 'Adentrando a la historia', 'Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.');
 
 -- --------------------------------------------------------
 
@@ -187,6 +216,12 @@ INSERT INTO `marenasa_sucursales` (`id`, `imagen`, `nombre`, `direccion`, `horar
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `marenasa_carrusel_QS`
+--
+ALTER TABLE `marenasa_carrusel_QS`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `marenasa_inicio_carrusel`
@@ -247,6 +282,11 @@ ALTER TABLE `marenasa_sucursales`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `marenasa_carrusel_QS`
+--
+ALTER TABLE `marenasa_carrusel_QS`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT de la tabla `marenasa_inicio_carrusel`
 --
 ALTER TABLE `marenasa_inicio_carrusel`
@@ -275,7 +315,7 @@ ALTER TABLE `marenasa_producto_marcas`
 -- AUTO_INCREMENT de la tabla `marenasa_quienesomos`
 --
 ALTER TABLE `marenasa_quienesomos`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `marenasa_sucursales`
 --
