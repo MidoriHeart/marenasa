@@ -4,7 +4,8 @@ class SucursalesController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$sucursales = MarenasaSucursales::model()->findAll();
+		$this->render('index', array('sucursales'=>$sucursales));
 	}
 
 	// Uncomment the following methods and override them if needed

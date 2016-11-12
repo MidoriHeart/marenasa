@@ -1,13 +1,17 @@
 <?php
-/* @var $this ProductosController */
+/* @var $this HistoriaController */
 
-$this->breadcrumbs=array(
-	'Productos',
-);
+$baseUrl = Yii::app()->baseUrl;
+    $cs = Yii::app()->getClientScript();
+    $cs->registerCoreScript('jquery');
+    $cs->registerCssFile($baseUrl.'/css/productos/productos.css');
 ?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
-
-<p>
-	You may change the content of this page by modifying
-	the file <tt><?php echo __FILE__; ?></tt>.
-</p>
+<div class="contenedor1-p">
+	<div class="Titulo1-p">Productos</div>
+</div>
+<div class="contenedor2-p">
+	<div class="ddl-producto"></div> <div class="canasta-p"></div>
+</div>
+<div class="contenedor3-p">
+	<div class="producto"></div>
+</div>

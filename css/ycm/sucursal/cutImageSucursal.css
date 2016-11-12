@@ -1,0 +1,46 @@
+#preview 
+{
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 15px;
+}
+#image_ToCrop,
+#preview img
+{
+    max-width: none;
+}
+#getimage
+{
+    float: left;
+}
+#fancybox-content
+{
+    background-color: #FFF;
+}
+.fancy-content:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+#getCrop {
+margin-left: 30px;
+margin-top: 30px;
+}
+#miniButton{
+	margin: 0 auto;
+}
+#miniPreview {
+	width:250px;height:150px;overflow:hidden; margin-left: 30px;
+	margin: 0 auto;
+}
+.jcrop-holder {
+	background-color: transparent !important;
+margin: 0 auto;
+}
+#image_container {
+    margin-bottom: 10px;
+}

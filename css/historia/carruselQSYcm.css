@@ -1,0 +1,13 @@
+div.imagenCarrusel
+{
+    width: 316px;
+    height: 180px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+table.items.table.table-striped.table-bordered.table-condensed, div.summary, div.btn-toolbar
+{
+    width: 316px;
+    margin: auto;
+}

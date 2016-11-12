@@ -13,20 +13,13 @@ $baseUrl = Yii::app()->baseUrl;
 ?>
 
 <div class="container-historia1">
-		<div class="titulos1">Quienes somos?</div>
-		<div class="subtitulos1">Nulla quis lorem ut libero malesuada 
-			feugiat. Nulla quis lorem ut libero </div>
+		<div class="titulos1"><?php echo $somos[0]->titulo;?></div>
+		<div class="subtitulos1"><?php echo $somos[0]->subtitulo;?></div>
 </div>
 <div class="container-historia2">
 	<div class="content-wrapper">
 		<div class="container-texto">
-			Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
-		    eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta.
-		    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris 
-		    blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam 
-		    id dui posuere blandit. Donec rutrum congue leo eget malesuada. Proin eget 
-		    tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-		     Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+             <?php echo $somos[0]->descripcion;?>
 		 </div>
 		<div class="figura-hist"></div>
 	</div>
@@ -37,24 +30,12 @@ $baseUrl = Yii::app()->baseUrl;
 				<a href="#" class="flechaDerecha"></a>
 					 <div id="carousell">
 					 	<ul>
+					 	<?php foreach($qs as $data):?>
 							<li>
-								<div class="img imag1"></div>
+								<div class="img imag1" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasacarruselqs/imagen/'.$data['imagen'];?>');">
+								</div>
 							</li>
-							<li>	
-								<div class="img imag2"></div>
-							</li>
-							<li>	
-								<div class="img imag3"></div>
-							</li>
-							<li>
-								<div class="img imag1"></div>
-							</li>
-							<li>	
-								<div class="img imag2"></div>
-							</li>
-							<li>	
-								<div class="img imag3"></div>
-							</li>
+						<?php endforeach;?>
 						</ul>
 					</div>
 				<a href="#" class="flechaIzquierda"></a>

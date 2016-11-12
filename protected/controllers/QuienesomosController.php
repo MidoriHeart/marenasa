@@ -5,11 +5,17 @@ class QuienesomosController extends Controller
 	public function actionIndex()
 	{
 	//	$model = Quienesomos::model()->findAll();
-		$this->render('index');
+		$somos = MarenasaQuienesomos::model()->findAll();
+		$qs=MarenasaCarruselQS::model()->findAll();
+		//print_r($somos);
+		$this->render('index',array
+			(
+				 'somos'=>$somos,
+				 'qs' => $qs));
 	}
 
 	// Uncomment the following methods and override them if needed
-	/*
+	/*s
 	public function filters()
 	{
 		// return the filter configuration for this controller, e.g.:

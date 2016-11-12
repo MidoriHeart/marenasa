@@ -43,14 +43,14 @@ class MarenasaQuienesomos extends MActiveRecord
 	 */
 	public function rules()
 	{
-		// NOTE: you should only define rules for those attributes that
+		// NOTE: you should only define ru-les for those attributes that
 		// will receive user inputs.
 		return array(
-			array('titulo, subtitulo, imagen, descripcion', 'required'),
-			array('titulo, subtitulo, imagen', 'length', 'max'=>100),
+			array('titulo, subtitulo,  descripcion', 'required'),
+			array('titulo, subtitulo', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, titulo, subtitulo, imagen, descripcion', 'safe', 'on'=>'search'),
+			array('id, titulo, subtitulo, descripcion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,7 +73,6 @@ class MarenasaQuienesomos extends MActiveRecord
 		return array(
 			'titulo' => 'Titulo',
 			'subtitulo' => 'Subtitulo',
-			'imagen' => 'Imagen',
 			'descripcion' => 'Descripcion',
 		);
 	}
@@ -99,7 +98,6 @@ class MarenasaQuienesomos extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('titulo',$this->titulo,true);
 		$criteria->compare('subtitulo',$this->subtitulo,true);
-		$criteria->compare('imagen',$this->imagen,true);
 		$criteria->compare('descripcion',$this->descripcion,true);
 
 		return new CActiveDataProvider($this, array(
@@ -129,7 +127,7 @@ class MarenasaQuienesomos extends MActiveRecord
         (
             array('titulo', 'textField'),
             array('subtitulo', 'textField'),
-            array('imagen', 'image'),
+
             array('descripcion', 'textArea'),
         );
     }
@@ -154,13 +152,6 @@ class MarenasaQuienesomos extends MActiveRecord
                     'filter' => '',
                     'name'=>'subtitulo',
                     'value'=>'$data->subtitulo',
-                ),
-                array
-                (
-                    'name'=>'imagen',
-                    'type' => 'raw',
-                    'value'=>'MarenasaQuienesomos::model()->getImagen($data->imagen)',
-                    'filter' => ''
                 ),
                 array
                 (

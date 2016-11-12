@@ -8,7 +8,7 @@
  * @property string $mision
  * @property string $vision
  */
-class MarenasaMisionvision extends CActiveRecord
+class MarenasaMisionvision extends MActiveRecord
 {
 	public $adminNames=array('Mision y Vision','mision y vision','mision y vision'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
@@ -112,4 +112,33 @@ class MarenasaMisionvision extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+ 	public function attributeWidgets()
+    {
+        return array
+        (
+            array('mision', 'textArea'),
+            array('vision', 'textArea'),
+
+        );
+    }
+   public function adminSearch()
+    {
+        return array
+        (
+            'columns'=> array
+            (
+                array
+                (
+                    'name'=>'mision',
+                    'value'=>'$data->mision',
+                ),
+                array
+                (
+                    'name'=>'vision',
+                    'value'=>'$data->vision',
+                ),
+               
+            )
+        );
+    }
 }

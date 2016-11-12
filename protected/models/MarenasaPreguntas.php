@@ -116,4 +116,31 @@ class MarenasaPreguntas extends MActiveRecord
 	{
 		return parent::model($className);
 	}
+	public function attributeWidgets()
+    {
+        return array
+        (
+            array('pregunta', 'textArea'),
+            array('respuesta', 'textArea'),
+        );
+    }
+    public function adminSearch()
+    {
+        return array
+        (
+            'columns'=> array
+            (
+                array
+                (
+                    'name'=>'pregunta',
+                    'value'=>'$data->pregunta',
+                ),
+                array
+                (
+                    'name'=>'respuesta',
+                    'value'=>'$data->respuesta',
+                ),
+            )
+        );
+    }
 }

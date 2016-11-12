@@ -1,21 +1,15 @@
 <?php
 
 /**
- * This is the model class for table "marenasa_sucursales".
+ * This is the model class for table "marenasa_carrusel_QS".
  *
- * The followings are the available columns in table 'marenasa_sucursales':
+ * The followings are the available columns in table 'marenasa_carrusel_QS':
  * @property integer $id
  * @property string $imagen
- * @property string $nombre
- * @property string $direccion
- * @property string $horarios
- * @property string $telefono1
- * @property string $telefono2
- * @property string $email
  */
-class MarenasaSucursales extends MActiveRecord
+class MarenasaCarruselQS extends MActiveRecord
 {
-	public $adminNames=array('Sucursales','sucursal','sucursales'); // admin interface, singular, plural
+	public $adminNames=array('carrusel quienes somos','imagen','imagenes'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
@@ -29,8 +23,12 @@ class MarenasaSucursales extends MActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'marenasa_sucursales';
+		return 'marenasa_carrusel_QS';
 	}
+  public function getModelName() 
+        {
+            return 'inicio';
+        }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -40,11 +38,11 @@ class MarenasaSucursales extends MActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('imagen, nombre, direccion, horarios, telefono1, telefono2, email', 'required'),
-			array('imagen, nombre', 'length', 'max'=>250),
+			array('imagen', 'required'),
+			array('imagen', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, imagen, nombre, direccion, horarios, telefono1, telefono2, email', 'safe', 'on'=>'search'),
+			array('id, imagen', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,12 +65,6 @@ class MarenasaSucursales extends MActiveRecord
 		return array(
 			'id' => 'ID',
 			'imagen' => 'Imagen',
-			'nombre' => 'Nombre',
-			'direccion' => 'Direccion',
-			'horarios' => 'Horarios',
-			'telefono1' => 'Telefono1',
-			'telefono2' => 'Telefono2',
-			'email' => 'Email',
 		);
 	}
 
@@ -96,12 +88,6 @@ class MarenasaSucursales extends MActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('imagen',$this->imagen,true);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('direccion',$this->direccion,true);
-		$criteria->compare('horarios',$this->horarios,true);
-		$criteria->compare('telefono1',$this->telefono1,true);
-		$criteria->compare('telefono2',$this->telefono2,true);
-		$criteria->compare('email',$this->email,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -112,32 +98,26 @@ class MarenasaSucursales extends MActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return MarenasaSucursales the static model class
+	 * @return MarenasaCarruselQS the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
-	public function attributeWidgets()
+	 public function attributeWidgets()
     {
         return array
         (
 
             array('imagen', 'image'),
-            array('nombre', 'textField'),
-            array('direccion', 'textField'),
-            array('horario','textField'),
-            array('telefono1', 'textField'),
-            array('telefono2', 'textField'),
-            array('email', 'textField'),
         );
-    }  
-    public function getImagenYcm($nombre)
+    }
+       public function getImagenYcm($nombre)
     {
         $b = Yii::app()->baseUrl;
-        return "<div class='imagenCarrusel' style='background-image: url($b/uploads/marenasasucursales/imagen/$nombre)'></div>";
+        return "<div class='imagenCarrusel' style='background-image: url($b/uploads/marenasacarruselqs/imagen/$nombre)'></div>";
     }
-      public function adminSearch()
+     public function adminSearch()
     {
         return array
         (
@@ -147,69 +127,43 @@ class MarenasaSucursales extends MActiveRecord
                 (
                     'name'=>'imagen',
                     'type' => 'raw',
-                    'value'=>'MarenasaSucursales::model()->getImagenYcm($data->imagen)',
+                    'value'=>'MarenasaCarruselQS::model()->getImagenYcm($data->imagen)',
                     'filter' => ''
-                ),
-                array
-                (
-                    'name'=>'nombre',
-                    'value'=>'$data->nombre',
-                ),
-                array
-                (
-                    'name'=>'direccion',
-                    'value'=>'$data->direccion',
-                ),
-                array
-                (
-                    'name'=>'horarios',
-                    'value'=>'$data->horarios',
-                ),
-                array
-                (
-                    'name'=>'telefono1',
-                    'value'=>'$data->telefono1',
-                ),
-                array
-                (
-                    'name'=>'telefono2',
-                    'value'=>'$data->telefono2',
-                ),
-                 array
-                (
-                    'name'=>'email',
-                    'value'=>'$data->email',
-                ),
-
+                )
             )
         );
     }
-       public function extraOptions() {
-           $array = array(
-              'imagen'=>array('class'=>'span5 jcropImage'),            
+    public function extraOptions() {
+            $array = array(
+               'imagen'=>array('class'=>'span5 jcropImage'),            
            );
+
            return $array;
        }
-       public function js() {
+
+         public function js() {
            $baseUrl = Yii::app()->baseUrl;
            $cs = Yii::app()->getClientScript();        
            $cs->registerScriptFile($baseUrl.'/js/plugins/JCrop/jquery.Jcrop.min.js');
            $cs->registerScriptFile($baseUrl.'/js/plugins/ColorBox/jquery.colorbox.js');
-           $cs->registerScriptFile($baseUrl.'/js/ycm/inicio/cutImageSucursal.js');
+           $cs->registerScriptFile($baseUrl.'/js/ycm/inicio/cutImageCarruselQS.js');
+
        }
-    public function css() 
+       public function css() 
     {
         $baseUrl = Yii::app()->baseUrl;
         $cs = Yii::app()->getClientScript();
         $cs->registerCssFile($baseUrl.'/css/plugins/JCrop/jquery.Jcrop.min.css');
         $cs->registerCssFile($baseUrl.'/js/plugins/ColorBox/colorbox.css');
-        $cs->registerCssFile($baseUrl.'/css/ycm/sucursal/cutImageSucursal.css');
-        $cs->registerCssFile($baseUrl.'/css/sucursales/inicioSucursalYcm.css');
+        $cs->registerCssFile($baseUrl.'/css/ycm/historia/cutImageCarruselQS.css');
+        $cs->registerCssFile($baseUrl.'/css/historia/CarruselQSYcm.css');
     }
-       public function extraPhpBeforeSaveValidate($model='',$post='',$paths='',$module='')
+      public function extraPhpBeforeSaveValidate($model='',$post='',$paths='',$module='')
     {      
     }
-     public function extraHtml() {
+
+
+    public function extraHtml() {
 
            $array = array(
                'imagen'=>'
@@ -250,7 +204,7 @@ class MarenasaSucursales extends MActiveRecord
                );
            return $array;
        }
-       public function extraPhpAfterSaveValidate($model='',$post='',$paths='', $module='')
+         public function extraPhpAfterSaveValidate($model='',$post='',$paths='', $module='')
     {   
        /**
         * guarda una imagen en el directorio especificado con las dimenciones dadas
@@ -342,7 +296,7 @@ class MarenasaSucursales extends MActiveRecord
                }
            }
        }
-   public function afterFind()
+         public function afterFind()
     {
         if($this->imagen != '' && $this->imagen != null)
         {
@@ -355,6 +309,5 @@ class MarenasaSucursales extends MActiveRecord
             $nombre_anterior2 = null;
         }
     }
-
 
 }
