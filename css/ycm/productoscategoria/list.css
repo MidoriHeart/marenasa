@@ -1,0 +1,22 @@
+div.muebleImagen
+{
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+table.items.table.table-striped.table-bordered.table-condensed, div.summary, div.btn-toolbar
+{
+    width: 500px;
+    margin: auto;
+}
+table.items.table.table-striped.table-bordered.table-condensed > tbody > tr > td:nth-child(2n)
+{
+    width: 200px;
+}
+
+.imagenWidget {
+	width: 200px;
+	height: 200px;
+}

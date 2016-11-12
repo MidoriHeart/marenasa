@@ -957,3 +957,125 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/quienesomos
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/QuienesomosController.php (7)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/09 00:30:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_sucursales' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_sucursales`.
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/YcmModule.php (743)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/views/default/index.php (14)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/DefaultController.php (12)
+2016/11/09 00:30:43 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_sucursales" for active record class "MarenasaSucursales" cannot be found in the database.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(MarenasaSucursales))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/YcmModule.php(743): CActiveRecord->__construct()
+#3 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/views/default/index.php(14): YcmModule->getAdminName('MarenasaSucursa...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/DefaultController.php(12): CController->render('index', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ycm')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/marenasa/index.php/ycm
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/default/login
+---
+2016/11/09 01:13:31 [error] [php] mkdir(): Permission denied (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php:282)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoCategorias
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (282)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/09 01:14:21 [error] [php] Undefined variable: nombre_anterior2 (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoCategorias.php:275)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoCategorias
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoCategorias.php (275)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (315)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/09 01:15:01 [error] [php] Undefined variable: nombre_anterior2 (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoCategorias.php:275)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoCategorias
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoCategorias.php (275)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (315)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/09 01:51:15 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoMarcas.php(281): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php(315): MarenasaProductoMarcas->extraPhpAfterSaveValidate(Object(MarenasaProductoMarcas), Array, Array, Object(YcmModule))
+#3 [internal function]: ModelController->actionCreate('MarenasaProduct...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(ModelController), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModelController), Object(ReflectionMethod), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ycm/model/creat...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+---
+2016/11/09 01:52:36 [error] [php] unlink(): No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoMarcas.php:279)
+Stack trace:
+#0 unknown(0): ModelController->actionUpdate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaProductoMarcas/pk/1
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoMarcas.php (279)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (418)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/09 01:54:59 [error] [php] unlink(): No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoMarcas.php:279)
+Stack trace:
+#0 unknown(0): ModelController->actionUpdate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaProductoMarcas/pk/1
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/models/MarenasaProductoMarcas.php (279)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (418)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)

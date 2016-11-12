@@ -12,7 +12,8 @@
 }
 .arriba-mv {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
+    position: relative;
 }
 .abajo-mv {
      width: 100%;
@@ -56,14 +57,14 @@
 }
 .img-montania {
     width: 45%;
-    max-width: 430px;
+    max-width: 370px;
     background-image: url(../../images/Montana.png);
     background-size: cover;
     height: 290px;
     background-repeat: no-repeat;
     background-position: 0px -66px;
     right: 120px;
-    top: 410px;
+    top: -67px;
     position: absolute;
 }
 .img-foco{
