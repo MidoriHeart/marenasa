@@ -96,6 +96,10 @@ class MarenasaPromociones extends CActiveRecord
     {
         return MarenasaProductos::model()->findByPk($id)->articulo;
     }
+    public function getProductoImagen($id)
+    {
+        return MarenasaProductos::model()->findByPk($id)->imagen;
+    }
     public function adminSearch()
     {
         return array

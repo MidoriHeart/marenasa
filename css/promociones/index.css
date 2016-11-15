@@ -1,5 +1,212 @@
+#footer
+{
+    border-top: 0;
+}
 div.principal
 {
     width: 1200px;
     margin: 0 auto;
+}
+h1
+{
+    border-bottom: 7px solid #E80033;
+    color: #2375AE;
+    font-family: Roboto-Bold;
+    line-height: 75px;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+h1 span
+{
+    width: 952px;
+    margin: 0 auto;
+    display: block;
+}
+div.principal > div:first-child
+{
+    margin-bottom: 60px;
+}
+div.carrusel
+{
+    width: 1152px;
+    margin: 0 auto;
+}
+div.carrusel > div
+{
+    float: left;
+}
+.flechaD, .flechaI
+{
+    width: 85px;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 60px;
+    cursor: pointer;
+}
+.flechaD:hover, .flechaI:hover
+{
+    background-color: #C7C7C7;
+}
+.flechaD
+{
+    background-image: url('../../images/flechaDerSlider2.png');
+    margin-left: 15px;
+}
+.flechaI
+{
+    background-image: url('../../images/flechaIzqSlider2.png');
+    margin-right: 15px;
+}
+div.contenido
+{
+    width: 952px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+div.contenidoMovil
+{
+    height: 480px;
+    width: 1000em;
+    position: absolute;
+    transition: 0.3s all;
+    left: 0;
+}
+div.contenidoMovil > div:last-child
+{
+    margin-right: 0;
+}
+div.promocion
+{
+    width: 100%;
+    height: 227px;
+    float: left;
+}
+div.promoHeader
+{
+    width: 100%;
+    height: 76px;
+}
+div.promoHeader > div
+{
+    float: left;
+}
+div.rightHeader
+{
+    width: 74.66666666666667%;
+    height: 76px;
+    background-color: #FFFFFF;
+}
+div.rightHeader div:first-child
+{
+    height: 39px;
+    font-family: Roboto-Regular;
+    color: #2375AE;
+    font-size: 24px;
+    text-indent: 15px;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+div.rightHeader div:last-child
+{
+    height: 36px;
+    line-height: 36px;
+    font-family: Roboto-Regular;
+    text-indent: 15px;
+    color: #D6D6D6;
+    font-size: 16px;
+}
+div.leftHeader
+{
+    width: 25.33333333333333%;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-size: 26px;
+    color: #FFFFFF;
+    background-color: #CE243E;
+}
+div.promoImagen
+{
+    width: 100%;
+    height: 151px;
+    background-size: 100% 100%;
+    position: relative;
+    box-shadow: 2px 6px 7px #939191;
+}
+div.promoImagen a
+{
+    display: block;
+    text-decoration: none;
+    color: initial;
+    position: absolute;
+    background-color: #A1D069;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: #575756;
+    text-align: center;
+}
+div.contenidoMovil > div
+{
+    width: 300px;
+    float: left;
+    margin-right: 26px; 
+}
+div.contenidoMovil > div > div:first-child
+{
+    margin-bottom: 26px;
+}
+div.contenidoMovil > div:last-child > div
+{
+    margin-bottom: 0;
+}
+div.principal > div:last-child
+{
+    width: 79.33333333333333%;
+    margin: 0 auto;
+    padding-bottom: 39px;
+}
+div.tituloUltra
+{
+    color: #2375AE;
+    font-size: 26px;
+    font-family: Roboto-Bold;
+    margin-bottom: 35px;
+}
+div.ultraPromo div.promocion
+{
+    width: 463px;
+    height: 283px;
+    margin-bottom: 26px;
+}
+div.ultraPromo div.promocion:nth-child(2n)
+{
+    margin-left: 26px;
+}
+div.ultraPromo div.rightHeader
+{
+    width: 346px;
+}
+div.ultraPromo div.leftHeader
+{
+    width: 117px;
+}
+div.ultraPromo div.promoImagen
+{
+    height: 207px;
+}
+div.carrusel:after,
+div.contenidoMovil > div:after,
+div.contenidoMovil:after,
+div.ultraPromo:after
+{
+    content: '';
+    display: block;
+    clear: both;
 }

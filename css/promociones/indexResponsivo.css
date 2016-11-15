@@ -1,0 +1,178 @@
+@media(max-width: 1200px)
+{
+    h1 span
+    {
+        width: 90%;
+    }
+    div.principal
+    {
+        width: auto;
+    }
+    div.carrusel
+    {
+        width: 826px;
+    }
+    div.contenido
+    {
+        width: 626px;
+    }
+    div.tituloUltra
+    {
+        text-align: center;
+    }
+    div.ultraPromo div.promocion
+    {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
+    div.ultraPromo div.promocion:nth-child(2n) 
+    {
+        margin-left: 0;
+        margin: 0 auto;
+        margin-bottom: 26px;
+    }
+    div.ultraPromo div.promocion:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 960px)
+{
+    div.carrusel
+    {
+        width: 749px;
+    }
+    div.contenido
+    {
+        width: 549px;
+    }
+    div.contenidoMovil > div
+    {
+        width: 261px;
+    }
+    div.rightHeader div:first-child
+    {
+        font-size: 19px;
+    }
+}
+@media(max-width: 768px)
+{
+    div.carrusel 
+    {
+        width: 461px;
+    }
+    div.contenido
+    {
+        width: 261px;
+    }
+    div.ultraPromo div.promocion
+    {
+        width: 365px;
+    }
+    div.ultraPromo div.rightHeader
+    {
+        width: 75%;
+    }
+    div.ultraPromo div.leftHeader
+    {
+        width: 25%;
+    }
+}
+@media(max-width: 480px)
+{
+    h1
+    {
+        margin-bottom: 20px;
+        line-height: 50px;
+        font-size: 26px;
+    }
+    .flechaD, .flechaI
+    {
+        width: 45px;
+        height: 386px;
+    }
+    .flechaI
+    {
+        margin-right: 5px;
+    }
+    .flechaD
+    {
+        margin-left: 5px;
+    }
+    div.rightHeader
+    {
+        height: 50px;
+    }
+    div.leftHeader
+    {
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    div.principal > div:first-child
+    {
+        margin-bottom: 20px;
+    }
+    div.tituloUltra 
+    {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    div.contenido 
+    {
+        width: 202px;
+        height: 386px;
+    }
+    div.carrusel 
+    {
+        width: 302px;
+    }
+    div.contenidoMovil > div
+    {
+        width: 202px;
+    }
+    div.promocion
+    {
+        height: 180px;
+    }
+    div.promoHeader
+    {
+        height: 50px;
+    }
+    div.promoImagen
+    {
+        height: 130px;
+    }
+    div.rightHeader div:first-child
+    {
+        padding-top: 5px;
+    }
+    div.rightHeader div:first-child 
+    {
+        font-size: 14px;
+        height: 19px;
+    }
+    div.ultraPromo div.promocion
+    {
+        height: 200px;
+    }
+    div.ultraPromo div.rightHeader div:first-child 
+    {
+        height: 25px;
+    }
+    div.ultraPromo div.promoImagen 
+    {
+        height: 150px;
+    }
+    div.rightHeader div:last-child 
+    {
+        height: 31px;
+        line-height: 31px;
+        font-size: 14px;
+    }
+    div.ultraPromo div.promocion 
+    {
+        width: 238px;
+    }
+}
