@@ -37,11 +37,33 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
-				array('label'=>'Quienes Somos', 'url'=>array('/quienesomos')),
-				array('label'=>'Preguntas Frecuentes', 'url'=>array('/preguntasfrecuentes')),
+				array('label'=>'Nosotros', 
+					'items'=> array(
+						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
+						array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+					),
+				),
+				array('label'=>'Productos', 
+					'items'=> array(
+						array( 'label' => 'Por categoría', 'url' => array('/productos/categoria')),
+						array( 'label' => 'Por marca', 'url' => array('/productos/marca')),
+						array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
+					),
+				),
+				array( 'label' => 'Promociones', 
+					'items' => array(
+						array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
+						array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
+					),
+				),
+				array( 'label' => 'Servicios', 
+					'items' => array(
+						array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios/index')),
+						array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
+					),
+				),
+				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
 				array('label'=>'Contacto', 'url'=>array('/contacto')),
-				array('label'=>'Mision y Vision', 'url'=>array('/misionvision')),
-
 				),
 			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Productos', 'url'=>array('/site/contact')),
