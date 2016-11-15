@@ -5,7 +5,15 @@ class ProductosController extends Controller
 	public function actionIndex()
 	{
 		$marca = MarenasaProductoMarcas::model()->findAll();
+
 		$this->render('index', array('marca'=>$marca));
+	}
+	public function actionGetProductos($id)
+	{	
+			$criteria = new CDbCriteria();
+			$criteria->condition='id_marca ='.(int)$id;
+			$productos = MarenasaProductos::model()->findAll($criteria);
+			echo json_encode($productos);
 	}
 
 	// Uncomment the following methods and override them if needed
