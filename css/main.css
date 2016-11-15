@@ -75,74 +75,72 @@
     z-index: 9;
 }
 
-#mainmenu ul
+#mainmenu .content-wrapper > ul
 {
-    padding: 6px 20px 5px 20px;
-    margin: 0px;
+    margin: 0px auto;
     margin-right: 110px;
+    max-width: 952px;
+    padding: 0;
+
 }
 
-#mainmenu ul li
+#mainmenu .content-wrapper > ul > li
 {
-    display: inline;
-    padding-bottom: 5px;
-    border-bottom: 5px solid  #2D72B1;
-    margin-left: 13px;
-    margin-right: 13px;
+    display: block;
+    float: left;
+    background-color: #2D72B1;
+    width: 106px;
+    margin: 0 15px;
 }
 
-#mainmenu ul li a
+#mainmenu .content-wrapper > ul > li a,
+#mainmenu .content-wrapper > ul > li span
 {
-	color:#DCE4EA;
-	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
-	text-decoration:none;
-	padding: 5px 8px;
+    color: #DCE4EA;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
     font-family: 'roboto-thin';
     font-size: 16px;
-}
-#mainmenu ul li:nth-child(1) a
-{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-#mainmenu ul li:nth-child(2) a
-{
-    padding-left: 16px;
-    padding-right: 16px;
-}
-#mainmenu ul li:nth-child(3) a,
-#mainmenu ul li:nth-child(7) a
-{
-    padding-left: 14px;
-    padding-right: 14px;
-}
-#mainmenu ul li:nth-child(4) a
-{
-    padding-left: 2px;
-    padding-right: 2px;
-}
-#mainmenu ul li:nth-child(5) a
-{
-    padding-left: 18px;
-    padding-right: 18px;
-}
-#mainmenu ul li:nth-child(6) a
-{
-    padding-left: 11px;
-    padding-right: 11px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 22px;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
+#mainmenu .content-wrapper > ul > li a:hover, 
+#mainmenu .content-wrapper > ul > li.active a, 
+#mainmenu .content-wrapper > ul > li.active span
 {
-	color: #DCE4EA;
-	text-decoration:none;
 	border-bottom: 5px solid #BBE573;
 }
+#mainmenu .content-wrapper > ul > li > ul {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    padding: 10px 0;
+}
+#mainmenu .content-wrapper > ul > li:hover > ul {
+    display: block;
+}
 
-div.flash-error, div.flash-notice, div.flash-success
+#mainmenu .content-wrapper > ul > li > ul > li {
+    height: auto;
+    min-height: 35px;
+}
+#mainmenu .content-wrapper > ul > li > ul > li > a,
+#mainmenu .content-wrapper > ul > li > ul > li > span {
+    height: auto;
+    border-bottom: 5px solid #2D72B0;
+    margin-top: 0;
+}
+
+div.flash-error, div.flash-notice, 
+div.flash-success
 {
 	padding:.8em;
 	margin-bottom:1em;
@@ -444,20 +442,19 @@ width: 150px;
     top: 30px;
     margin-right: 47px;
 }
-.buscador input
-            {
-            width: 100%;  
-            max-width: 160px;
-            box-sizing: border-box;
-            height: 25px;
-            line-height: 23px;
-            text-indent: 5px;
-            border: 0;
-            font-weight: bold;
-            color:    #0580A9;
-            }
+.buscador input {
+    width: 100%;  
+    max-width: 160px;
+    box-sizing: border-box;
+    height: 25px;
+    line-height: 23px;
+    text-indent: 5px;
+    border: 0;
+    font-weight: bold;
+    color:    #0580A9;
+}
 .lupa {
-background-color: #E50C39;
+    background-color: #E50C39;
     width: 25px;
     height: 25px;
     position: absolute;
@@ -494,9 +491,8 @@ label.lheader {
     top: 4px;
     left: 60px;
 }
-#mainmenu ul {
-    padding: 6px 20px 5px 20px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 890px;
+#mainmenu .content-wrapper > ul:after {
+    display: block;
+    content: "";
+    clear: both;
 }
