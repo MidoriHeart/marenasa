@@ -11,4 +11,5 @@
 ?>
 <div class="principal">
     <h1>Promociones</h1>
+    <?php print_r($promociones);?>
 </div>

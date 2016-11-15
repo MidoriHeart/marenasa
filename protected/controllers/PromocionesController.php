@@ -32,7 +32,7 @@ class PromocionesController extends Controller
     }
     public function actionIndex()
     {
-        $date = date('d/m/Y');
+        $date = date('Y-m-d');
         $promociones = MarenasaPromociones::model()->findAll("fecha_final > $date");
         $this->render('index',array(
             'promociones'=>$promociones,

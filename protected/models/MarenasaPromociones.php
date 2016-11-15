@@ -15,7 +15,7 @@
  */
 class MarenasaPromociones extends CActiveRecord
 {
-    public $adminNames=array('Promociones','promoci&oacute;n','promociones'); // admin interface, singular, plural
+    public $adminNames=array('Promociones','promoción','promociones'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
@@ -74,6 +74,28 @@ class MarenasaPromociones extends CActiveRecord
                     'porcentaje' => 'Porcentaje de promoci&oacute;n',
             );
     }
+    public function attributeWidgets()
+    {
+        return array
+        (
+            array('id_producto', 'chosen'),
+            array('fecha_inicio', 'date'),
+            array('fecha_final', 'date'),
+            array('porcentaje', 'textField'),
+        );
+    }
+    public function id_productoChoices()
+    {
+        $productos = MarenasaProductos::model()->findAll();
+        $return = array();
+        foreach($productos as $data)
+            $return[$data->id] = $data->articulo;
+        return $return;
+    }
+    public function getProducto($id)
+    {
+        return MarenasaProductos::model()->findByPk($id)->articulo;
+    }
     public function adminSearch()
     {
         return array
@@ -83,7 +105,7 @@ class MarenasaPromociones extends CActiveRecord
                 array
                 (
                     'name'=>'id_producto',
-                    'value'=>'MarenasaPromociones::model()->getCategoria($data->id_categoria)',
+                    'value'=>'MarenasaPromociones::model()->getProducto($data->id_producto)',
                 ),
                 array
                 (
@@ -151,7 +173,6 @@ class MarenasaPromociones extends CActiveRecord
     public function css() 
     {
     }
-    
     public function extraHtml() 
     {
     }
