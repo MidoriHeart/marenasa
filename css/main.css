@@ -201,6 +201,8 @@ div.breadcrumbs
 {
 	font-size: 0.9em;
 	padding: 5px 20px;
+        height: 35px;
+        box-sizing: border-box;
 }
 
 div.breadcrumbs span

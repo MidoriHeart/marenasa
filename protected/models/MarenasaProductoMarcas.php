@@ -275,10 +275,10 @@ class MarenasaProductoMarcas extends MActiveRecord
                 if($this->nombre_anterior2 != null)
                 {
                     $baseUrl = Yii::app()->baseUrl;
-                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/logo/{$this->nombre_anterior2";
+                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/logo/{$this->nombre_anterior2}";
                     unlink(realpath($targetFile));
                 }
-                $new_path = $new_path.$model->imagen;
+                $new_path = $new_path.$model->logo;
                 //intenta guardar la imagen resultante en el servidor
                                 switch($type){
                                         case 'bmp': $retorno = imagewbmp($dst_r, $new_path); break;
@@ -311,7 +311,7 @@ class MarenasaProductoMarcas extends MActiveRecord
         else
         {
             $this->nombre_anterior = null;
-            $this->$nombre_anterior2 = null;
+            $this->nombre_anterior2 = null;
         }
     }
 }
