@@ -1,19 +1,133 @@
 .contenedor1-p {
     width: 100%;
-    height: 210px;
-    background-color: black;
+    height: 125px;
+    background-image: url(../../images/Imagen-Buscador.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .Titulo1-p {
     color: white;
-    font-size: 35px;
+    font-size: 28px;
+    font-family: 'Roboto-Regular';
     position: relative;
-    top: 155px;
-    left: 130px;
-    text-shadow: 2px 3px #ABABDC;
+    top: 85px;
+    left: 100px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.46);
+    width: 500px;
 }
 .contenedor2-p {
     background-color: #ececec;
     width: 100%;
     height: 160px;
     border-bottom: 7px solid #E80033;
+}
+.contenedor3-p {
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: #ececec;
+}
+.canasta-p {
+     width: 60px;
+    height: 60px;
+    background-image: url(../../images/canastaBuscador.png);
+    background-size: 100%;
+    position: relative;
+    top:50px;
+    right: 0px;
+}
+.contenedor2-2p {
+    float: left;
+    width: 50%;
+    height: 167px;
+}
+.contenedor2-1p {
+    width: 50%;
+    height: 167px;
+    float: left;
+}
+.canasta-p {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../images/canastaBuscador.png);
+    background-size: 100%;
+    margin-right: 60px;
+    float: right;
+}
+.titulo-ddl {
+    color: #2E73B2;
+    font-size: 19px;
+    font-family: 'Roboto-Regular';
+    margin-left: 90px;
+    margin-top: 40px;
+}
+.ddl-producto {
+    margin-left: 87px;
+    margin-top: 5px;
+    width: 50%;
+}
+.nice-select {
+border-radius:9px !important; 
+height: 37px !important;
+width: 160px !important;
+}
+.nice-select:after {
+    border-bottom: 3px solid #4C85B6 !important;
+    border-right: 3px solid #4C85B6 !important;
+    height: 10px !important;
+    width: 10px !important;
+    top:15px !important;
+}
+.content-wrapper{
+    margin: 0 120px !important;
+}
+.buscador-producto {
+    height: 180px;
+    background-color: #ffffff;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 20px;
+    float: left;
+}
+.buscador-producto:nth-child(1),
+.buscador-producto:nth-child(2),
+.buscador-producto:nth-child(3),
+.buscador-producto:nth-child(4)
+ {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+.titulo-pm {
+    width: 100%;
+    height: 45px;
+}
+.imagen-marca {
+    width: 100%;
+    height: 135px;
+}
+
+.titulo-pm {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    color: #3965a9;
+    font-size: 17px;
+    font-family: 'Roboto-Regular';
+}
+.imagen-marca {
+    width: 100%;
+    height: 135px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.contenedor3-p:after,
+.imagen-marca:after
+
+{
+    clear: both;
+    content: '';
+    display: block;
 }

@@ -35,3 +35,216 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/ycm/model/list/name/MarenasaPromociones
 HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/create/name/MarenasaPromociones
 ---
+2016/11/15 19:48:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_promociones' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_promociones`.
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/YcmModule.php (743)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/views/default/index.php (14)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/DefaultController.php (12)
+2016/11/15 19:48:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_promociones" for active record class "MarenasaPromociones" cannot be found in the database.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(MarenasaPromociones))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/YcmModule.php(743): CActiveRecord->__construct()
+#3 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/views/default/index.php(14): YcmModule->getAdminName('MarenasaPromoci...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/DefaultController.php(12): CController->render('index', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ycm')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/marenasa/index.php/ycm
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/default/login
+---
+2016/11/15 19:59:46 [error] [php] move_uploaded_file(/Applications/XAMPP/xamppfiles/htdocs/marenasa/uploads/marenasaproductomarcas/logo/b29d6153a7b143c23549dac53944a4e4.jpg): failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 unknown(0): ModelController->actionCreate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (291)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/15 20:00:33 [error] [php] move_uploaded_file(/Applications/XAMPP/xamppfiles/htdocs/marenasa/uploads/marenasaproductomarcas/logo/dfc4ae1bf54df94a67f2df38b21e42fe.jpg): failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 unknown(0): ModelController->actionCreate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (291)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/15 20:00:42 [error] [php] move_uploaded_file(/Applications/XAMPP/xamppfiles/htdocs/marenasa/uploads/marenasaproductomarcas/logo/4b5789d3a43e7fafb48b51cc643e7a8f.jpg): failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 unknown(0): ModelController->actionCreate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (291)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/15 20:01:47 [error] [php] move_uploaded_file(/Applications/XAMPP/xamppfiles/htdocs/marenasa/uploads/marenasaproductomarcas/logo/7f6d24a25f3b7b1e06d8a457a0e9e479.jpg): failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 unknown(0): ModelController->actionCreate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): ModelController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): ModelController->runActionWithFilters()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): ModelController->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/create/name/MarenasaProductoMarcas
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/controllers/ModelController.php (291)
+in /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php (13)
+2016/11/15 20:38:35 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
+2016/11/15 20:40:53 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
+2016/11/15 20:40:55 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
+2016/11/15 20:42:21 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
+2016/11/15 20:42:22 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
+2016/11/15 20:42:24 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaProductoMarcas.imagen" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('imagen')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CModel.php(596): CActiveRecord->__get('imagen')
+#2 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/views/productos/index.php(39): CModel->offsetGet('imagen')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/controllers/ProductosController.php(8): CController->render('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): ProductosController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('productos')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/marenasa/index.php/productos
+---
