@@ -35,6 +35,29 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/ycm/model/list/name/MarenasaPromociones
 HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/create/name/MarenasaPromociones
 ---
+<<<<<<< HEAD
+2016/11/15 17:52:04 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "marca". in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('marca')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('marca')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('productos/marca')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/marenasa/index.php/productos/marca
+HTTP_REFERER=http://localhost/marenasa/index.php/promociones
+---
+2016/11/15 17:52:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "categoria". in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('categoria')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('categoria')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('productos/categ...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/marenasa/index.php/productos/categoria
+HTTP_REFERER=http://localhost/marenasa/index.php/productos/marca
+=======
 2016/11/15 19:48:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_promociones' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_promociones`.
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/YcmModule.php (743)
 in /Applications/XAMPP/xamppfiles/htdocs/marenasa/protected/modules/ycm/views/default/index.php (14)
@@ -247,6 +270,7 @@ Stack trace:
 #15 /Applications/XAMPP/xamppfiles/htdocs/marenasa/index.php(13): CApplication->run()
 #16 {main}
 REQUEST_URI=/marenasa/index.php/productos
+>>>>>>> 46be4bb5896fd4c4b85b50896b4cb6a7108d0b2a
 ---
 2016/11/15 23:44:19 [error] [php] move_uploaded_file(/Applications/XAMPP/xamppfiles/htdocs/marenasa/uploads/marenasaproductocategorias/imagen/4b1cceb58cfd0e4b35a8da820f147ee4.gif): failed to open stream: Permission denied (/Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CUploadedFile.php:198)
 Stack trace:
