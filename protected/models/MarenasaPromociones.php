@@ -13,7 +13,7 @@
  * The followings are the available model relations:
  * @property MarenasaProductos $idProducto
  */
-class MarenasaPromociones extends CActiveRecord
+class MarenasaPromociones extends MActiveRecord
 {
     public $adminNames=array('Promociones','promoción','promociones'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel

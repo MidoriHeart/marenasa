@@ -4,7 +4,8 @@ class ProductosController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$marca = MarenasaProductoMarcas::model()->findAll();
+		$this->render('index', array('marca'=>$marca));
 	}
 
 	// Uncomment the following methods and override them if needed
