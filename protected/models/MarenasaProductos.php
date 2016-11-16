@@ -53,10 +53,11 @@ class MarenasaProductos extends MActiveRecord
             // NOTE: you should only define rules for those attributes that
             // will receive user inputs.
             return array(
-                    array('id_categoria, id_marca, articulo', 'required','message'=>'{attribute} no puede dejarse vacio'),
+                    array('id_categoria, id_marca, articulo, descripcion', 'required','message'=>'{attribute} no puede dejarse vacio'),
                     array('precio', 'numerical','message'=>'{attribute} debe ser numerico'),
                     array('id_categoria, id_marca', 'length', 'max'=>11,'message'=>'{attribute} solo puede tener 11 caracter(es)'),
                     array('articulo, dimensiones, imagen', 'length', 'max'=>150,'message'=>'{attribute} solo puede tener 150 caracter(es)'),
+                    array('descripcion', 'length', 'max'=>300,'message'=>'{attribute} solo puede tener 300 caracter(es)'),
                     // The following rule is used by search().
                     // Please remove those attributes that should not be searched.
                     array('id, id_categoria, id_marca, articulo, dimensiones, imagen, precio', 'safe', 'on'=>'search'),
@@ -86,6 +87,7 @@ class MarenasaProductos extends MActiveRecord
                     'id_categoria' => 'Categor&iacute;a',
                     'id_marca' => 'Marca',
                     'articulo' => 'Nombre del artículo',
+                    'descripcion' => 'Descripción del artículo',
                     'dimensiones' => 'Dimensiones del artículo',
                     'imagen' => 'Imagen del artículo',
                     'precio' => 'Precio',
@@ -98,6 +100,7 @@ class MarenasaProductos extends MActiveRecord
             array('id_categoria', 'chosen'),
             array('id_marca', 'chosen'),
             array('articulo', 'textField'),
+            array('descripcion', 'textArea'),
             array('dimensiones', 'textField'),
             array('imagen', 'image'),
             array('precio', 'textField'),
@@ -203,6 +206,11 @@ class MarenasaProductos extends MActiveRecord
                 (
                     'name'=>'articulo',
                     'value'=>'$data->articulo',
+                ),
+                array
+                (
+                    'name'=>'descripcion',
+                    'value'=>'$data->descripcion',
                 ),
                 array
                 (
