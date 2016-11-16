@@ -40,7 +40,8 @@
 
 #content
 {
-    padding: 0px;
+    padding: 0px;    
+    margin-top: 35px;
 }
 
 #sidebar
@@ -71,7 +72,7 @@
     height: 35px;
     display: block;
     position: absolute;
-    width: 99.9%;
+    width: 100%;
     z-index: 9;
 }
 

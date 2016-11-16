@@ -1,10 +1,11 @@
 <?php
 
-class ContactoController extends Controller
+class ServiciosController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$productos = MarenasaProductos::model()->findAll();
+		$this->render('index', array('productos'=>$productos));
 	}
 
 	// Uncomment the following methods and override them if needed
