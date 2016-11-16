@@ -18,7 +18,7 @@ class MarenasaProductoCategorias extends MActiveRecord
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
     public $nombre_anterior;
-    public $nombre_anterior2;
+   // public $nombre_anterior2;
     public $hideCreateAction = false;
     public $hideListAction = false;
     public $hideDeleteAction = false; 
@@ -272,12 +272,12 @@ class MarenasaProductoCategorias extends MActiveRecord
 //                $new_path = $module->getAttributePath(__CLASS__,'logo').DIRECTORY_SEPARATOR.'cutted_image'.DIRECTORY_SEPARATOR;
                 $new_path = $module->getAttributePath(__CLASS__,'imagen').DIRECTORY_SEPARATOR;
 
-                if($this->nombre_anterior2 != null)
+              /* if($this->nombre_anterior2 != null)
                 {
                     $baseUrl = Yii::app()->baseUrl;
                     $targetFile = $baseUrl."uploads/marenasaproductocategorias/imagen/{$this->nombre_anterior2}";
                     unlink(realpath($targetFile));
-                }
+                }*/
                 $new_path = $new_path.$model->imagen;
                 //intenta guardar la imagen resultante en el servidor
                                 switch($type){
@@ -306,12 +306,12 @@ class MarenasaProductoCategorias extends MActiveRecord
         if($this->imagen != '' && $this->imagen != null)
         {
             $this->nombre_anterior = $this->imagen;
-            $this->nombre_anterior2 = $this->imagen;
+            //$this->nombre_anterior2 = $this->imagen;
         }
         else
         {
             $this->nombre_anterior = null;
-            $this->$nombre_anterior2 = null;
+          //  $this->$nombre_anterior2 = null;
         }
     }
 }
