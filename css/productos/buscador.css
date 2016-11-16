@@ -1,0 +1,157 @@
+div.arriba
+{
+    border-bottom: 7px solid #E80033;
+    margin-bottom: 50px;
+}
+div.imagenArriba
+{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 35px;
+    background-image: url(../../images/Imagen-Buscador.png);
+    background-size: 100% 100%;
+}
+div.imagenArriba > div
+{
+    width: 952px;
+    margin: 0 auto;
+    height: 20px;
+    font-size: 24px;
+    font-family: Roboto-Bold;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding-top: 75px;
+    background-color: transparent;
+}
+.nice-select:active, .nice-select.open, .nice-select:focus 
+{
+    border-color: #E8E8E8;
+}
+.nice-select:after 
+{
+    border-bottom: 3px solid #4C85B6 !important;
+    border-right: 3px solid #4C85B6 !important;
+    height: 10px !important;
+    width: 10px !important;
+    top: 15px !important;
+}
+div.menuOpciones
+{
+    width: 952px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+div.menuOpciones > div
+{
+    float: left;
+    margin-right: 25px;
+}
+div.menuOpciones > div:last-child
+{
+    margin-right: 0;
+}
+div.menuOpciones .titulo
+{
+    color: #2E73B2;
+    font-size: 19px;
+    font-family: 'Roboto-Regular';
+}
+div.menuOpciones .buscar
+{
+    width: 250px;
+}
+div.principal
+{
+    width: 952px;
+    margin: 0 auto;
+}
+div.producto
+{
+    float: left;
+    position: relative;
+    width: 219px;
+    height: 219px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+div.producto:nth-child(4n)
+{
+    margin-right: 0;
+}
+div.productoWraper
+{
+    border-radius: 6px;
+    width: 100%;
+    height: 219px;
+    overflow: hidden;
+    transition: 0.3s all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+}
+div.productoWraper:hover
+{
+    width: 235px;
+    height: 342px;
+    box-shadow: 2px 2px 2px 2px rgba(136, 134, 139, 0.7);
+}
+.topProducto
+{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #E3E3E3;
+    margin-bottom: 10px;
+}
+div.producto .titulo
+{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #2E73B2;
+    font-size: 17px;
+    font-family: 'Roboto-Regular';
+}
+div.producto .imagen
+{
+    width: 100%;
+    padding-bottom: 79.45205479452055%;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+div.bottomProducto
+{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    position: relative;
+}
+div.bottomProducto > div:last-child
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: #2E73B2;
+    color: #FFFFFF;
+    font-size: 56px;
+    text-align: center;
+    line-height: 60px;
+}
+div.menuOpciones:after,
+div.principal:after
+{
+    display: block;
+    clear: both;
+    content: '';
+}

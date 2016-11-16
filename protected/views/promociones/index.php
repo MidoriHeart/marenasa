@@ -1,9 +1,6 @@
 <?php
 /* @var $this MarenasaOfertasController */
 /* @var $dataProvider CActiveDataProvider */
-    $this->breadcrumbs=array(
-            'Promociones',
-    );
     $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
