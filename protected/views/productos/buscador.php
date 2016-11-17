@@ -28,10 +28,14 @@
 </div>
 <div class="abajo">
     <div class="pedidosLista ocultarLista">
-        <div class="pedidosHeader">
-            <div>Pedido</div>
-        </div>
-        <div class="pedidosWraper"></div>
+        <form name="Pedido" action="<?php echo $baseUrl.'/index.php/servicios/index'?>" method="post">
+            <div class="pedidosHeader">
+                <div>Pedido</div>
+            </div>
+            <div class="pedidosWraper">
+                <input type="submit" value="Continuar">
+            </div>
+        </form>
     </div>
     <div class="principal">
         <div class="productosWraper">
