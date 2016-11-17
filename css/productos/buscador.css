@@ -1,7 +1,95 @@
 div.arriba
 {
     border-bottom: 7px solid #E80033;
-    margin-bottom: 50px;
+}
+div.abajo
+{
+    position: relative;
+    padding-top: 50px;
+}
+div.pedidosLista
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-left: 7px solid #2E73B2;
+    transition: 0.3s all;
+    z-index: 1000;
+    box-shadow: -2px 2px 2px rgba(0,0,0,0.7);
+}
+.ocultarLista
+{
+    width: 0 !important;
+    border: 0 !important;
+}
+.ocultarLista .pedidosHeader,
+.ocultarLista .pedidosWraper
+{
+    display: none;
+}
+div.pedidosHeader div
+{
+    background-image: url(../../images/canastaBuscador.png);
+    background-position: center left 9px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    text-indent: 39px;
+    height: 50px;
+    line-height: 57px;
+    font-size: 24px;
+    font-family: Roboto-Bold;
+}
+div.pedidosWraper
+{
+    padding: 10px;
+}
+div.pedido
+{
+    margin-bottom: 10px;
+}
+div.pedidosWraper input[type=text]
+{
+    border: 0;
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    float: left;
+    width: 175px;
+    line-height: 21px;
+    padding: 0;
+    color: #575756;
+}
+div.pedidosWraper input[type=number]
+{
+    float: left;
+    width: 35px;
+    width: 42px;
+}
+div.pedidosWraper div.borrar
+{
+    float: left;
+    width: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Roboto-Bold;
+    margin-left: 10px;
+    line-height: 21px;
+    cursor: pointer;
+    text-align: center;
+}
+div.canasta
+{
+    width: 60px;
+    height: 60px;
+    background-image: url(../../images/canastaBuscador.png);
+    background-size: 100%;
+    margin-right: 60px;
+    float: right;
+    margin-top: 5px;
+    cursor: pointer;
 }
 div.imagenArriba
 {
@@ -76,6 +164,10 @@ div.producto
     border-radius: 6px;
     background-color: #FFFFFF;
     cursor: pointer;
+    z-index: 1;
+}
+.producto:hover {
+    z-index: 2;
 }
 div.producto:nth-child(4n)
 {
@@ -144,12 +236,94 @@ div.bottomProducto > div:last-child
     border-radius: 50%;
     background-color: #2E73B2;
     color: #FFFFFF;
-    font-size: 56px;
+    font-size: 19px;
+    font-family: Roboto-Regular;
     text-align: center;
     line-height: 60px;
 }
+div.productosWraper
+{
+    padding-bottom: 150px;
+}
+div[data-infoI] .titulo
+{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #2E73B2;
+    font-size: 17px;
+    font-family: 'Roboto-Regular';
+    background-color: #FFFFFF;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+div[data-infoI] .imagen
+{
+    width: 100%;
+    padding-bottom: 79.45205479452055%;
+    background-size: 100% 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.descripcionWraper .topProducto
+{
+    width: 219px;
+    float: left;
+}
+.imagenWraper
+{
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+.descripcionWraper .bottomProducto
+{
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+}
+.descripcionWraper .bottomProducto div
+{
+    text-align: right;
+}
+.descripcionWraper .bottomProducto > div:last-child
+{
+    position: initial;
+    background-color: #85E67D;
+    border-radius: 8px;
+    float: right;
+    width: 175px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 25px;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+div.botonCerrar
+{
+    float: left;
+    margin-left: 75px;
+    margin-top: -15px;
+    border-radius: 50%;
+    background-color: #2E73B2;
+    width: 60px;
+    height: 60px;
+    font-size: 34px;
+    font-family: Roboto-Regular;
+    text-align: center;
+    line-height: 60px;
+    color: #FFFFFF;
+    box-shadow: -2px 2px 2px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
 div.menuOpciones:after,
-div.principal:after
+div.principal:after,
+div.productosWraper:after,
+div.descripcionWraper:after,
+div[data-infoI]:after,
+div.producto:after,
+div.pedido:after
 {
     display: block;
     clear: both;
