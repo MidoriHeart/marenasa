@@ -5,44 +5,47 @@
     background-image: url(../../images/contacto.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
 }
 .inferior-cnt {
-    padding-bottom: 45%;
+    /*padding-bottom: 40px;*/
     width: 100%;
-    
     background-color: #ececec;
 }
 .titulo-cnt {
     color: white;
     position: absolute;
     font-size: 50px;
-    margin-top: 250px;
-    margin-left: 819px;
+    bottom: 20px;
+    right: 62px;
     text-shadow: 3px 3px rgb(85, 85, 85);
 }
 .izquierda-cnt {
     width: 50%;
     float: left;
-     margin-top:10%;
+    font-family: Roboto-Regular;
+}
+.contenido-wrapper
+{
+    padding: 75px 0;
 }
 .derecha-cnt {
     width: 50%;
+    font-family: Roboto-Regular;
     float: right;
-    margin-top: 10%;
 }
 .descripcion-cnt
 {
     font-size: 19px;
     width: 90%;
     margin: 0 auto;
-    margin-left: 10%;
-
+    /*margin-left: 10%;*/
     margin-bottom: 30px;
 }
 .informacion-cnt {
     width: 90%;
     margin: 0 auto;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     margin-top: 50px;
     font-size: 20px;
 }
@@ -54,21 +57,34 @@
 
 .lmensaje {
     margin-bottom: 20px;
+    font-family: Roboto-Regular;
 }
-.boton {
-    width: 90px;
-    height: 30px;
-    background-color: #A1D25C;
-    border: none;
-    margin-top: 15px;
-    position: relative;
-    left: 243px;
-    font-size: 14px;
+.boton 
+{
+    float: right;
+    position: initial;
 }
-input[type="text"] {
-    border: 1px inset #ececec !important;
+input[type="text"], textarea {
+    border: 1px inset rgba(236, 236, 236, 0.7) !important;
+    font-family: Roboto-Regular;
 }
-.superior-cnt:after
+.correo {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+div.rowWraper 
+{
+    width: 350px;
+    margin: 0 auto;
+    float: none;
+}
+.superior-cnt:after,
+.inferior-cnt:after,
+.contenido-wrapper:after,
+.correo:after,
+.row3:after
 {
 	clear: both;
     content: '';

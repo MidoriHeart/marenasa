@@ -371,8 +371,9 @@ div.row
     border: 0;
     font-weight: bold;
     color:    #0580A9;
+    font-family: Roboto-Regular;
     }
-    div.row2 input
+    div.row2 textarea
     {
     width: 100%;  
     max-width: 500px;
@@ -383,6 +384,7 @@ div.row
     border: 0;
     font-weight: bold;
     color:    #0580A9;
+    resize: none;
     }
 .boton {
     width: 90px;
