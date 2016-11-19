@@ -1,0 +1,112 @@
+@media (max-width:1200px) {
+	.container11 {
+	    position: relative;
+	    width: 400px;
+	    top: 88px;
+	    left: 0;
+	    z-index: 9;
+	    margin-left: 10%;
+	}
+	#main-carousel
+	{
+		height: 378px;
+	}
+	.carousel-wrapper {
+		left:0px;
+    	margin-left: 11%;
+	}
+	.oferta {
+    	margin-right: 9%;
+    	margin-left: 1%
+	}
+	.categoriasl {
+	    height: 146px;
+    	margin: 0 3.81%;
+	}
+
+	.categoriasl:nth-child(2n) {
+		margin-left: 0px;
+	}
+	.ppContainer {
+	    width: 100%;
+	    max-width: 960px;
+	    padding-top: 60px;
+	}
+	.titulares4:first-child {
+	    margin-left: 5%;
+	}
+}
+@media (max-width:960px) {
+	.carousel-wrapper {
+	    left: 0px;
+	        margin-left: 6%;
+	}
+	.flechaISl2{
+		width: 35px;
+    	height: 45px;
+    	background-size: 100% 100%;
+    	top: 53px;
+    	left: -31px;
+	}
+	.flechaIDl2
+	{
+
+	}
+	.sproducto {
+      	width: 130px;
+    	height: 130px;
+	}
+	.images1, .images2, .images3 {
+    	width: 106px;
+	    height: 111px;
+    	top: 9px;
+    	left: 11px;
+	}
+	#main-carousel {
+    	height: 278px;
+	}
+	.flechaIzq {
+ 	    top: 185px;
+	}
+	.flechaDer{
+ 	    top: 185px;
+	}
+	.pContainer {
+	    padding-top: 41px;
+	}
+	.ppContainer{
+	    max-width: 768px;
+	}
+	.categoriasl {
+	    height: 146px;
+	    margin: 0 2.5%;
+	    width: 347px;
+	}
+	.titulares4:first-child {
+    	margin-left: 1%;
+	}
+	.titulares4{
+	    margin-left: 1%;
+        width: 176px;
+	}
+	label.titulo43 {
+	    margin-left: 19px;
+    	margin-right: 19px;
+    }
+
+	.oferta {
+    	margin-right: 6%;
+    	margin-left: 1%;
+    	max-width: 214px;
+	}
+
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:480px) {
+
+}
+@media (max-width:320px) {
+
+}

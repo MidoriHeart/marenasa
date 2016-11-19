@@ -4,6 +4,7 @@
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/inicio/inicio.css');
+    $cs->registerCssFile($baseUrl.'/css/inicio/inicio-responsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core_plugin.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
@@ -38,7 +39,39 @@ $this->pageTitle=Yii::app()->name;
 
 
 <div class="container2">
-	<div class="pContainer">
+	<div class="ppContainer">
+			
+		     <div class="contenedorIzquierdo"> 
+		     	<label class="letrerosl2">Productos Estrella</label>
+		 		<div class="carousel-wrapper">
+					<div id="second-carousel">
+							 <ul>
+								<li>
+									<div class ="sproducto"><div class="images1"></div></div>
+								</li>
+								<li>
+									<div class ="sproducto"><div class="images2"></div></div>
+								</li>
+								<li>
+									<div class ="sproducto"><div class="images3"></div></div>
+								</li>
+									<li>
+									<div class ="sproducto"><div class="images1"></div></div>
+								</li>
+								<li>
+									<div class ="sproducto"><div class="images2"></div></div>
+								</li>
+								<li>
+									<div class ="sproducto"><div class="images3"></div></div>
+								</li>
+								
+							</ul>		
+					</div>	
+					<a href="#" class="flechaISl2"></a>
+					<a href="#" class="flechaDSl2"></a>
+			</div>	
+		</div> 
+		<div class="contenedorDerecha">
 		     <div class ="oferta">
 		     		<div class="letreror">-50%</div>
 		     		<div class="ofertal">
@@ -47,40 +80,15 @@ $this->pageTitle=Yii::app()->name;
 		     		</div>
 		     		<div class="imagenOferta"></div>
 		     		<div class="botonVerde">Ver más...</div>
-		     </div>		 
-		     	<label class="letrerosl2">Productos Estrella</label>
-		 <div class="carousel-wrapper">
-			<div id="second-carousel">
-				 <ul>
-					<li>
-						<div class ="sproducto"><div class="images1"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images2"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images3"></div></div>
-					</li>
-						<li>
-						<div class ="sproducto"><div class="images1"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images2"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images3"></div></div>
-					</li>
-					
-				</ul>		
-			</div>	
-					<a href="#" class="flechaISl2"></a>
-					<a href="#" class="flechaDSl2"></a>
-		</div> 	
+		     </div>
+		</div>
+
+			
  	</div>
  </div>
 
 <div class="container3">
-	<div class="pContainer">
+	<div class="ppContainer">
 		<div class="contenerdor-tercero">
 
 				<div class="categoriasl">
@@ -149,7 +157,7 @@ $this->pageTitle=Yii::app()->name;
 
 <div class="container4">
 	<div class="content-wrapper">
-		<div class="pContainer">
+		<div class="ppContainer">
 			<div class ="titulares4">
 				<label class="titulo41">Nosotros</label>
 				<label class="titulo42">Subtitulo</label>
