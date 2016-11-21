@@ -55,7 +55,7 @@ class MarenasaProductoMarcas extends MActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('marca, logo', 'required','message'=>'{attribute} no puede dejarse vacio'),
+			array('marca', 'required','message'=>'{attribute} no puede dejarse vacio'),
 			array('marca, logo', 'length', 'max'=>100,'message'=>'{attribute} solo puede tener 100 caracter(es)'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -272,12 +272,12 @@ class MarenasaProductoMarcas extends MActiveRecord
 //                $new_path = $module->getAttributePath(__CLASS__,'logo').DIRECTORY_SEPARATOR.'cutted_image'.DIRECTORY_SEPARATOR;
                 $new_path = $module->getAttributePath(__CLASS__,'logo').DIRECTORY_SEPARATOR;
 
-                if($this->nombre_anterior2 != null)
-                {
-                    $baseUrl = Yii::app()->baseUrl;
-                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/logo/{$this->nombre_anterior2}";
-                    unlink(realpath($targetFile));
-                }
+//                if($this->nombre_anterior2 != null)
+//                {
+//                    $baseUrl = Yii::app()->baseUrl;
+//                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/logo/{$this->nombre_anterior2}";
+//                    unlink(realpath($targetFile));
+//                }
                 $new_path = $new_path.$model->logo;
                 //intenta guardar la imagen resultante en el servidor
                                 switch($type){
@@ -298,7 +298,7 @@ class MarenasaProductoMarcas extends MActiveRecord
                  'logo' => $model->nombre_anterior
              );
              $update = Yii::app()->db->createCommand()
-                 ->update('oko_muebles', $columnas, "id = ".(int)$model->id);
+                 ->update('marenasa_producto_marcas', $columnas, "id = ".(int)$model->id);
         }
     }
     public function afterFind()

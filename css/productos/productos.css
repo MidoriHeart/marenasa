@@ -77,15 +77,13 @@ width: 160px !important;
     width: 10px !important;
     top:15px !important;
 }
-.content-wrapper{
-    margin: 0 120px !important;
-}
+
 .buscador-producto {
     height: 180px;
     background-color: #ffffff;
     width: 200px;
     border-radius: 10px;
-    margin: 20px;
+    margin:20px;
     margin-top: 20px;
     float: left;
 }
@@ -120,7 +118,11 @@ width: 160px !important;
     height: 135px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+.container-cc {
+    width: 100%;
+    margin: 0 120px;
 }
 
 .contenedor3-p:after,

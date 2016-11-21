@@ -3,13 +3,14 @@ $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/contacto/contacto.css');
+    $cs->registerCssFile($baseUrl.'/css/contacto/responsivo.css');
 ?>
 	<div class= "superior-cnt">
 	<div class="titulo-cnt">Contacto</div>
 	</div>
 
 	<div class ="inferior-cnt">
-		<div class = "content-wrapper">
+		<div class = "contenido-wrapper">
 			<div class= "izquierda-cnt">
 				<div class="descripcion-cnt">
 					Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. 
@@ -20,7 +21,7 @@ $baseUrl = Yii::app()->baseUrl;
 					<div>Numero de contacto: 545 4544</div>
 					<div>Otro búmero: 354 6677</div>
 					<div>Fax: 545 6677</div>
-					<div>Email: marenasa!marenasa.com</div>	
+					<div>Email: marenasa@marenasa.com</div>	
 				</div>
 			</div>	
 			<div  class="derecha-cnt">
@@ -43,11 +44,11 @@ $baseUrl = Yii::app()->baseUrl;
 	                    </div>
 	                    <div class="row2">
 	                    	<div class="inputField">
-	                       		 <input type="text" name="tasunto" autocomplete="off" placeholder="Mensaje...">    
+                                     <textarea type="text" name="tasunto" autocomplete="off" placeholder="Mensaje..."></textarea>  
 	                       	 </div>                
 	               		</div>
 	               		 <div class="row3">
-	                        <input class="boton" type="submit" value="enviar" >
+	                        <input class="boton" type="submit" value="Enviar" >
 	             	   </div>
 				 </div> 
 	            </form>

@@ -11,7 +11,7 @@ $(document).ready(function() {
         var index = loc.lastIndexOf('productoscategoria');
 
         var url = loc.substring(0, index);
-        url = url+'getProductos'
+        url = url+'getProductosMarca'
         /*if(index == -1)
             url = '/index.php/Prodcutos/getProductos';
         else
