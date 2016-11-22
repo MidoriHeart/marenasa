@@ -129,6 +129,23 @@ class MarenasaPromociones extends MActiveRecord
             )
         );
     }
+    public function getMeses()
+    {
+        echo '
+            <option>Seleccionar</option>
+            <option value="2016-01-01">Enero 2016</option>
+            <option value="2016-08-01">Febrero 2016</option>
+            <option value="2016-02-01">Marzo 2016</option>
+            <option value="2016-03-01">Abril 2016</option>
+            <option value="2016-04-01">Mayo 2016</option>
+            <option value="2016-05-01">Junio 2016</option>
+            <option value="2016-06-01">Julio 2016</option>
+            <option value="2016-07-01">Agosto 2016</option>
+            <option value="2016-09-01">Septiembre 2016</option>
+            <option value="2016-10-01">Octubre 2016</option>
+            <option value="2016-11-01">Noviembre 2016</option>
+            <option value="2016-12-01">Diciembre 2016</option>';
+    }
     /**
      * Retrieves a list of models based on the current search/filter conditions.
      *
