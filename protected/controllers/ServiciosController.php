@@ -7,6 +7,13 @@ class ServiciosController extends Controller
 		$productos = MarenasaProductos::model()->findAll();
 		$this->render('index', array('productos'=>$productos));
 	}
+	public function actionSendCorreo($id, $as, $d, $f) {
+		$result['datos'] = $id;
+		$result['result'] = 1;
+
+		echo json_encode($result);
+
+	}
 
 	// Uncomment the following methods and override them if needed
 	/*
