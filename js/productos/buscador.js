@@ -111,6 +111,7 @@ $(document).ready(function()
         </div>';
         $('.pedidosWraper').append(html);
         borrar();
+        $('.pedidosLista').removeClass('ocultarLista');
         total++;
     });
     $('.botonCerrar').click(function()

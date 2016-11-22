@@ -336,12 +336,12 @@ class MarenasaProductos extends MActiveRecord
 //                $new_path = $module->getAttributePath(__CLASS__,'imagen').DIRECTORY_SEPARATOR.'cutted_image'.DIRECTORY_SEPARATOR;
                 $new_path = $module->getAttributePath(__CLASS__,'imagen').DIRECTORY_SEPARATOR;
 
-                if($this->nombre_anterior2 != null)
-                {
-                    $baseUrl = Yii::app()->baseUrl;
-                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/imagen/{$this->nombre_anterior2}";
-                    unlink(realpath($targetFile));
-                }
+//                if($this->nombre_anterior2 != null)
+//                {
+//                    $baseUrl = Yii::app()->baseUrl;
+//                    $targetFile = $baseUrl."uploads/marenasaproductomarcas/imagen/{$this->nombre_anterior2}";
+//                    unlink(realpath($targetFile));
+//                }
                 $new_path = $new_path.$model->imagen;
                 //intenta guardar la imagen resultante en el servidor
                                 switch($type){

@@ -46,6 +46,7 @@ div.pedidosHeader div
 div.pedidosWraper
 {
     padding: 10px;
+    position: relative;
 }
 div.pedido
 {
@@ -67,6 +68,20 @@ div.pedidosWraper input[type=number]
     float: left;
     width: 35px;
     width: 42px;
+}
+div.pedidosWraper input[type=submit]
+{
+    border: 0;
+    background-color: #2E73B2;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    position: absolute;
+    bottom: -45px;
+    right: 10px;
 }
 div.pedidosWraper div.borrar
 {
@@ -270,6 +285,7 @@ div[data-infoI] .imagen
 {
     width: 219px;
     float: left;
+    border-bottom: 0;
 }
 .imagenWraper
 {

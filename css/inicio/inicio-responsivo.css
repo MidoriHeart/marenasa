@@ -46,7 +46,7 @@
     	height: 45px;
     	background-size: 100% 100%;
     	top: 53px;
-    	left: -31px;
+    	left: -61px;
 	}
 	.flechaIDl2
 	{
@@ -93,15 +93,54 @@
 	    margin-left: 19px;
     	margin-right: 19px;
     }
-
 	.oferta {
     	margin-right: 6%;
     	margin-left: 1%;
-    	max-width: 214px;
+    	max-width: 200px;
 	}
+	.imagenOferta {
+	    background-size: 100%100%;
+	    width: 200px;
+	    height: 130px
+	}
+	.letreror {
+	    width: 65px;
+        font-size: 20px;
+	}
+	.botonVerde {
+    	width: 105px;
+    	font-size: 18px;
+	}
+	label.subtitulo21 {
+     	font-size: 12px;
+    	text-align: left;
+    	margin-top: 12px;
+    	margin-left: 16px;
+	}
+	label.subtitulo22 {
+	    text-align: left;
+    	margin-left: 31px;
+    }
 
 }
-@media (max-width:768px) {
+@media (max-width:768px){
+	.image1-carousel {
+	    padding-bottom: 56.57%;
+	}
+	.container11 {
+	    top: 48px;
+	    margin-left: 19%;
+	}
+	.categoriasl {
+	    width: 300px;
+	}
+	.categoriasd {
+    	margin-left: 0px;
+	}
+	.imagenCat,.imagenCat1,.imagenCat2,.imagenCat3 {
+    	width: 158px;
+	}
+
 
 }
 @media (max-width:480px) {
