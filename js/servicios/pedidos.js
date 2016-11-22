@@ -25,11 +25,38 @@ $(document).ready(function() {
 		}
 	});
 
+	$('#searchtext').keydown( function(e) {
+		if(e.keyCode == 13) {
+			var txt = $('#searchtext').val();
+			if(txt.length > 2) {
+				var filteredByText = productos.clone();
+				filteredByText = filteredByText.filter(function() 
+	            {
+	                if($(this).html()!='')
+	                {
+	                    return removeDiacritics($(this).children().filter( 'div.nombre-producto').html().toLowerCase()).indexOf(txt) > -1;
+	                }
+	                else
+	                    return '';
+				});
+				if (filteredByText.length>=1) {
+					$('.search-results').empty();
+					$('.search-results').append(filteredByText);
+					$('.search-results').removeClass('none');
+					clickOnResults();
+				}
+			}
+			else {
+				console.log(txt.length);
+			}
+		}
+	});
+
 	function clickOnResults() {
 		$('.search-results .product-row').off('click').on('click', function(){
 			var id     = $(this).children('.nombre-producto').data('id');
 			var existe = false;
-			$('input.cantidad').each(function() {
+			$('.order .product-row .product-name').each(function() {
 				if($(this).data('id') == id) {
 					existe = true;
 				}
@@ -105,7 +132,47 @@ $(document).ready(function() {
 		}
 		return ret;
 	}
+	$('.send-button').on('click', function(){
+		var send_info = $('.order').children().clone();
+		var url = $('#url').val();
+		var new_url = url+'/index.php/servicios/sendCorreo';
+		console.log(new_url);
+		if($('#nombre').val() != "" && $('#correo').val() != "" && $('#tel').val() != "" ) {
+			var info ="";
+			send_info.each(function () {
+				info = info+'id_'+$(this).children('.product-name').data('id')+'-'+
+						  'nombre_'+$(this).children('.product-name').html()+'-'+
+						  'cantidad_'+$(this).children('.cantidad').children('input.cantidad').val()+'-'+
+						  'precio_'+$(this).children('.precio').data('precio')+'-'+
+						  'subtotal_'+$(this).children('.subtotal').data('subtotal')+"__";
+			});
+			info = info+'TOTAl_'+$('.total-price').data('total');
+			console.log(info);
+			$.ajax({
+				type : 'GET',
+				url  : new_url,
+				dataType : 'json',
+				data : {
+					info   : info,
+					nombre : $('#nombre').val(),
+					correo : $('#correo').val(),
+					tel    : $('#tel').val(),
+				},
+				succes: function(data) {
+					console.log(data);
+				},
+				error : function(a, b, c) {
+					console.log(a, b, c);
+				}
+			});
+		}
+		else {
+			alert('porfavor, llene todos los datos de contacto correctamente, de lo contrario, no nos será posible contactarnos con usted.');
+		}
 
+
+
+	});
 	setChangeCant();
 	setMath();
 });

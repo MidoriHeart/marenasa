@@ -69,11 +69,12 @@
 						</div>
 						<div class="user-row">
 							<label for="correo" >E-mail: </label>
-							<input id="correo" name="correo" placeholder="usuario@ejemplo.com"/>
+							<input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com"/>
 						</div>
 						<div class="user-row">
 							<label for="tel" >Teléfono: </label>
 							<input id="tel" name="tel" placeholder="311-1234567"/>
+							<input type="hidden" id="url" value="<?php echo $baseUrl; ?>"/>
 						</div>
 					</div>
 					<div class="send-button">Hacer pedido</div>

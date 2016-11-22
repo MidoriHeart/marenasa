@@ -9,7 +9,7 @@ div#page {
 }
 .blue-ribbon {
     width: 10px;
-    min-height: 671px;
+    min-height: 656px;
     float: left;
     background-color: #3475B1;
     box-shadow: 2px 2px 1px #888888;
@@ -60,6 +60,7 @@ input#searchtext {
     background-size: 15px;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .search-container > .srch-wrapper {
 	position: relative;
@@ -189,6 +190,22 @@ input.cantidad {
     background-color: #B0C9E3;
 }
 
+.send-button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #3073AE;
+    color: #FFFFFF;
+    border-radius: 9px;
+    position: absolute;
+    right: 0;
+    bottom: 33px;
+    cursor: pointer;
+}
+.send-button:hover {
+    background-color: #214d73;
+}
 
 
 .search-container:after{
