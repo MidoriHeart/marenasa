@@ -92,8 +92,47 @@
         height: 128px;
     }
 }
-@media (max-width:480px) {
-
+@media (max-width:480px) 
+{
+    .ppContainer2
+    {
+        padding-top: 30px;
+    }
+    .categoriasTitulo
+    {
+        text-align: center;
+    }
+    .categoriasl 
+    {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        float: none !important;
+    }
+    .container11 
+    {
+        left: -9px;
+    }
+    .flechaIzq, .flechaDer 
+    {
+        top: 85px;
+    }
+    #content 
+    {
+        margin-top: 5px !important;
+    }
+    .sproducto 
+    {
+        width: 101px;
+        height: 105px;
+    }
+    .sproducto div 
+    {
+        width: 88px;
+        height: 94px;
+        margin: 5px;
+    }
 }
 @media (max-width:320px) {
 

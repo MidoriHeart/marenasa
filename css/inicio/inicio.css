@@ -1,6 +1,6 @@
 #content
 {
-	padding:0;
+    margin-top: 22px !important;
 }
 /* */
 /* --------  MODIFICAR  --------- */
@@ -58,7 +58,8 @@
 }
 .contenedorIzquierdo 
 {
-    width: 618px;
+    width: 100%;
+    max-width: 618px;
     float: left;
 }
 .contenedorDerecha {
