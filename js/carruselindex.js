@@ -18,8 +18,8 @@ $(document).ready(function() {
     var ch  = $('#second-carousel ul').children().length;
     var wul = ch*55;
     var wli = 55/ch;
-    $('#second-carousel ul').css('width', wul+'%');
-    $('#second-carousel ul li').css('width', wli+'%');
+//    $('#second-carousel ul').css('width', wul+'%');
+//    $('#second-carousel ul li').css('width', wli+'%');
     $('#second-carousel').jcarousel({
         wrap: 'circular'
     });

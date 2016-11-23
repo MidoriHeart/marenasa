@@ -1,7 +1,7 @@
-#content
+/*#content
 {
     margin-top: 22px !important;
-}
+}*/
 /* */
 /* --------  MODIFICAR  --------- */
 
@@ -10,6 +10,15 @@
     width: 100%;
     /*background-color:#ECECEC;*/
     position: relative;
+}
+#main-carousel ul,
+#second-carousel ul
+{
+    margin: 0;
+}
+#second-carousel ul
+{
+    width: 1000em !important;
 }
 .carousel-wrapper
 {
@@ -44,7 +53,7 @@
     z-index: 9;
 }
 .container11 {
-    position: relative;
+    position: absolute;
     width: 400px;
     top: 100px;
     left: 180px;
@@ -83,8 +92,6 @@
 {
     width: 100%;
     /*background-color: #ECECEC;*/
-    position: relative;
-    top: -80px;
 }
 .container3 
 {
@@ -138,6 +145,7 @@
     max-width: 952px;
     margin: 0 auto;
     padding-top: 60px;
+    margin-bottom: 25px;
 }
 .ppContainer2
 {
@@ -244,6 +252,10 @@ label.subtitulo22 {
 .botonVerde:hover
 {
     color: #424B46;
+}
+.ofertaUp
+{
+    height: 52px;
 }
 .ofertal 
 {
@@ -461,7 +473,7 @@ label.titulo43 {
     position: relative;
     overflow: hidden;
     z-index: 0;
-    top: -77px;
+    /*top: -77px;*/
 }
 #main-carousel ul {
     position: absolute;
@@ -485,7 +497,7 @@ label.titulo43 {
 }
 #second-carousel
 {
-    width: 504px;
+    width: 490px;
     height: 186px;
     position: relative;
     overflow: hidden;
@@ -505,7 +517,7 @@ label.titulo43 {
 #second-carousel ul li {
     padding: 0;
     float: left;
-    width: 30%;
+    width: 148px;
     margin: 7px;
 }
 .categoriasd {

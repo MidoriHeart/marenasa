@@ -367,22 +367,21 @@ div.row
     line-height: 23px;
     text-indent: 5px;
     border: 0;
-    font-weight: bold;
-    color:    #0580A9;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Bold;
+    color: #0580A9;
     }
     div.row2 textarea
     {
-    width: 100%;  
-    max-width: 500px;
-    box-sizing: border-box;
-    height: 130px;
-    line-height: 23px;
-    text-indent: 5px;
-    border: 0;
-    font-weight: bold;
-    color:    #0580A9;
-    resize: none;
+        width: 100%;  
+        max-width: 500px;
+        box-sizing: border-box;
+        height: 130px;
+        line-height: 23px;
+        text-indent: 5px;
+        border: 0;
+        font-family: Roboto-Bold;
+        color: #0580A9;
+        resize: none;
     }
 .boton {
     width: 90px;
