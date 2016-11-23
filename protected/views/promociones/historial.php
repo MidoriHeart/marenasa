@@ -6,6 +6,7 @@
     $cs->registerScriptFile($baseUrl.'/js/plugins/nice-select/jquery.nice-select.js');
     $cs->registerCssFile($baseUrl.'/css/plugins/nice-select/nice-select.css');
     $cs->registerCssFile($baseUrl.'/css/promociones/historial.css');
+    $cs->registerCssFile($baseUrl.'/css/promociones/historialResponsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/promociones/historial.js');
     $ligaImagen = $baseUrl.'/uploads/marenasaproductos/imagen/';
     $total  = count($promociones);
