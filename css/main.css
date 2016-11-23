@@ -329,8 +329,7 @@ div.search-form
 }
   div.rowWraper {
 	    float: right;
-	    width: 55%;
-	    margin-right: 140px;
+	    width: 65%;
     }    
     div.rowWraper2 {
         float: right;
@@ -340,7 +339,7 @@ div.search-form
 div.row
     {
     margin: 0 auto;
-    width: 160px;
+    width: 49%;
     margin-bottom: 8px;
     height: 24px;
     float: left;
@@ -348,7 +347,7 @@ div.row
     div.row1
     {
 	    margin: 0 auto;
-	    width: 160px;
+	    width: 49%;
 	    margin-bottom: 8px;
 	    height: 34px;
 	    float: right;
@@ -405,6 +404,7 @@ div.row
     float: right;
     width: 52%;
     margin: 0 auto;
+    margin-right: 20px;
 }
 div.ltitulo1 {
     color: #ffffff;
@@ -422,7 +422,7 @@ div.subtitulo1 {
 }
 .info1 {
     width: 150px;
-        margin-left: 40%;
+    margin-left: 20px;
     display: block;
     float: left;
 }
@@ -487,6 +487,9 @@ label.lheader {
   max-width: 1200px;
     margin: 0 auto;
 }
+#footer .content-wrapper {
+    max-width: 960px;
+}
 .logoMarenasa {
     width: 140px;
     height: 64px;
@@ -504,6 +507,10 @@ footer:after{
     clear: both;
     content: '';
     display: block;
+}
+a {
+    text-decoration: initial;
+    color: #ffffff;
 }
 .botonmenu
 {

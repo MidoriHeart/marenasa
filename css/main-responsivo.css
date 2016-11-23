@@ -84,20 +84,15 @@
 	 	right: -36px;
 	 }
 	 .info1 {
-		width: 95px;
-		margin-left: 1%;
+		margin-left: 0;
 	}
 	.info2 {
-	    width: 84px;
 	}
 	div.rowWraper {
 	    width: 80%;
 	    float: none;
 	    margin: 0 auto;
 	    max-width: 500px;
-	}
-	.info2 {
-	    margin-left: 12%;
 	}
 	#header {
 	  height: 70px;
@@ -106,20 +101,16 @@
 	    padding-top: 5px;
 	}
 	.informacion {
-		width: 100%;
+	    width: 100%;
+	    max-width: 300px;
+	    margin: 0 auto;
+	    float: none;
+        margin-top: 55px;
 	}
 	.correo {
-		   width: 100%;
-	}
-	.info2 {
-		float: left;
-	}
-	.info1 {
-	    width: 95px;
-	    margin-left: 21%;
-	}
-	.informacion {
-	    height: 271px;
+	   width: 100%;
+       margin-right: auto;
+       float: none;
 	}
 }
 @media (max-width:480px) {
@@ -133,7 +124,14 @@
 	.social-wrapper {
 	    margin-top: 6px;
 	}
-		
-}
-@media (max-width:320px) {
+	.informacion {
+		width: 260px;
+	}
+	.info1, .info2 {
+	    width: 120px;
+	    float: left;
+	}
+	.info2 {
+		margin-left: 15px;
+	}
 }
