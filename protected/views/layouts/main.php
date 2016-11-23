@@ -173,19 +173,19 @@
            <?php endif;?>                 <div class="informacion">
                     <div class ="info1">
                         <div class="ltitulo1">Nosotros</div>
-                        <div class="subtitulo1">¿Quienes somos?</div>
-                        <div class="subtitulo1">Misión y Visión</div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/quienesomos" ?>' >¿Quienes somos?</a></div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/misionvision" ?>' >Misión y Visión</a></div>
                         <div class="ltitulo1">Productos</div>
-                        <div class="subtitulo1">Por categoria</div>
-                        <div class="subtitulo1">Por marca</div>
-                        <div class="subtitulo1">Buscador</div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/productos/productoscategoria'" ?>' >Por categoria</a></div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/productos'" ?>' >Por marca</a></div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/productos/buscador'" ?>' >Buscador</a></div>
                         <div class="ltitulo1">Promociones</div>
                     </div>
                     <div class ="info2">
                         <div class="ltitulo1">Servicios</div>
-                        <div class="subtitulo1">Pedidos en l&iacute;nea</div>
-                        <div class="ltitulo1">Sucursales</div>
-                        <div class="ltitulo1">Contacto</div>
+                        <div class="subtitulo1"><a href='<?php echo "/marenasa/index.php/servicios/index'" ?>' >Pedidos en l&iacute;nea</a></div>
+                        <div class="ltitulo1"><a href='<?php echo "/marenasa/index.php/sucursales'" ?>' >Sucursales</a></div>
+                        <div class="ltitulo1"><a href='<?php echo "/marenasa/index.php/contacto'" ?>' >Contacto</a></div>
                     </div>
                 </div>
             </div><!-- footer -->
