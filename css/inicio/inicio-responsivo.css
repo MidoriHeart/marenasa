@@ -10,9 +10,7 @@
     }
     .container2 .ppContainer
     {
-        width: 100%;
         max-width: 618px;
-        margin: 0 auto;
     }
     .contenedorDerecha
     {
@@ -26,7 +24,7 @@
     }
     .container3 .ppContainer2
     {
-        width: 445px;
+        max-width: 445px;
         margin: 0 auto;
     }
     .container4 .ppContainer2
@@ -44,24 +42,43 @@
         margin-right: 0;
     }
 }
-@media (max-width:768px){
-	.image1-carousel {
-	    padding-bottom: 56.57%;
-	}
-	.container11 {
-	    top: 48px;
-	    margin-left: 19%;
-	}
-	.categoriasl {
-	    width: 300px;
-	}
-	.categoriasd {
-    	margin-left: 0px;
-	}
-	.imagenCat,.imagenCat1,.imagenCat2,.imagenCat3 {
-    	width: 158px;
-	}
-
+@media (max-width:768px)
+{
+    #second-carousel ul li
+    {
+        width: 100px;
+    }
+    .carousel-wrapper
+    {
+        width: 459px;
+        margin: 0 auto;
+    }
+    .image1-carousel 
+    {
+        padding-bottom: 56.57%;
+    }
+    .container11 
+    {
+        top: 48px;
+        margin-left: 19%;
+    }
+    .categoriasl 
+    {
+        width: 100%;
+        max-width: 300px;
+        max-width: 420px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        float: none !important;
+    }
+    .categoriasd 
+    {
+        margin-left: 0px;
+    }
+    .imagenCat
+    {
+        width: 158px;
+    }
     .flechaIzq, .flechaDer 
     {
         top: 64px;
@@ -79,22 +96,143 @@
     }
     .sproducto
     {
-        width: 110px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
     .sproducto div
     {
-        width: 89px;
-        height: 98px;
+        width: 90px;
+        height: 90px;
+        margin: 5px;
     }
     .flechaISl2, .flechaDSl2
     {
         height: 128px;
     }
 }
-@media (max-width:480px) {
-
+@media (max-width:480px) 
+{
+    label.titulo1
+    {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    label.subitutlo1
+    {
+        font-size: 10px;
+    }
+    .ofertal
+    {
+        width: 170px;
+    }
+    .letreror
+    {
+        width: 70px;
+    }
+    .contenedorDerecha
+    {
+        width: 240px;
+    }
+    .imagenOferta
+    {
+        width: 240px;
+    }
+    .container11
+    {
+        top: 11px;
+        margin-bottom: 5px;
+    }
+    .container11 
+    {
+        width: auto;
+    }
+    .flechaIzq, .flechaDer 
+    {
+        width: 20px;
+        height: 35px;
+        top: 42px;
+    }
+    .flechaIzq
+    {
+        left: 5px;
+    }
+    .flechaDer 
+    {
+        right: 1px;
+    }
+    .ppContainer2
+    {
+        padding-top: 30px;
+    }
+    .categoriasTitulo
+    {
+        text-align: center;
+    }
+    .container11 
+    {
+        left: -9px;
+    }
+    .sproducto 
+    {
+/*        width: 101px;
+        height: 105px;*/
+    }
+    #second-carousel
+    {
+        width: 117px;
+    }
+/*    #second-carousel li
+    {
+        width: 137px ;
+    }*/
+    .sproducto div 
+    {
+        
+    }
+    #second-carousel ul
+    {
+        margin: 0;
+    }
+    .carousel-wrapper
+    {
+        height: 118px;
+        width: 231px;
+    }
+    .container4 .ppContainer2
+    {
+        width: 211px;
+    }
+    .titulares4
+    {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 23px;
+    }
+    .container2 .ppContainer
+    {
+        padding-top: 20px;
+    }
+    div.letrerosl2
+    {
+        font-size: 20px;
+    }
 }
-@media (max-width:320px) {
-
+@media (max-width:320px) 
+{
+    .imagenCat
+    {
+        width: 102px;
+    }
+    label.letreroCat
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+    .botonVerdeC
+    {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 15px;
+    }
 }

@@ -1,0 +1,45 @@
+@media(max-width: 960px)
+{
+    h1 span
+    {
+        text-indent: 10px;
+    }
+    div.buscador-historial
+    {
+        width: auto;
+        margin-left: 10px;
+    }
+    div.contenido
+    {
+        width: 617px;
+    }
+    div.promocion:nth-child(3n)
+    {
+        margin-right: 17px;
+    }
+    div.promocion:nth-child(2n)
+    {
+        margin-right: 0;
+    }
+}
+@media(max-width: 768px)
+{
+    div.contenido
+    {
+        width: 300px;
+    }
+}
+@media(max-width: 480px)
+{
+    h1
+    {
+        font-size: 26px;
+    }
+}
+@media(max-width: 320px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+}

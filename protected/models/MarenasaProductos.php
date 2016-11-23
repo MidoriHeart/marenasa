@@ -132,7 +132,7 @@ class MarenasaProductos extends MActiveRecord
     }
     public function getNombre($id)
     {
-        echo MarenasaProductos::model()->findByPk($id)->articulo;
+        return MarenasaProductos::model()->findByPk($id)->articulo;
     }
     public function getImagen($id)
     {

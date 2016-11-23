@@ -1,6 +1,6 @@
 <?php
 /* @var $this SiteController */
- 	$baseUrl = Yii::app()->baseUrl;
+    $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/inicio/inicio.css');
