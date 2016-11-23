@@ -1,8 +1,9 @@
 $(document).ready(function() {
 		var productos = $('.search-content .search').children().clone();
 	$('.search-button').on('click', function(){
-		var txt = $('#searchtext').val();
-		if(txt.length > 2) {
+		var text = $('#searchtext').val();
+		if(text.length > 2) {
+			var txt = text.toLowerCase();
 			var filteredByText = productos.clone();
 			filteredByText = filteredByText.filter(function() 
             {
@@ -138,33 +139,49 @@ $(document).ready(function() {
 		var new_url = url+'/index.php/servicios/sendCorreo';
 		console.log(new_url);
 		if($('#nombre').val() != "" && $('#correo').val() != "" && $('#tel').val() != "" ) {
-			var info ="";
-			send_info.each(function () {
-				info = info+'id_'+$(this).children('.product-name').data('id')+'-'+
-						  'nombre_'+$(this).children('.product-name').html()+'-'+
-						  'cantidad_'+$(this).children('.cantidad').children('input.cantidad').val()+'-'+
-						  'precio_'+$(this).children('.precio').data('precio')+'-'+
-						  'subtotal_'+$(this).children('.subtotal').data('subtotal')+"__";
-			});
-			info = info+'TOTAl_'+$('.total-price').data('total');
-			console.log(info);
-			$.ajax({
-				type : 'GET',
-				url  : new_url,
-				dataType : 'json',
-				data : {
-					info   : info,
-					nombre : $('#nombre').val(),
-					correo : $('#correo').val(),
-					tel    : $('#tel').val(),
-				},
-				succes: function(data) {
-					console.log(data);
-				},
-				error : function(a, b, c) {
-					console.log(a, b, c);
-				}
-			});
+			if($('.total-price').data('total') > 0){
+				var info ="";
+				send_info.each(function () {
+					info = info+''+$(this).children('.product-name').data('id')+'-'+
+							  $(this).children('.product-name').html()+'-'+
+							  $(this).children('.cantidad').children('input.cantidad').val()+'-'+
+							  $(this).children('.precio').data('precio')+'-'+
+							  $(this).children('.subtotal').data('subtotal')+"__";
+				});
+				info = info+'::TOTAl_'+$('.total-price').data('total');
+				$.ajax({
+					type : 'get',
+					url  : new_url,
+					dataType : 'json',
+					data : {
+						info   : info,
+						nombre : $('#nombre').val(),
+						correo : $('#correo').val(),
+						tel    : $('#tel').val(),
+					},
+					success: function(data) {
+						if(data.result == 0) {
+							alert('Ocurrió un problema, porfavor, póngase en contacto con el técnico.');
+						}
+						else {
+							 alert('Su pedido se ha enviado correctamente, a la brevedad nos pondremos en contacto con usted. \n Gracias por su preferencia.');
+							 $('.order').empty();
+							 $('#nombre').val('');
+							 $('#tel').val('');
+							 $('#correo').val('');
+							 $('.total-price').data('total','0');
+							 $('.total-price').html('$ 0.00');
+						}
+					},
+					error : function(a, b, c) {
+						console.log(a, b, c);
+						alert('Ocurrió un problema, porfavor, póngase en contacto con el técnico.');
+					}
+				});
+			}
+			else {
+				alert('Por favor, elija al menos un producto para poder ponernos en contacto con usted.')
+			}
 		}
 		else {
 			alert('porfavor, llene todos los datos de contacto correctamente, de lo contrario, no nos será posible contactarnos con usted.');
