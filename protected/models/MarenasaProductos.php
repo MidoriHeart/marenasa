@@ -130,6 +130,14 @@ class MarenasaProductos extends MActiveRecord
     {
         return MarenasaProductoMarcas::model()->findByPk($id)->marca;
     }
+    public function getNombre($id)
+    {
+        echo MarenasaProductos::model()->findByPk($id)->articulo;
+    }
+    public function getImagen($id)
+    {
+        return MarenasaProductos::model()->findByPk($id)->imagen;
+    }
     /**
      * Retrieves a list of models based on the current search/filter conditions.
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.

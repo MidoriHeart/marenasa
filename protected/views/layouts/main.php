@@ -131,61 +131,56 @@
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
-
 	<?php echo $content; ?>
-
 	<div class="clear"></div>
-
 	<div id="footer">
-		<div class= "content-wrapper">
-
-			<div class="informacion">
-				<div class ="info1">
-					<div class="ltitulo1">Nosotros</div>
-					<div class="subtitulo1">¿Quienes somos?</div>
-					<div class="subtitulo1">Misión y Visión</div>
-					<div class="ltitulo1">Productos</div>
-					<div class="subtitulo1">Por categoria</div>
-					<div class="subtitulo1">Por marca</div>
-					<div class="subtitulo1">Buscador</div>
-					<div class="ltitulo1">Promociones</div>
-				</div>
-				<div class ="info2">
-					<div class="ltitulo1">Servicios</div>
-					<div class="subtitulo1">Pedidos en l&iacute;nea</div>
-					<div class="ltitulo1">Sucursales</div>
-					<div class="ltitulo1">Contacto</div>
-				</div>
-			</div>
-
-<?php if($this->id!='contacto'):?>
-		    <div class="correo">
-	            <form method="POST" name="Contacto">
-	                <div class="rowWraper">
-	                	<div class="ltitulo1">Escr&iacute;benos</div>
-	                    <div class="row">
-	                        <div class="inputField">
-	                            <input type="text" name="nombre" autocomplete="off">
-	                        </div>
-	                    </div>
-	                    <div class="row1">
-	                        <div class="inputField">
-	                            <input type="text" name="telefono" autocomplete="off">
-	                        </div>
-	                    </div>
-	                    <div class="row2">
-	                    	<div class="inputField">
-	                       		 <input type="text" name="tasunto" autocomplete="off">    
-	                       	 </div>                
-	               		</div>
-	               		 <div class="row3">
-	                        <input class="boton" type="submit" value="enviar" >
-	             	   </div>
-				 </div> 
-	            </form>
-	        </div>
-	       <?php endif;?> 
-		</div><!-- footer -->
+            <div class= "content-wrapper">
+                <div class="informacion">
+                    <div class ="info1">
+                        <div class="ltitulo1">Nosotros</div>
+                        <div class="subtitulo1">¿Quienes somos?</div>
+                        <div class="subtitulo1">Misión y Visión</div>
+                        <div class="ltitulo1">Productos</div>
+                        <div class="subtitulo1">Por categoria</div>
+                        <div class="subtitulo1">Por marca</div>
+                        <div class="subtitulo1">Buscador</div>
+                        <div class="ltitulo1">Promociones</div>
+                    </div>
+                    <div class ="info2">
+                        <div class="ltitulo1">Servicios</div>
+                        <div class="subtitulo1">Pedidos en l&iacute;nea</div>
+                        <div class="ltitulo1">Sucursales</div>
+                        <div class="ltitulo1">Contacto</div>
+                    </div>
+                </div>
+                <?php if($this->id!='contacto'):?>
+                <div class="correo">
+                <form method="POST" name="Contacto">
+                    <div class="rowWraper">
+                        <div class="ltitulo1">Escr&iacute;benos</div>
+                        <div class="row">
+                            <div class="inputField">
+                                <input type="text" name="nombre" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row1">
+                            <div class="inputField">
+                                <input type="text" name="telefono" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="inputField">
+                                <textarea name="tasunto" autocomplete="off"></textarea>   
+                            </div>                
+                        </div>
+                        <div class="row3">
+                            <input class="boton" type="submit" value="enviar" >
+                        </div>
+                    </div> 
+                </form>
+            </div>
+           <?php endif;?> 
+            </div><!-- footer -->
 	</div>
 
 </div><!-- page -->

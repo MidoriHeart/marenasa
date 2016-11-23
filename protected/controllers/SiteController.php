@@ -27,9 +27,37 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+            $productosEstrella = Yii::app()->db->createCommand()
+                    ->select('id, imagen')
+                    ->from('marenasa_productos')
+                    ->limit(18)
+                    ->order('id DESC')
+                    ->queryAll();
+            $fecha = date('Y-m-d');
+            $ofertaEspecial = Yii::app()->db->createCommand()
+                    ->from('marenasa_promociones')
+//                    ->where("fecha_inicio < $fecha")
+//                    ->andWhere("fecha_final > $fecha")
+                    ->order('porcentaje DESC')
+                    ->queryRow();
+            $criteria = new CDbCriteria;
+            $criteria->limit = 8;
+            $categorias = MarenasaProductoCategorias::model()->findAll($criteria);
+            $ofertasMenores = Yii::app()->db->createCommand()
+                    ->from('marenasa_promociones')
+//                    ->where("fecha_inicio <= $fecha")
+//                    ->andWhere("fecha_final > $fecha")
+                    ->andWhere('porcentaje <= 50')
+                    ->limit(4)
+                    ->order('porcentaje DESC')
+                    ->queryAll();
+            $this->render('index', array
+                (
+                    'productosEstrella' => $productosEstrella,
+                    'ofertaEspecial' => $ofertaEspecial,
+                    'categorias' => $categorias,
+                    'ofertasMenores' => $ofertasMenores
+                ));
 	}
 
 	/**
