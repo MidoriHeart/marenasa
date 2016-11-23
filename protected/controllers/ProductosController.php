@@ -51,7 +51,7 @@ class ProductosController extends Controller
      public function actionGetProductosMarca($id)
     {   
         $criteria = new CDbCriteria();
-        $criteria->condition='id_marca ='.(int)$id;
+        $criteria->condition='id_categoria ='.(int)$id;
         $productos = MarenasaProductos::model()->findAll($criteria);
         $result['result'] =1;
 

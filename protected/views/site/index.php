@@ -4,181 +4,108 @@
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/inicio/inicio.css');
+    $cs->registerCssFile($baseUrl.'/css/inicio/inicio-responsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core_plugin.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
     $cs->registerScriptFile($baseUrl.'/js/carruselindex.js');
-        $carrusel = MarenasaInicioCarrusel::model()->findAll();
-
-$this->pageTitle=Yii::app()->name;
+    $carrusel = MarenasaInicioCarrusel::model()->findAll();
+    $this->pageTitle=Yii::app()->name;
+    $urlImagenProducto = $baseUrl.'/uploads/marenasaproductos/imagen/';
+    $urlImagenCategoria = $baseUrl.'/uploads/marenasaproductocategorias/imagen/';
+    $nombreProducto = MarenasaProductos::model()->getNombre($ofertaEspecial['id_producto']);
+    $imagenProducto = 'background-image: url('.$baseUrl.'/uploads/marenasaproductos/imagen/'.MarenasaProductos::model()->getImagen($ofertaEspecial['id_producto']).')';
 ?>
 <div class="container1">
- 	
-		<div class="container11">
-			<label class="titulo1">TITULO SIMULADO</label>
-			<label class="subitutlo1">Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget 
-				felis porttitor volutpat. </label>
-			<div class= "botonVer"> Ver más</div>	
-		</div>
-
-	<div id="main-carousel">
-		<ul>
+    <div class="container11">
+        <label class="titulo1">TITULO SIMULADO</label>
+        <label class="subitutlo1">Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget 
+                    felis porttitor volutpat. </label>
+        <div class= "botonVer hide"> Ver más</div>	
+    </div>
+    <div id="main-carousel">
+        <ul>
             <?php foreach($carrusel as $data):?>
                 <li>
                     <div class="image1-carousel" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasainiciocarrusel/imagen/'.$data['imagen'];?>');">
                 </li>
             <?php endforeach;?>
-		</lu>
-	</div>
-	<a href="#" class="flechaIzq"></a>
-	<a href="#" class="flechaDer"></a>
+        </lu>
+    </div>
+    <a href="#" class="flechaIzq"></a>
+    <a href="#" class="flechaDer"></a>
 </div>
-
-
-
 <div class="container2">
-	<div class="pContainer">
-		     <div class ="oferta">
-		     		<div class="letreror">-50%</div>
-		     		<div class="ofertal">
-		     			<label class ="subtitulo21">OFERTA ESPECIAL</label>
-		     			<label class="subtitulo22">lorem Ipsum</label>
-		     		</div>
-		     		<div class="imagenOferta"></div>
-		     		<div class="botonVerde">Ver más...</div>
-		     </div>		 
-		     	<label class="letrerosl2">Productos Estrella</label>
-		 <div class="carousel-wrapper">
-			<div id="second-carousel">
-				 <ul>
-					<li>
-						<div class ="sproducto"><div class="images1"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images2"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images3"></div></div>
-					</li>
-						<li>
-						<div class ="sproducto"><div class="images1"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images2"></div></div>
-					</li>
-					<li>
-						<div class ="sproducto"><div class="images3"></div></div>
-					</li>
-					
-				</ul>		
-			</div>	
-					<a href="#" class="flechaISl2"></a>
-					<a href="#" class="flechaDSl2"></a>
-		</div> 	
- 	</div>
- </div>
-
+    <div class="ppContainer">
+        <div class="contenedorIzquierdo"> 
+            <div class="letrerosl2">PRODUCTOS ESTRELLA</div>
+            <div class="carousel-wrapper">
+                <a href="#" class="flechaISl2"></a>
+                <div id="second-carousel">
+                    <ul>
+                        <?php foreach($productosEstrella as $data):?>
+                            <li>
+                                <div class ="sproducto">
+                                    <div style="background-image: url('<?php echo $urlImagenProducto.$data['imagen'];?>')"></div>
+                                </div>
+                            </li>
+                        <?php endforeach;?>
+                   </ul>		
+                </div>	
+                <a href="#" class="flechaDSl2"></a>
+            </div>	
+        </div> 
+        <div class="contenedorDerecha">
+            <div class ="oferta">
+                <div class="ofertaUp">
+                    <div class="ofertal">
+                        <label class ="subtitulo21">OFERTA ESPECIAL</label>
+                        <label class="subtitulo22"><?php echo $nombreProducto;?></label>
+                    </div>
+                    <div class="letreror">-50%</div>
+                </div>
+                <div class="ofertaDown">
+                    <div class="imagenOferta" style="<?php echo $imagenProducto;?>"></div>
+                    <a class="botonVerde" href="<?php echo $baseUrl;?>/index.php/promociones/index">Ver más...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container3">
-	<div class="pContainer">
-		<div class="contenerdor-tercero">
-
-				<div class="categoriasl">
-					<div class="imagenCat"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>
-				</div>
-				<div class="categoriasl">		
-					<div class="imagenCat1"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>	
-				</div>
-				<div class="categoriasl">
-					<div class="imagenCat2"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>
-				</div>
-				<div class="categoriasl">
-					<div class="imagenCat3"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>
-				</div>
-				<div class="categoriasl">
-					<div class="imagenCat"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>
-				</div>
-				<div class="categoriasl">		
-					<div class="imagenCat1"></div>
-					<div class="categoriasd">
-							<label class="letreroCat">Categoria 3</label>
-							<div class="botonVerdeC">Ver más</div>
-					</div>	
-				</div>
-				<div class="categoriasl">	
-					<div class="imagenCat2"></div>
-					<div class="categoriasd">	
-						<label class="letreroCat">Categoria 3</label>
-						<div class="botonVerdeC">Ver más</div>
-					</div>	
-				</div>
-				<div class="categoriasl">
-					<div class="imagenCat3"></div>
-					<div class="categoriasd">
-						<label class="letreroCat">Categoria 4</label>
-						<div class="botonVerdeC">Ver más</div>
-					</div>
-				</div>
-		</div>	
-	</div>
- 	<div class="containerA3">
-		<label class="letrarofCat">MÁS CATEGORÍAS</labeL>
-		<div class="flechaCat"></div>
-	</div>
+    <div class="ppContainer2">
+        <div class="categoriasTitulo">CATEGOR&Iacute;AS POPULARES</div>
+        <div class="contenerdor-tercero">
+            <?php foreach($categorias as $data):?>
+                <div class="categoriasl">
+                    <div class="imagenCat" style="background-image: url('<?php echo $urlImagenCategoria.$data['imagen'];?>')"></div>
+                    <div class="categoriasd">
+                        <label class="letreroCat">Categoria 3</label>
+                        <a class="botonVerdeC" href="<?php echo $baseUrl;?>/index.php/productos/index">Ver más</a>
+                    </div>
+                </div>
+            <?php endforeach;?>
+        </div>	
+    </div>
+    <?php if(count($categorias) > 4):?>
+    <div class="containerA3">
+        <label class="letrarofCat">MÁS CATEGORÍAS</labeL>
+        <div class="flechaCat"></div>
+    </div>
+    <?php endif;?>
 </div>
-
 <div class="container4">
-	<div class="content-wrapper">
-		<div class="pContainer">
-			<div class ="titulares4">
-				<label class="titulo41">Nosotros</label>
-				<label class="titulo42">Subtitulo</label>
-				<div class="linea41"></div>
-				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit </label>
-				<label class="titulo44">Leer más</label>
-			</div>
-			<div class ="titulares4">
-				<label class="titulo41">Nosotros</label>
-				<label class="titulo42">Subtitulo</label>
-				<div class="linea41"></div>
-				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit  </label>
-				<label class="titulo44">Leer más</label>
-			</div>
-			<div class ="titulares4">
-				<label class="titulo41">Nosotros</label>
-				<label class="titulo42">Subtitulo</label>
-				<div class="linea41">
-			</div>
-				<label class="titulo43 ">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit</label>
-				<label class="titulo44">Leer más</label></div>
-			<div class ="titulares4">
-	    		<label class="titulo41">Nosotros</label>
-				<label class="titulo42">Subtitulo</label>
-				<div class="image411"></div>
-				<label class="titulo44">Leer más</label>
-			</div>
-			</div>
-	</div>
+    <div class="content-wrapper">
+        <div class="ppContainer2">
+            <?php foreach($ofertasMenores as $data):?>
+                <div class ="titulares4">
+                    <label class="titulo41">OFERTA MENOR</label>
+                    <label class="titulo42"><?php echo MarenasaProductos::model()->getNombre($data['id_producto']);?></label>
+                    <div class="image411" style="background-image: url('<?php echo $urlImagenProducto.MarenasaProductos::model()->getImagen($data['id_producto'])?>')"></div>
+                    <a class="titulo44" href="<?php echo $baseUrl;?>/index.php/promociones/index">Ver más</a>
+                </div>
+            <?php endforeach;?>
+        </div>
+    </div>
 </div>
-
-

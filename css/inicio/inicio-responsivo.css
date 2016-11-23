@@ -1,0 +1,84 @@
+@media (max-width:1200px) 
+{
+	
+}
+@media (max-width:960px) 
+{
+    .flechaIzq, .flechaDer
+    {
+        top: 118px;
+    }
+    .container2 .ppContainer
+    {
+        width: 100%;
+        max-width: 618px;
+        margin: 0 auto;
+    }
+    .contenedorDerecha
+    {
+        margin: 0 auto;
+        float: none;
+        width: 260px;
+    }
+    .contenedorIzquierdo
+    {
+        float: none;
+    }
+    .container3 .ppContainer2
+    {
+        width: 445px;
+        margin: 0 auto;
+    }
+    .container4 .ppContainer2
+    {
+        width: 445px;
+        margin: 0 auto;
+    }
+    .titulares4
+    {
+        margin-right: 23px;
+        margin-bottom: 23px;
+    }
+    .titulares4:nth-child(2n)
+    {
+        margin-right: 0;
+    }
+}
+@media (max-width:768px)
+{
+    .flechaIzq, .flechaDer 
+    {
+        top: 64px;
+    }
+    .container11 
+    {
+        width: 319px;
+        top: 48px;
+        left: 75px;
+    }
+    #second-carousel
+    {
+        width: 345px;
+        height: 128px;
+    }
+    .sproducto
+    {
+        width: 110px;
+        height: 120px;
+    }
+    .sproducto div
+    {
+        width: 89px;
+        height: 98px;
+    }
+    .flechaISl2, .flechaDSl2
+    {
+        height: 128px;
+    }
+}
+@media (max-width:480px) {
+
+}
+@media (max-width:320px) {
+
+}
