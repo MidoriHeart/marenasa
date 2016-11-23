@@ -57,7 +57,7 @@
     text-align: center;
     border-top: 7px solid #E80033;
     background-color: #2E73B2;
-    padding-bottom: 350px;
+    padding-bottom: 30%
 }
 
 #logo
@@ -501,4 +501,53 @@ label.lheader {
     display: block;
     content: "";
     clear: both;
+}
+
+footer:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.botonmenu
+{
+    width: 44px;
+    height: 37px;
+    position: absolute;
+    display: block;
+    background-image: url(../images/icono_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 28px;
+    left: 32px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.botonmenu:hover
+{
+    background-color: #e0e0ef;
+    opacity: 0.6;
+}
+.menuSidr
+{   
+    display: none;
+    width:189px;
+    background-color: blue;
+    position: relative;
+    display: block;
+}
+.sidr-class-menu1
+{
+    width: 189px;
+    height:100%;
+    position: absolute;
+    float: left;
+    background-color:#ffffff;
+}
+.sidr-class-menu2
+{
+    width: 35px;
+    height:100%;
+    float: right;
+        position: absolute;
+    left: 154px;
 }

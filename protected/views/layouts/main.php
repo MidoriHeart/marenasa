@@ -13,6 +13,7 @@
 	<![endif]-->
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main-responsivo.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -29,11 +30,62 @@
 		<div class="facebook"></div>
 		<div class="twitter"></div>
 		<div class="blogspot"></div>
-		<div class="buscador"></div><div class="lupa"></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
 		<div class= "content-wrapper">
+
+<div class="botonmenu"></div>
+    <div class="sidr">
+        <div class="menuSidr">
+            <div class="menu1"> 
+
+                      <?php $this->widget('zii.widgets.CMenu',array(
+			'items'=>array(
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+				array('label'=>'Nosotros', 
+					'items'=> array(
+						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
+						array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+					),
+				),
+				array('label'=>'Productos', 
+					'items'=> array(
+						array( 'label' => 'Por categoría', 'url' => array('/productos')),
+						array( 'label' => 'Por marca', 'url' => array('/productos/productoscategoria')),
+						array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
+					),
+				),
+				array( 'label' => 'Promociones', 
+					'items' => array(
+						array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
+						array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
+					),
+				),
+				array( 'label' => 'Servicios', 
+					'items' => array(
+						array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios')),
+						array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
+					),
+				),
+				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
+				array('label'=>'Contacto', 'url'=>array('/contacto')),
+				),
+			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Productos', 'url'=>array('/site/contact')),
+				array('label'=>'Promociones', 'url'=>array('/site/contact')),
+				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+     			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		
+		)); ?>          
+            </div>
+
+               
+        </div>
+    </div>
+
+
+
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
@@ -45,8 +97,8 @@
 				),
 				array('label'=>'Productos', 
 					'items'=> array(
-						array( 'label' => 'Por categoría', 'url' => array('/productos/categoria')),
-						array( 'label' => 'Por marca', 'url' => array('/productos/marca')),
+						array( 'label' => 'Por categoría', 'url' => array('/productos')),
+						array( 'label' => 'Por marca', 'url' => array('/productos/productoscategoria')),
 						array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
 					),
 				),

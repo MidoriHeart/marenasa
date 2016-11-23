@@ -1,0 +1,137 @@
+@media (max-width:1200px) {
+	.info1 {
+	    	width: 150px;
+	    	margin-left: 20%;
+	    }
+	 div.rowWraper {
+       		width: 65%;
+		}
+		#mainmenu .content-wrapper > ul {
+	    	margin-right: 76px;
+	    }
+	     div.row1, div.row{
+		 	 width: 149px;
+		 }
+
+}
+@media (max-width:960px) {
+	    .info1 {
+		    margin-left: 8%;
+		}
+		div.row input, div.row1 input {
+	    	width: 100%;
+		    max-width: 140px;
+		}
+		div.row {
+		    width: 150px;
+		}
+		div.rowWraper {
+		    margin-right: 100px;
+		}
+		div.row1, div.row{
+			float: left;
+		}
+		div.row1, div.row{
+		 	 width: 130px;
+		 	 margin-left: 3px;
+		 }
+}
+@media (max-width:768px) {
+
+		div.rowWraper {
+		    margin-right: 30px;
+		}
+		div.row, div.row1 {
+		    width: 150px;
+		}
+		div.row input, div.row1 input {
+		    width: 100%;
+		    max-width: 150px;
+		}
+		div.row1, div.row{
+			float: left;
+		}
+		.boton {
+		 	right: -36px;
+		 }
+		 .info1 {
+    		width: 95px;
+    		margin-left: 1%;
+    	}
+    	.info2 {
+		    width: 84px;
+		}
+		div.rowWraper {
+    		width: 75%;
+    		margin-right: 26px;
+    	}
+    	.info2 {
+		    margin-left: 12%;
+		}
+			#header {
+	  	  height: 69px;
+		}
+		.blogspot ,.facebook,.twitter,label.lheader{
+    		top: 40px;
+		}
+		.logoMarenasa{
+   	 		top: 20px;
+    	}
+    	.blogspot {
+    		right: -240px
+    	}
+    	.facebook
+    	{
+    		right: -240px
+    		}
+    	.twitter{
+			right: -240px
+    	}
+    	label.lheader{
+    		right: -240px
+    	}
+
+		#footer {
+		    padding-bottom: 110%;
+		}
+		.informacion {
+			width: 100%;
+		}
+		.correo {
+ 		   width: 100%;
+		}
+		.info2 {
+	    	float: left;
+		}
+		.info1 {
+		    width: 95px;
+		    margin-left: 21%;
+		}
+		.informacion {
+		    height: 271px;
+		}
+}
+@media (max-width:480px) {
+
+		#footer {
+		    padding-bottom: 120%;
+		}
+		.logoMarenasa {
+		    left: 10px !important;
+		}
+		label.lheader {
+		    right: -250px;
+		}
+}
+@media (max-width:320px) {
+
+		#footer {
+		    padding-bottom: 200%;
+		}
+		.logoMarenasa {
+		    left: 10px !important;
+		}
+		label.lheader {
+		    right: -250px;
+		}
+}
