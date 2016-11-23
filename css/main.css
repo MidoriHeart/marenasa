@@ -61,7 +61,6 @@
     text-align: center;
     border-top: 7px solid #E80033;
     background-color: #2E73B2;
-    padding-bottom: 30%
 }
 
 #logo
@@ -78,13 +77,13 @@
     display: block;
     position: absolute;
     width: 100%;
-    z-index: 9;
+    z-index: 99;
 }
 
 #mainmenu .content-wrapper > ul
 {
     margin: 0px auto;
-    margin-right: 110px;
+    width: 100%;
     max-width: 952px;
     padding: 0;
 
@@ -136,7 +135,9 @@
 
 #mainmenu .content-wrapper > ul > li > ul > li {
     height: auto;
-    min-height: 35px;
+    min-height: 30px;
+    margin: 0;
+    width: 100%;
 }
 #mainmenu .content-wrapper > ul > li > ul > li > a,
 #mainmenu .content-wrapper > ul > li > ul > li > span {
@@ -301,12 +302,8 @@ div.search-form
     height: 25px;
     background-image: url(../images/facebook.png);
     display: block;
-    position: absolute;
     margin-left: 25px;
-    float: right;
-    top: 30px;
-    right: 0px;
-    margin-right: 319px; 
+    float: left;
 }
 .twitter
 {
@@ -314,11 +311,8 @@ div.search-form
     height: 25px;
     background-image: url(../images/twitter.png);
     display: block;
-    position: absolute;
-    float: right;
-    top: 30px;
-    right: 0px;
-    margin-right:286px;
+    float: left;
+    margin-left: 5px;
 }
 .blogspot
 {	
@@ -326,11 +320,8 @@ div.search-form
     height: 25px;
     background-image: url(../images/rss.png);
     display: block;
-    position: absolute;
-    float: right;
-    top: 30px;
-    right: 0px;
-    margin-right:  253px;
+    float: left;
+    margin-left: 5px;
 }
   div.rowWraper {
 	    float: right;
@@ -396,9 +387,7 @@ div.row
     background-color: #A1D25C;
     border: none;
     margin-top: 15px;
-    position: relative;
-    right: -119px;
-    font-size:14px; 
+    float: right;
 }
 .informacion {
     width:45%;
@@ -477,14 +466,17 @@ width: 150px;
     display: block;
     margin-right: 21px;
 }
+.social-wrapper {
+    width: 195px;
+    float: right;
+    margin-top: 17px;
+}
 label.lheader {
     color: #000000;
     display: block;
-    position: absolute;
-    top: 36px;
-    right: 0px;
-    margin-right: 371px;
     font-size: 16px;
+    float: left;
+    margin-top: 5px;
 }
 .content-wrapper {
     width: 100%;
@@ -492,21 +484,18 @@ label.lheader {
     margin: 0 auto;
 }
 .logoMarenasa {
+    width: 140px;
+    height: 64px;
     background-image: url(../images/Marenasa.png);
-    background-size: 100%;
-    width: 100px;
-    height: 100px;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 4px;
-    left: 60px;
+    background-size: cover;
+    background-position: center;
+    float: left;
 }
-#mainmenu .content-wrapper > ul:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
+#footer .content-wrapper:after,
+#mainmenu .content-wrapper > ul:after,
+.logoMarenasa:after, 
+.social-wrapper:after,
 footer:after{
     clear: both;
     content: '';
@@ -514,22 +503,21 @@ footer:after{
 }
 .botonmenu
 {
-    width: 44px;
-    height: 37px;
-    position: absolute;
-    display: block;
+    width: 32px;
+    height: 29px;
+    margin-left: 30px;
+    margin-top: 3px;
+    display: none;
     background-image: url(../images/icono_menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    top: 28px;
-    left: 32px;
+    background-size: 26px;
     cursor: pointer;
     z-index: 9999;
 }
 .botonmenu:hover
 {
-    background-color: #e0e0ef;
-    opacity: 0.6;
+    background-color: #18466f;
 }
 .menuSidr
 {   
@@ -537,7 +525,6 @@ footer:after{
     width:189px;
     background-color: blue;
     position: relative;
-    display: block;
 }
 .sidr-class-menu1
 {
@@ -554,4 +541,74 @@ footer:after{
     float: right;
         position: absolute;
     left: 154px;
+}
+div#menu-sidr {
+    background-color: #2D72B1;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sidr-inner {
+    background-color: #2D72B1;
+}
+.sidr ul {
+    display: block;
+    padding: 0;
+    border: none;
+}
+.sidr ul li ul li a, 
+.sidr ul li ul li span,
+.sidr ul li a, .sidr ul li span {
+    color: #DCE4EA;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'roboto-thin';
+    font-size: 16px;
+    margin: 0 auto;
+    height: 22px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-bottom: 3px solid #2D72B1;
+}
+.sidr ul li:hover>a, 
+.sidr ul li:hover>span, 
+.sidr ul li.active>a, 
+.sidr ul li.active>span, 
+.sidr ul li.sidr-class-active>a, 
+.sidr ul li.sidr-class-active>span {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.sidr ul > li:hover {
+    line-height: inherit;
+}
+
+.sidr ul > li:hover > a, 
+.sidr ul li.active, 
+.sidr ul li.sidr-class-active {
+    line-height: inherit;
+    border-bottom: 3px solid #BBE573;
+}
+.sidr ul li {
+    display: block;
+    margin: 0;
+    border-bottom: 3px solid #2D72B1;    
+    border-top: 0;
+    line-height: inherit;
+}
+.sidr ul li ul li:hover {
+    line-height: inherit;
+   } 
+.sidr ul li ul li.active, 
+.sidr ul li ul li.sidr-class-active,
+.sidr ul li ul li {
+    line-height: inherit;
+    font-size: 13px;
+}
+.sidr ul > li.active:hover > a, 
+.sidr ul > li.sidr-class-active:hover > a {
+    border-bottom: 3px solid #2D72B1;
+}
+.sidr ul li span {
+    background-color: #1c5386;
+    padding-top: 3px;
 }
