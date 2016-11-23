@@ -47,16 +47,11 @@
 							<div class="order-title">Subtotal</div>
 						</div>
 						<div class="order">
-							<div class="product-row">
-								<div class="product-name" data-id="0"> Producto 1</div>
-								<div class="cantidad"> <input type="number" name="cantidad" class="cantidad" value='1' /> <span class="bold">X</span></div>
-								<div class="precio" data-precio="89.00">$ 89.00</div>
-								<div class="subtotal" data-subtotal="899.00">899.00</div>
-							</div>
+							
 						</div>
 						<div class="total-container">
 							<div class="total-title">Total</div>
-							<div class="total-price" data-total="3339.88">3339.88</div>
+							<div class="total-price" data-total="0.00">$ 0.00</div>
 						</div>
 					</div>
 				</div>
