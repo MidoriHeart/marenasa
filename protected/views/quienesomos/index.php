@@ -5,6 +5,7 @@ $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/historia/historia.css');
+    $cs->registerCssFile($baseUrl.'/css/historia/historia-responsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core_plugin.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
