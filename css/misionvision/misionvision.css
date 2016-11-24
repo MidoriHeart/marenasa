@@ -9,6 +9,7 @@
     width: 100%;
     background-color: #ececec;
     padding-top: 68px;
+    padding-bottom: 10%;
 }
 .arriba-mv {
     width: 100%;
@@ -46,13 +47,13 @@
     padding: 10px;
 }
 .tituloprimero-mv {
-    font-size: 30px;
+    font-size: 41px;
     color: #ffffff;
     position: absolute;
-    top: 260px;
-    width: 71px;
+    margin-top: 15%;
+    width: 111px;
     text-align: center;
-    right: 490px;
+    margin-left: 47%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.73);
 }
 .img-montania {
@@ -92,7 +93,9 @@
 	    padding-bottom: 24%;
 }
 .abajo-mv:after,
-.arriba-mv:after {
+.arriba-mv:after,
+.inferior-mv:after,
+.superior-mv:after {
 	content:"";
 	display: block;
 	clear: both;

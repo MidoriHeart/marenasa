@@ -3,6 +3,7 @@
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/misionvision/misionvision.css');
+    $cs->registerCssFile($baseUrl.'/css/misionvision/misionvision-responsivo.css');
 ?>
 <div class="superior-mv">
 	<div class="tituloprimero-mv">
