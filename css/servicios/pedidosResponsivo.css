@@ -1,0 +1,73 @@
+@media(max-width: 768px)
+{
+    .search-container, .order-wrapper, .user-container
+    {
+        margin-left: 0;
+    }
+}
+@media(max-width: 480px)
+{
+    input#searchtext
+    {
+        width: 222px;
+    }
+    .search-results
+    {
+        width: 254px;
+    }
+    .send-button
+    {
+        bottom: -10px;
+        left: 0;
+    }
+    .order-title
+    {
+        padding-left: 5px;
+        width: 25%;
+    }
+    .order-title.first
+    {
+        width: 25%;
+        padding-left: 5px;
+    }
+    .product-row > div:first-child
+    {
+        padding-left: 5px;
+        width: 25%;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .product-row > div.precio
+    {
+        width: 25%;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .product-row .cantidad
+    {
+        width: 25%;
+        padding-left: 5px;
+    }
+    .product-row .cantidad input
+    {
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+    .product-row .cantidad span
+    {
+        display: block;
+        text-align: center;
+        line-height: 17px;
+    }
+    .product-row > div.subtotal
+    {
+        width: 25%;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+/*    .order-title:nth-child(2)
+    {
+        width: 25%;
+    }*/
+}
