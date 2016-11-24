@@ -1,0 +1,38 @@
+@media (max-width:1200px){
+	.contenedor-scl .content-wrapper {
+	    width: 100%;
+	    max-width: 960px;
+	    margin-right: 15%;
+	    margin-left: 15%;
+
+	}
+	.container-sucursales {
+		width: 353px;
+
+	}
+}
+@media (max-width:960px){
+	.contenedor-scl .content-wrapper {
+	    width: 100%;
+	    max-width: 768px;
+	    margin-right: 20%;
+	    margin-left: 20%;
+	}
+
+}
+@media (max-width:768px){
+		.contenedor-scl .content-wrapper {
+	    width: 100%;
+	    max-width: 480px;
+	    margin-right: 10%;
+	    margin-left: 10%;
+		}
+}
+@media (max-width:480px){
+		.contenedor-scl .content-wrapper {
+	    width: 100%;
+	    max-width: 320px;
+	    margin-right: 2%;
+	    margin-left: 2%;
+		}
+}

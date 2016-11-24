@@ -15,17 +15,18 @@
 }
 .contenedor-scl {
     background-color: #ececec;
-    padding-bottom: 80%;
+
 }
 .container-sucursales {
-    width: 33.33%; 
+    width: 370px;
     height: 450px;
     float: left;
+    margin: 0 15px;
 }
 .imagen-scl {
     margin: 0 10%;
     width: 80%;
-    height: 200px;
+    height: 175px;
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -47,4 +48,10 @@
 }
 p{
     margin:0 !important;
+}
+
+.contenedor-scl:after{
+    clear: both;
+    content: '';
+    display: block;
 }

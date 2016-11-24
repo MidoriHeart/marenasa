@@ -3,6 +3,7 @@ $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales.css');
+    $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');
 ?>
 <div class= "banner-scl">
 	<div class="titulo1-scl">Sucursales</div>
