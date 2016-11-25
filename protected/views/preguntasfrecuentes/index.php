@@ -9,6 +9,7 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
      $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes.js');
+     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes11.js');
 ?>
 
 <div class="content-wrapper">
