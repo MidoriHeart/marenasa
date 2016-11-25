@@ -30,6 +30,10 @@
         width: 25%;
         padding-left: 5px;
     }
+    .order .product-row
+    {
+        min-height: 80px;
+    }
     .product-row > div:first-child
     {
         padding-left: 5px;
@@ -63,11 +67,18 @@
     .product-row > div.subtotal
     {
         width: 25%;
-        padding-left: 10px;
+        padding-left: 5px;
         font-size: 10px;
     }
 /*    .order-title:nth-child(2)
     {
         width: 25%;
     }*/
+}
+@media(max-width: 353px)
+{
+    .blue-ribbon
+    {
+        min-height: 700px;
+    }
 }
