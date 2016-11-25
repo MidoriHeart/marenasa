@@ -1,0 +1,68 @@
+@media (max-width:1200px){
+	.tituloprimero-mv {
+	    font-size: 33px;
+	}
+
+}
+@media (max-width:960px){
+	.tituloprimero-mv {
+	    margin-top: 12%;
+	 }
+	 .img-montania,.img-foco {
+    	width: 0;
+    	background-image: none;
+    	height: 0;
+	 }
+	 .mision-des, .vision-des {
+	 	width: 100%;
+	 	    max-width: 344px;
+	 	    margin-top: 0px;
+	 }
+	 .arriba-mv {
+    	width: 49%;
+    	float: left;
+	}
+	.abajo-mv {
+    	width: 49%;
+		float: right;
+
+	}
+
+
+}
+@media (max-width:768px){
+	.tituloprimero-mv {
+	    font-size: 25px;
+	    margin-top: 11%;
+	    width: 169px;
+	    margin-left: 41%;
+	}
+	.arriba-mv {
+	    width: 100%;
+	    float: none;
+	}
+	.mision-des{
+	    padding-left: 0;
+        margin: 0 16%;
+	}
+	.abajo-mv {
+	    float: none;
+	    width: 100%;
+	}
+	.vision-des {
+	    margin: 0px 16%;
+	    margin-top: 44px;
+	    float: none;
+	}
+
+
+}
+@media (max-width:480px){
+	.tituloprimero-mv {
+	    margin-left: 30%;
+	}
+	.mision-des, .vision-des {
+	    max-width: 261px;
+        font-size: 17px;	
+	}
+}
