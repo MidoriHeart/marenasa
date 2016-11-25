@@ -1,0 +1,39 @@
+@media (max-width:1200px){
+	.izquierdo {
+	    width: 33%;
+	}
+	.newImage {
+	    background-size: 100% 100%;
+	}	
+
+}
+@media (max-width:960px){
+	.izquierdo {
+	    width: 34%;
+	}
+	.pregunta {
+    width: 80%;
+    line-height: 20px;
+    margin-top: 13px;
+}
+
+
+}
+@media (max-width:768px){
+	.faq-responsive{
+	    display: block;
+	}
+	.izquierdo{
+		display: none;
+	}
+	.sidr-class-izquierdo1{
+		display: block;
+	}
+	.derecha{
+		width: 100%;
+		float: none;
+	}
+}
+@media (max-width:480px){
+
+}

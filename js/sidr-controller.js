@@ -10,4 +10,14 @@ $(document).ready(function(){
             
         }
 	});
+    $('.faq-responsive').sidr({
+        name:'faq-sidr',
+        source: '.faq-menu1',
+        displace:false,
+        onOpen: function(){
+            $("#page.container:not(#faq-sidr)").on("click",function() {
+                $.sidr('close', 'faq-sidr');
+            });
+        }
+    });
 });
