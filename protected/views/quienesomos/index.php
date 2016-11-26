@@ -40,6 +40,6 @@ $baseUrl = Yii::app()->baseUrl;
 						</ul>
 					</div>
 				<a href="#" class="flechaIzquierda"></a>
-</di>
+</div>
 	</div>
 </div>

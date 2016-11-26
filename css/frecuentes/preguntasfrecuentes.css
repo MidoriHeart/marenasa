@@ -275,10 +275,70 @@ div#faq-sidr .sidr-inner {
     background-color: #1c5386;
     padding-top: 3px;
 }
+.grande{
+    display:block;
+}
+.chico
+{
+    display: none;
+    position: relative;
+    width: 100%;
+     padding-bottom: 35%;
+}
+.flechaDerecha {
+    background-image: url(../../images/flechaIzqSlider2.png);
+    width: 50px;
+    height: 180px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.flechaIzquierda {
+    background-image: url(../../images/flechaDerSlider2.png);
+    width: 50px;
+    height: 180px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    position: relative;
+    top: 3px;
+
+}
+#carousell
+{
+    width: 100%;
+    max-width: 1113px;
+    height: 186px;
+    z-index: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: -1px;
+    left: 45px;
+    overflow: hidden;
+}
+#page {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #dedede !important;
+    border: 1px solid #C9E0ED;
+}
+
 .container-rigut-pf:after,
 .container-left-pf:after,
 .cont-categoria:after,
-#content:after
+.wraperCategorias:after,
+.abajo:after,
+.arriba:after,
+.grande:after,
+.chico:after,
+.content-wrapper:after,
+#content:after,
+.carrusel-frecuentes:after,
+.categoria-wraper:after
 {
     clear: both;
     content: '';

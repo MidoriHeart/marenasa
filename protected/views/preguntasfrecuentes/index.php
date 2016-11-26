@@ -13,142 +13,120 @@ $baseUrl = Yii::app()->baseUrl;
 ?>
 
 <div class="content-wrapper">
-				
-	<div class="faq-responsive"></div>
-		<div class="sidr1">
-			<div class="faqSidr">
-				<div class="faq-menu1"> 	
-					<div class="izquierdo1">
-						<div class="categorias-wraper>">				
-							<div class="titulo1">
-								Preguntas Frecuentes
-							</div>
-								<?php $first = false; ?>
-									<?php foreach($categorias as $data):?> 
-										<?php if($first == false):?>
-											<div class="categoria-wraper activo" >
-												<?php $first = true;?>
-										<?php else: ?>
-											<div class="categoria-wraper" >
-										<?php endif;?>
-											<?php // if($contar[$data['id']] == 0):?><?php //endif;?>
-										<div class="tipo-letra-cat" >
-											 <?php echo $data['categoria'];?>
-										</div>
+	<div class ="grande">
+		<div class="izquierdo">
+				<div class="categorias-wraper>">				
+					<div class="titulo1">Preguntas Frecuentes</div>
+						<?php $first = false; ?>
+							<?php foreach($categorias as $data):?> 
+								<?php if($first == false):?>
+									<div class="categoria-wraper activo">
+									<?php $first = true;?>
+								<?php else: ?>
+									<div class="categoria-wraper">
+								<?php endif;?>
+									<?php // if($contar[$data['id']] == 0):?><?php //endif;?>
+										<div class="tipo-letra-cat"  > <?php echo $data['categoria'];?></div>
 											<?php $pregunta  = false;?>
-											<div class="preguntas-wraper">
-												<ul>
-													<?php 
-														$criteria = new CDbCriteria();
-														$criteria->condition = "id_marenasa = '{$data['id']}'";
-														$preguntas= MarenasaPreguntas::model()->findAll($criteria); ?>
-														<?php foreach($preguntas as $datos):?>
-												 		<?php if($pregunta == false):?>
-															<li>	
-																<div  class="pregunta selected"  data-id='<?php echo $datos->id;?>'> 
-																	<?php echo $datos['pregunta'];?>
-																</div>
-															</li>
-																<?php $pregunta = true;?>
-																<?php else:?>
-																	<li>
-																		<div class ="pregunta" data-id='<?php echo $datos->id;?>'> 
-																			<?php echo $datos['pregunta'];?>
-																		</div>
-																	</li>
-																	<?php endif;?>
-									 									<?php endforeach;?>
-																			</ul>
-																		</div>
-																</div>
-																	<div class="linea"></div>
-																<?php endforeach;?>	
-						</div>
-					</div>
-				</div>				               
+												<div class="preguntas-wraper">
+													<ul>
+														<?php 
+															$criteria = new CDbCriteria();
+															$criteria->condition = "id_marenasa = '{$data['id']}'";
+															$preguntas= MarenasaPreguntas::model()->findAll($criteria); ?>
+															<?php foreach($preguntas as $datos):?>
+													 		<?php if($pregunta == false):?>
+																<li>	
+																	<div  class="pregunta selected"  data-id='<?php echo $datos->id;?>'> 
+																		<?php echo $datos['pregunta'];?>
+																	</div>
+																</li>
+																	<?php $pregunta = true;?>
+															<?php else:?>
+																<li><div class ="pregunta" data-id='<?php echo $datos->id;?>'> 
+																    <?php echo $datos['pregunta'];?>
+																	</div>
+																</li>
+																<?php endif;?>
+				 										 <?php endforeach;?>
+													</ul>
+												</div>
+											</div>
+										<div class="linea"></div>
+							<?php endforeach;?>	
 			</div>
 		</div>
-
-
-					<div class="izquierdo">
-							<div class="categorias-wraper>">				
-								<div class="titulo1">Preguntas Frecuentes</div>
-									<?php $first = false; ?>
-										<?php foreach($categorias as $data):?> 
-											<?php if($first == false):?>
-												<div class="categoria-wraper activo" >
-													<?php $first = true;?>
-													<?php else: ?>
-													<div class="categoria-wraper" >
-														<?php endif;?>
-														 <?php // if($contar[$data['id']] == 0):?><?php //endif;?>
-														<div class="tipo-letra-cat"  > <?php echo $data['categoria'];?></div>
-														<?php $pregunta  = false;?>
-															<div class="preguntas-wraper">
-																<ul>
-																	<?php 
-																		$criteria = new CDbCriteria();
-																		$criteria->condition = "id_marenasa = '{$data['id']}'";
-																		$preguntas= MarenasaPreguntas::model()->findAll($criteria); ?>
-																		<?php foreach($preguntas as $datos):?>
-																 		<?php if($pregunta == false):?>
-																				<li>	
-																					<div  class="pregunta selected"  data-id='<?php echo $datos->id;?>'> 
-																						<?php echo $datos['pregunta'];?>
-																					</div>
-																				</li>
-																			<?php $pregunta = true;?>
-																		<?php else:?>
-																		    <li><div class ="pregunta" data-id='<?php echo $datos->id;?>'> 
-																		    	<?php echo $datos['pregunta'];?></div></li>
-																		<?php endif;?>
-						 										 <?php endforeach;?>
-																</ul>
-															</div>
-													</div>
-														<div class="linea"></div>
-												<?php endforeach;?>	
-												
-							</div>
-					</div>
-
-
-
-
-					<div class="derecha">	
-							<div class="container-imagen">
-									<div class="newImage">
-											<div class="titulo-transparente">
-													<div class="titulocat">Preguntas Frecuentes</div>
-											</div>
-									</div>
-							</div>
-							<div class="container-info">
-										<?php $opcion = false;?>
-										<?php foreach($preguntas_freq as $data):?>
-												<?php if($opcion == false):?>
-											<div class="container-Preguntas activo" data-id='<?php echo $data->id;?>'>	
-												<?php $opcion = true;?>
-											<?php else: ?>
-											<div class="container-Preguntas" data-id='<?php echo $data->id;?>'>
-												<?php endif; ?>	
-												<div class="cont-categoria">
-													<?php 
-														$categoria = MarenasaPreguntasCategoria::model()->findByPk($data->id_marenasa);?>
-													<?php echo $categoria->categoria;?>
-												</div> 
-													<div class="cont-pregunta-respuesta">
-														<div class="preguntas">
-															<?php echo $data->pregunta; ?>
-														</div>
-														<div class="respuestas">
-															<?php echo $data->respuesta; ?>
-														
-														</div>
-													</div> 
-										    </div>
-										<?endforeach;?>
-									</div>
-							</div>
+		<div class="derecha">	
+			<div class="container-imagen">
+				<div class="newImage">
+					<div class="titulo-transparente">
+							<div class="titulocat">Preguntas Frecuentes</div>
 					</div>
 				</div>
+			</div>
+			<div class="container-info">
+						<?php $opcion = false;?>
+							<?php foreach($preguntas_freq as $data):?>
+								<?php if($opcion == false):?>
+									<div class="container-Preguntas activo" data-id='<?php echo $data->id;?>'>	
+									<?php $opcion = true;?>
+								<?php else:?>
+									<div class="container-Preguntas" data-id='<?php echo $data->id;?>'>
+								<?php endif;?>	
+											<div class="cont-categoria">
+												<?php 
+													$categoria = MarenasaPreguntasCategoria::model()->findByPk($data->id_marenasa);?>
+												<?php echo $categoria->categoria;?>
+											</div> 
+											<div class="cont-pregunta-respuesta">
+												<div class="preguntas">
+													<?php echo $data->pregunta; ?>
+												</div>
+												<div class="respuestas">
+													<?php echo $data->respuesta; ?>
+												</div>
+											</div> 
+						    		</div>
+						<?endforeach;?>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="content-wrapper">
+	<div class="chico">
+		<div class="container-imagen">
+			<div class="newImage">
+				<div class="titulo-transparente">
+						<div class="titulocat">Preguntas Frecuentes</div>
+				</div>
+			</div>
+		</div>
+		<div class="arriba">
+			<div class="carrusel-frecuentes">
+				<a href="#" class="flechaDerecha"></a>
+					 <div id="carousell">
+				<?php $first = false; ?>
+				<?php foreach($categorias as $data):?> 
+					<?php if($first == false):?>
+						<div class="categoria-wraper activo">
+						<?php $first = true;?>
+					<?php else: ?>
+						<div class="categoria-wraper">
+					<?php endif;?>
+								 <?php // if($contar[$data['id']] == 0):?><?php //endif;?>
+								<div class="tipo-letra-cat"  > <?php echo $data['categoria'];?></div>
+								<?php $pregunta  = false;?>
+				<?php endforeach;?>	
+					</div>	
+					</div>
+				<a href="#" class="flechaIzquierda"></a>
+		</div>
+		</div>		
+		<div class="abajo">
+		
+		</div>	
+	</div>
+</div>
+</div>
+

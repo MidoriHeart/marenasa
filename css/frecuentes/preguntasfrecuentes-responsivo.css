@@ -20,19 +20,24 @@
 
 }
 @media (max-width:768px){
-	.faq-responsive{
+	.chico
+	{
 	    display: block;
 	}
-	.izquierdo{
-		display: none;
+	.grande
+	{
+		display:none;
 	}
-	.sidr-class-izquierdo1{
-		display: block;
+	.container-imagen {
+	    margin-bottom: 9%;
 	}
-	.derecha{
-		width: 100%;
-		float: none;
-	}
+	#carousell {
+    width: 100%;
+    max-width: 307px;
+    top: 347px;
+    }
+    .tipo-letra-cat, .sidr-class-tipo-letra-cat {
+    padding-left: 10px;}
 }
 @media (max-width:480px){
 
