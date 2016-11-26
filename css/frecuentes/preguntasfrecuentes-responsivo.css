@@ -32,12 +32,26 @@
 	    margin-bottom: 9%;
 	}
 	#carousell {
-    width: 100%;
-    max-width: 307px;
-    top: 347px;
-    }
-    .tipo-letra-cat, .sidr-class-tipo-letra-cat {
-    padding-left: 10px;}
+	    width: 100%;
+	    max-width: 427px;
+	    top: 286px;
+	    margin: 0 4.16%;
+	    height: 77px;  
+	    left:0px;
+	}
+   	.tipo-letra-cat, .sidr-class-tipo-letra-cat {
+		padding-left: 10px;}
+	}
+	#carousell ul li {
+    	display: block;
+    	width: 30%;
+    	float: left;
+	}
+	.carrusel-frecuentes {
+		    width: 100%;
+		    height: 77px;
+		}
+
 }
 @media (max-width:480px){
 

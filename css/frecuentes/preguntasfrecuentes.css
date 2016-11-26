@@ -288,7 +288,7 @@ div#faq-sidr .sidr-inner {
 .flechaDerecha {
     background-image: url(../../images/flechaIzqSlider2.png);
     width: 50px;
-    height: 180px;
+    height: 60px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -299,15 +299,16 @@ div#faq-sidr .sidr-inner {
 .flechaIzquierda {
     background-image: url(../../images/flechaDerSlider2.png);
     width: 50px;
-    height: 180px;
+    height: 60px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     float: right;
     position: relative;
-    top: 3px;
-
+    top: -74px;
+    display: block;
 }
+
 #carousell
 {
     width: 100%;

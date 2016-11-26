@@ -106,18 +106,22 @@ $baseUrl = Yii::app()->baseUrl;
 			<div class="carrusel-frecuentes">
 				<a href="#" class="flechaDerecha"></a>
 					 <div id="carousell">
+					 	<ul>
 				<?php $first = false; ?>
 				<?php foreach($categorias as $data):?> 
 					<?php if($first == false):?>
+					 <li>
 						<div class="categoria-wraper activo">
 						<?php $first = true;?>
 					<?php else: ?>
+					<li>
 						<div class="categoria-wraper">
 					<?php endif;?>
 								 <?php // if($contar[$data['id']] == 0):?><?php //endif;?>
 								<div class="tipo-letra-cat"  > <?php echo $data['categoria'];?></div>
 								<?php $pregunta  = false;?>
 				<?php endforeach;?>	
+			</li>
 					</div>	
 					</div>
 				<a href="#" class="flechaIzquierda"></a>
