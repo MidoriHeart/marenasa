@@ -1,17 +1,3 @@
-<?php
-$baseUrl = Yii::app()->baseUrl;
-    $cs = Yii::app()->getClientScript();
-    $cs->registerCoreScript('jquery');
-    $cs->registerCssFile($baseUrl.'/css/frecuentes/preguntasfrecuentes.css');
-    $cs->registerCssFile($baseUrl.'/css/frecuentes/preguntasfrecuentes-responsivo.css');
-    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core.js');
-    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/core_plugin.js');
-    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
-    $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
-     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes.js');
-     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes11.js');
-?>
-
 
 <div class="content-wrapper">
 	<div class ="grande">
@@ -128,58 +114,44 @@ $baseUrl = Yii::app()->baseUrl;
 
 					</ul>
 				</div>
-				<a href="#" class="flechaIzquierda"></a>
+
 			</div>
 		</div>
 		<div class = "abajo">
-						<?php $pregunta  = false;?>
-									<div class="preguntas-wraper">
-										<ul>
-											<?php 
-												$criteria = new CDbCriteria();
-												$criteria->condition = "id_marenasa = '{$data['id']}'";
-												$preguntas= MarenasaPreguntas::model()->findAll($criteria); ?>
-												<?php foreach($preguntas as $datos):?>
-													<?php if($pregunta == false):?>
-													<li>
-														<div  class="pregunta selected"  data-id='<?php echo $datos->id;?>'> 
-															<?php echo $datos['pregunta'];?>
-														</div>
-													</li>
-														<?php $pregunta = true;?>
-													<?php else:?>
-													<li>
-														<div class ="pregunta" data-id='<?php echo $datos->id;?>'> 
-															<?php echo $datos['pregunta'];?>
-														</div>
-													</li>
-													<?php endif;?>
-												<?php endforeach;?>
-										</ul>
-									</div>
-											<div class="container-info">
-												<?php $opcion = false;?>
-														<?php foreach($preguntas_freq as $data):?>
-															<?php if($opcion == false):?>
-																<div class="container-Preguntas activo" data-id='<?php echo $data->id;?>'>	
-																	<?php $opcion = true;?>
-															<?php else:?>
-																<div class="container-Preguntas" data-id='<?php echo $data->id;?>'>
-															<?php endif;?>
-		
-																		<div class="cont-pregunta-respuesta">
-																			<div class="preguntas">
-																				<?php echo $data->pregunta; ?>
-																			</div>
-																			<div class="respuestas">
-																				<?php echo $data->respuesta; ?>
-																			</div>
-																		</div>
-
-											</div>
-							<?endforeach;?>
-				</div>
 
 		</div>
 	</div>
+</div>
+
+
+		<div class="arriba">
+			<div class="carrusel-frecuentes">
+				<a href="#" class="flechaDerecha"></a>
+					 <div id="carousell">
+					 	<ul>
+				<?php $first = false; ?>
+				<?php foreach($categorias as $data):?> 
+					<?php if($first == false):?>
+					 <li>
+						<div class="categoria-wraper activo">
+						<?php $first = true;?>
+					<?php else: ?>
+					<li>
+						<div class="categoria-wraper">
+					<?php endif;?>
+								 <?php // if($contar[$data['id']] == 0):?><?php //endif;?>
+								<div class="tipo-letra-cat"  > <?php echo $data['categoria'];?></div>
+								<?php $pregunta  = false;?>
+				<?php endforeach;?>	
+			</li>
+					</div>	
+					</div>
+				<a href="#" class="flechaIzquierda"></a>
+		</div>
+		</div>		
+		<div class="abajo">
+		
+		</div>	
+	</div>
+
 </div>

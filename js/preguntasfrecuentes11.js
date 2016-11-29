@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var change = 0;
-    var percentage = 58;
+    var percentage = 50;
     console.log($(window).width());
     if($(window).width() <= 768 && $(window).width() >480 ) {
         percentage = 70;
@@ -27,19 +27,21 @@ $(document).ready(function(){
         console.log($(window).width());
         if( size > 768 && change != 0 ) {
             var ch  = $('#carousell ul').children().length;
-            var wul = ch*58;
-            var wli =58/ch;
+            var wul = ch*50;
+            var wli =50/ch;
             $('#carousell ul').css('width', wul+'%');
-            $('#carousell ul li').css('width', wli+'%');
+            $('#carousell ul li ').css('width', wli+'%');
+             $('#carousell ul li .categoria-wraper').css('width', wli+'%');
             change = 0; 
         }
         else  {  
             if( size > 480 && size <= 768 && change != 1 ) {
                 var ch  = $('#carousell ul').children().length;
-                var wul = ch*70;
-                var wli =70/ch;
+                var wul = ch*30;
+                var wli = 30/ch;
                 $('#carousell ul').css('width', wul+'%');
                 $('#carousell ul li').css('width', wli+'%');
+                $('#carousell ul li .categoria-wraper').css('width', wli+'%');
                 change = 1;            
             }
             else {
@@ -49,6 +51,7 @@ $(document).ready(function(){
                     var wli =100/ch;
                     $('#carousell ul').css('width', wul+'%');
                     $('#carousell ul li').css('width', wli+'%');
+                     $('#carousell ul li .categoria-wraper').css('width', wli+'%');
                     change = 2; 
                 }
             }

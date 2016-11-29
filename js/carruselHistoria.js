@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var change = 0;
-    var percentage = 7;
+    var percentage = 58;
     console.log($(window).width());
     if($(window).width() <= 768 && $(window).width() >480 ) {
         percentage = 70;
@@ -26,8 +26,8 @@ $(document).ready(function() {
         console.log($(window).width());
         if( size > 768 && change != 0 ) {
             var ch  = $('#carousell ul').children().length;
-            var wul = ch*7;
-            var wli =7/ch;
+            var wul = ch*58;
+            var wli =58/ch;
             $('#carousell ul').css('width', wul+'%');
             $('#carousell ul li').css('width', wli+'%');
             change = 0; 
