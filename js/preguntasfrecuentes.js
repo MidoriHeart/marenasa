@@ -30,5 +30,5 @@ $(document).ready(function(){
  				}
  			});
 
- 		});
+ 		});	$('.arriba .categoria-wraper.activo').trigger('click');
 });
