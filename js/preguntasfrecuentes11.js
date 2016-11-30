@@ -19,8 +19,8 @@ $(document).ready(function(){
     $('#carousell').jcarousel({
         wrap: 'circular'
     });
-    $('.flechaIzquierda').jcarouselControl({target: '-=1'});
-    $('.flechaDerecha').jcarouselControl({target: '+=1'});
+    $('.flechaDerecha').jcarouselControl({target: '-=1'});
+    $('.flechaIzquierda').jcarouselControl({target: '+=1'});
     console.log($(window).width());
      $(window).resize( function() {
         var size = $(window).width();
@@ -42,6 +42,7 @@ $(document).ready(function(){
                 $('#carousell ul').css('width', wul+'%');
                 $('#carousell ul li').css('width', wli+'%');
                 $('#carousell ul li .categoria-wraper').css('width', wli+'%');
+                
                 change = 1;            
             }
             else {

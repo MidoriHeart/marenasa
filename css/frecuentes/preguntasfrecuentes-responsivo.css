@@ -65,7 +65,52 @@
 		max-width: 150px;
 		float: left;
 	}
+.container-info {
+	   background: #FFFFFF;
+   	   padding: 45px 0;
+
+}
+	.preguntas-wraper {
+	    overflow: visible;
+		padding: 0;
+		margin: 0 auto;
+		width: 80%;
+	    height: auto;
+	}
+	.pregunta {
+	    width: 100%;
+	}
+	.preguntas-wraper > ul, .sidr-class-preguntas-wraper > ul {
+	    width: 60%;
+    	margin: 0 20%;
+	}
+	.linea {
+    	border: 2px solid #3075b4;
+    	width: 71%;
+    	margin-left: 10px;
+
+	}
+	.preguntas
+	{
+		 padding-top: 20px;
+	}
+	.respuestas
+	{
+	    padding-bottom: 30px;
+	}
+
 }
 @media (max-width:480px){
-
+	#carousell {
+	    top: 0px;
+	    max-width: 211px;
+	    margin: 0px 17.16%;
+	}
+	.carrusel-frecuentes {
+	    max-width: 320px;
+	}
+	#carousell ul li {
+     	max-width: 144px;
+    	margin: 0 30px;
+	}
 }
