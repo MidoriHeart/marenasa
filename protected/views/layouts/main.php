@@ -60,7 +60,7 @@
 						array('label'=>'Nosotros', 
 							'items'=> array(
 								array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-								array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+								array( 'label'=> 'Misión y visión', 'url'=>array('/misionVision') )
 							),
 						),
 						array('label'=>'Productos', 
@@ -76,9 +76,9 @@
 								array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 							),
 						),
-						array( 'label' => 'Servicios', 
+						array( 'label' => 'SerVicios', 
 							'items' => array(
-								array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios')),
+								array( 'label' => 'Pedidos en línea', 'url'=>array('/serVicios')),
 								array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
 							),
 						),
@@ -87,11 +87,11 @@
 						),
 				)); 
 			?>          
-            </div>
+            </diV>
 
                
-        </div>
-    </div>
+        </diV>
+    </diV>
 
 
 
@@ -101,7 +101,7 @@
 				array('label'=>'Nosotros', 
 					'items'=> array(
 						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-						array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+						array( 'label'=> 'Misión y Visión', 'url'=>array('/misionVision') )
 					),
 				),
 				array('label'=>'Productos', 
@@ -117,9 +117,9 @@
 						array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 					),
 				),
-				array( 'label' => 'Servicios', 
+				array( 'label' => 'SerVicios', 
 					'items' => array(
-						array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios/index')),
+						array( 'label' => 'Pedidos en línea', 'url'=>array('/serVicios/index')),
 						array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
 					),
 				),
