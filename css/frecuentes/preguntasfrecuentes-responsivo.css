@@ -99,9 +99,18 @@
 	    padding-bottom: 30px;
 	}
 
-
-	}
 }
 @media (max-width:480px){
-
+	#carousell {
+	    top: 0px;
+	    max-width: 211px;
+	    margin: 0px 17.16%;
+	}
+	.carrusel-frecuentes {
+	    max-width: 320px;
+	}
+	#carousell ul li {
+     	max-width: 144px;
+    	margin: 0 30px;
+	}
 }

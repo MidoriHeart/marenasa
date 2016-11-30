@@ -19,8 +19,8 @@ $(document).ready(function(){
     $('#carousell').jcarousel({
         wrap: 'circular'
     });
-    $('.flechaIzquierda').jcarouselControl({target: '-=1'});
-    $('.flechaDerecha').jcarouselControl({target: '+=1'});
+    $('.flechaDerecha').jcarouselControl({target: '-=1'});
+    $('.flechaIzquierda').jcarouselControl({target: '+=1'});
     console.log($(window).width());
      $(window).resize( function() {
         var size = $(window).width();
