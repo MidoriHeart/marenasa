@@ -113,11 +113,11 @@ $baseUrl = Yii::app()->baseUrl;
 						<?php foreach($categorias as $data):?> 
 							<?php if($first == false):?>
 								<li>
-									<div class="categoria-wraper activo">
+									<div class="categoria-wraper activo" data-categoria="<?php echo $data->id; ?>">
 										<?php $first = true;?>
 							<?php else: ?>
 								<li>
-									<div class="categoria-wraper">
+									<div class="categoria-wraper" data-categoria="<?php echo $data->id; ?>">
 							<?php endif;?>
 										<div class="tipo-letra-cat"> 
 											<?php echo $data['categoria'];?>
@@ -125,8 +125,9 @@ $baseUrl = Yii::app()->baseUrl;
 									<?php $pregunta  = false;?>
 							    </li>
 						<?php endforeach;?>	
-
+					<?php reset($categorias);?>
 					</ul>
+					
 				</div>
 				<a href="#" class="flechaIzquierda"></a>
 			</div>
@@ -135,6 +136,7 @@ $baseUrl = Yii::app()->baseUrl;
 						<?php $pregunta  = false;?>
 									<div class="preguntas-wraper">
 										<ul>
+											<?php foreach($categorias as $data): ?>
 											<?php 
 												$criteria = new CDbCriteria();
 												$criteria->condition = "id_marenasa = '{$data['id']}'";
@@ -142,20 +144,29 @@ $baseUrl = Yii::app()->baseUrl;
 												<?php foreach($preguntas as $datos):?>
 													<?php if($pregunta == false):?>
 													<li>
-														<div  class="pregunta selected"  data-id='<?php echo $datos->id;?>'> 
+														<div  class="pregunta selected"  data-catid="<?php echo $data->id; ?>" data-id='<?php echo $datos->id;?>'> 
 															<?php echo $datos['pregunta'];?>
 														</div>
+														<div class="linea"></div>
 													</li>
+													
 														<?php $pregunta = true;?>
 													<?php else:?>
 													<li>
-														<div class ="pregunta" data-id='<?php echo $datos->id;?>'> 
+														<div class ="pregunta" data-catid="<?php echo $data->id; ?>" data-id='<?php echo $datos->id;?>'> 
 															<?php echo $datos['pregunta'];?>
 														</div>
+															<div class="linea"></div>
 													</li>
-													<?php endif;?>
-												<?php endforeach;?>
+												
+													<?php 
+														endif;
+														endforeach;
+														endforeach;
+													?>
+												
 										</ul>
+										
 									</div>
 											<div class="container-info">
 												<?php $opcion = false;?>
@@ -175,7 +186,6 @@ $baseUrl = Yii::app()->baseUrl;
 																				<?php echo $data->respuesta; ?>
 																			</div>
 																		</div>
-
 											</div>
 							<?endforeach;?>
 				</div>
