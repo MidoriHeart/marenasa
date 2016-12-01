@@ -19,9 +19,8 @@
 ?>
 <div class="container1">
     <div class="container11">
-        <label class="titulo1">TITULO SIMULADO</label>
-        <label class="subitutlo1">Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget 
-                    felis porttitor volutpat. </label>
+        <label class="titulo1"><?php echo $titulo[0]->titulo ;?></label>
+        <label class="subitutlo1"><?php echo $titulo[0]->subtitulo ;?> </label>
         <div class= "botonVer hide"> Ver más</div>	
     </div>
     <div id="main-carousel">

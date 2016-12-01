@@ -18,7 +18,7 @@ class MarenasaQuienesomos extends MActiveRecord
     public $downloadCsv=false; // Download CSV
     public $nombre_anterior;
     public $nombre_anterior2;
-    public $hideCreateAction = false;
+    public $hideCreateAction = true;
     public $hideListAction = true;
     public $hideDeleteAction = true;  
 

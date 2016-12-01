@@ -4,7 +4,8 @@ class ContactoController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$contacto = MarenasaContacto::model()->findAll();
+		$this->render('index',array('contacto'=>$contacto));
 	}
 
 	// Uncomment the following methods and override them if needed
