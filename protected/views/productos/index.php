@@ -5,6 +5,7 @@ $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/productos/productos.css');
+    $cs->registerCssFile($baseUrl.'/css/productos/productos-responsivos.css');
 	$cs->registerScriptFile($baseUrl.'/js/plugins/nice-select/jquery.js');
 	$cs->registerScriptFile($baseUrl.'/js/productos-ddl.js');
 	$cs->registerScriptFile($baseUrl.'/js/plugins/nice-select/jquery.nice-select.js');

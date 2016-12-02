@@ -67,8 +67,8 @@
 						array('label'=>'Productos', 
 							'items'=> array(
 								array( 'label' => 'Por categoría', 'url' => array('/productos/productoscategoria')),
-								array( 'label' => 'Por marca', 'url' => array('/productos/buscador')),
-								array( 'label' => 'Buscador', 'url' => array('/productos')),
+								array( 'label' => 'Por marca', 'url' => array('/productos')),
+								array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
 							),
 						),
 						array( 'label' => 'Promociones', 

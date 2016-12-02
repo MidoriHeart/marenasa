@@ -8,6 +8,7 @@
     $cs->registerCssFile($baseUrl.'/css/plugins/nice-select/nice-select.css');
 //    $cs->registerCssFile($baseUrl.'/css/productos/productos.css');
     $cs->registerCssFile($baseUrl.'/css/productos/buscador.css');
+      $cs->registerCssFile($baseUrl.'/css/productos/productos-responsivos.css');
     $urlImagen = $baseUrl.'/uploads/marenasaproductos/imagen/';
 ?>
 <div class="arriba">
