@@ -33,7 +33,7 @@ div.pedidosLista
 }
 div.pedidosHeader div
 {
-    background-image: url(../../images/carrito.png);
+    background-image: url(../../images/carrito.svg);
     background-position: center left 9px;
     background-size: 25px 25px;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ div.canasta
 {
     width: 60px;
     height: 60px;
-    background-image: url(../../images/carrito.png);
+    background-image: url(../../images/carrito.svg);
     background-size: 100%;
     margin-right: 60px;
     float: right;
