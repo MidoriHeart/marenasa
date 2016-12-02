@@ -23,13 +23,13 @@ class ServiciosController extends Controller
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
         $mail->Host = 'smtp.gmail.com'; // SMTP a utilizar. Por ej. smtp.elserver.com
-        $mail->Username = 'ob.peralta03@gmail.com'; // Correo completo a utilizar
-        $mail->Password = 'omarbernardo'; // Contraseña
+        $mail->Username = 'pedidos.marenasa@gmail.com'; // Correo completo a utilizar
+        $mail->Password = 'marenasatepic2016'; // Contraseña
         $mail->Port = 587; // Puerto a utilizar
-        $mail->AddAddress('ob.peralta03@gmail.com');
+        $mail->AddAddress('pedidos.marenasa@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = 'Presupuesto de marenasa.com';	            
-        $mail->From = 'ob.peralta03@gmail.com'; // Desde donde enviamos (Para mostrar)
+        $mail->From = 'pedidos.marenasa@gmail.com'; // Desde donde enviamos (Para mostrar)
         $mail->FromName = 'Pedidos en linea de marenasa';
         $body = "<style>
         	.pedido > thead {

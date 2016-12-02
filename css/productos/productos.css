@@ -29,7 +29,7 @@
 .canasta-p {
      width: 60px;
     height: 60px;
-    background-image: url(../../images/canastaBuscador.png);
+    background-image: url(../../images/carrito.png);
     background-size: 100%;
     position: relative;
     top:50px;
@@ -48,7 +48,7 @@
 .canasta-p {
     width: 60px;
     height: 60px;
-    background-image: url(../../images/canastaBuscador.png);
+    background-image: url(../../images/carrito.png);
     background-size: 100%;
     margin-right: 60px;
     float: right;
