@@ -11,6 +11,7 @@ $baseUrl = Yii::app()->baseUrl;
 
 	<div class ="inferior-cnt">
 		<div class = "contenido-wrapper">
+
 			<div class= "izquierda-cnt">
 				<div class="descripcion-cnt">
 					<?php echo $contacto[0]->descripcion ;?>.</div>
@@ -23,34 +24,34 @@ $baseUrl = Yii::app()->baseUrl;
 			</div>	
 			<div  class="derecha-cnt">
 
+			    <div class="correo">
+		            <form method="POST" name="Contacto">
+		                <div class="rowWraper">
+		                	<div class="ltitulo11">Escr&iacute;benos</div>
+		                	<div class ="lmensaje">Deja tu mensaje!</div>
+		                    <div class="row">
+		                        <div class="inputField">
+		                            <input type="text" name="nombre" autocomplete="off" placeholder="Nombre">
+		                        </div>
+		                    </div>
+		                    <div class="row1">
+		                        <div class="inputField">
+		                            <input type="text" name="correo" autocomplete="off" placeholder="Correo electrónico">
+		                        </div>
+		                    </div>
+		                    <div class="row2">
+		                    	<div class="inputField">
+	                                     <textarea type="text" name="tasunto" autocomplete="off" placeholder="Mensaje..."></textarea>  
+		                       	 </div>                
+		               		</div>
+		               		 <div class="row3">
+		                        <input class="boton" type="submit" value="Enviar" >
+		             	   </div>
+					 </div> 
+		            </form>
+		        </div>
 
-		    <div class="correo">
-	            <form method="POST" name="Contacto">
-	                <div class="rowWraper">
-	                	<div class="ltitulo11">Escr&iacute;benos</div>
-	                	<div class ="lmensaje">Deja tu mensaje!</div>
-	                    <div class="row">
-	                        <div class="inputField">
-	                            <input type="text" name="nombre" autocomplete="off" placeholder="Nombre">
-	                        </div>
-	                    </div>
-	                    <div class="row1">
-	                        <div class="inputField">
-	                            <input type="text" name="telefono" autocomplete="off" placeholder="Email">
-	                        </div>
-	                    </div>
-	                    <div class="row2">
-	                    	<div class="inputField">
-                                     <textarea type="text" name="tasunto" autocomplete="off" placeholder="Mensaje..."></textarea>  
-	                       	 </div>                
-	               		</div>
-	               		 <div class="row3">
-	                        <input class="boton" type="submit" value="Enviar" >
-	             	   </div>
-				 </div> 
-	            </form>
-	        </div>
-
+				</div>
 			</div>
 		</div>	
 	</div>	

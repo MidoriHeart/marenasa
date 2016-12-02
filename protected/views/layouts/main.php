@@ -60,7 +60,7 @@
 						array('label'=>'Nosotros', 
 							'items'=> array(
 								array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-								array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+								array( 'label'=> 'Misión y visión', 'url'=>array('/misionVision') )
 							),
 						),
 						array('label'=>'Productos', 
@@ -87,7 +87,7 @@
 						),
 				)); 
 			?>          
-            </div>
+            </diV>
 
                 
         </div>
@@ -101,7 +101,7 @@
 				array('label'=>'Nosotros', 
 					'items'=> array(
 						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-						array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+						array( 'label'=> 'Misión y Visión', 'url'=>array('/misionVision') )
 					),
 				),
 				array('label'=>'Productos', 
@@ -126,12 +126,6 @@
 				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
 				array('label'=>'Contacto', 'url'=>array('/contacto')),
 				),
-			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Productos', 'url'=>array('/site/contact')),
-				array('label'=>'Promociones', 'url'=>array('/site/contact')),
-				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-     			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		
 		)); ?>
 	</div>
 	</div><!-- mainmenu -->
@@ -156,7 +150,7 @@
                         </div>
                         <div class="row1">
                             <div class="inputField">
-                                <input type="text" name="telefono"  placeholder="Tel&eacute;fono"autocomplete="off">
+                                <input type="text" name="email"  placeholder="Correo electrónico"autocomplete="off">
                             </div>
                         </div>
                         <div class="row2">
@@ -165,7 +159,7 @@
                             </div>                
                         </div>
                         <div class="row3">
-                            <input class="boton" type="submit" value="enviar" >
+                            <input class="boton" type="submit" value="Enviar" >
                         </div>
                     </div> 
                 </form>
