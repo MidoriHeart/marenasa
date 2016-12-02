@@ -1,25 +1,32 @@
 <?php
 
 /**
- * This is the model class for table "marenasa_preguntas_categoria".
+ * This is the model class for table "marenasa_contacto".
  *
- * The followings are the available columns in table 'marenasa_preguntas_categoria':
+ * The followings are the available columns in table 'marenasa_contacto':
  * @property integer $id
- * @property string $categoria
+ * @property string $descripcion
+ * @property string $numero
+ * @property string $otronumero
+ * @property string $email
+ * @property string $fax
  */
-class MarenasaPreguntasCategoria extends MActiveRecord
+class MarenasaContacto extends MActiveRecord
 {
-	public $adminNames=array('Preguntas Categoria','preguntas categoria','preguntas categoria'); // admin interface, singular, plural
+	public $adminNames=array('Contacto','contacto','contactos'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
     public $nombre_anterior;
     public $nombre_anterior2;
-    public $hideCreateAction = false;
+    public $hideCreateAction = true;
     public $hideListAction = true;
     public $hideDeleteAction = true; 
 
-    function behaviors() {
+	/**
+	 * @return string the associated database table name
+	 */
+	    function behaviors() {
     return array(
         'file' => array(
             'class'=>'application.modules.ycm.behaviors.FileBehavior',
@@ -31,7 +38,7 @@ class MarenasaPreguntasCategoria extends MActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'marenasa_preguntas_categoria';
+		return 'marenasa_contacto';
 	}
 
 	/**
@@ -42,11 +49,13 @@ class MarenasaPreguntasCategoria extends MActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('categoria', 'required'),
-			array('categoria', 'length', 'max'=>100),
+			array('descripcion, numero, otronumero, email, fax', 'required'),
+			array('descripcion', 'length', 'max'=>400),
+			array('numero, otronumero, fax', 'length', 'max'=>100),
+			array('email', 'length', 'max'=>150),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, categoria', 'safe', 'on'=>'search'),
+			array('id, descripcion, numero, otronumero, email, fax', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,7 +76,12 @@ class MarenasaPreguntasCategoria extends MActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'categoria' => 'Categoria',
+
+			'descripcion' => 'Descripcion',
+			'numero' => 'Numero',
+			'otronumero' => 'Otronumero',
+			'email' => 'Email',
+			'fax' => 'Fax',
 		);
 	}
 
@@ -90,7 +104,11 @@ class MarenasaPreguntasCategoria extends MActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('categoria',$this->categoria,true);
+		$criteria->compare('descripcion',$this->descripcion,true);
+		$criteria->compare('numero',$this->numero,true);
+		$criteria->compare('otronumero',$this->otronumero,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('fax',$this->fax,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -101,21 +119,26 @@ class MarenasaPreguntasCategoria extends MActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return MarenasaPreguntasCategoria the static model class
+	 * @return MarenasaContacto the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
-
-	public function attributeWidgets()
+	 	public function attributeWidgets()
     {
         return array
         (
-            array('categoria', 'textField'),
+            array('descripcion', 'textArea'),
+            array('numero', 'textField'),
+            array('otronumero', 'textField'),
+            array('email', 'textField'),
+            array('fax', 'textField'),
+
+
         );
     }
-       public function adminSearch()
+   public function adminSearch()
     {
         return array
         (
@@ -123,9 +146,29 @@ class MarenasaPreguntasCategoria extends MActiveRecord
             (
                 array
                 (
-                    'name'=>'categoria',
-                    'value'=>'$data->categoria',
+                    'name'=>'descripcion',
+                    'value'=>'$data->descripcion',
                 ),
+                array
+                (
+                    'name'=>'numero',
+                    'value'=>'$data->numero',
+                ),
+                                array
+                (
+                    'name'=>'otronumero',
+                    'value'=>'$data->otronumero',
+                ),
+                array
+                (
+                    'name'=>'email',
+                    'value'=>'$data->email',
+                ),
+                   array
+                (
+                    'name'=>'fax',
+                    'value'=>'$data->fax',
+                ),               
             )
         );
     }

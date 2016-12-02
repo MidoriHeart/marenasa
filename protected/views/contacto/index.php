@@ -11,22 +11,18 @@ $baseUrl = Yii::app()->baseUrl;
 
 	<div class ="inferior-cnt">
 		<div class = "contenido-wrapper">
-			<div class="content-wrapper">
-				<div class= "izquierda-cnt">
-					<div class="descripcion-cnt">
-						Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. 
-						Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor
-						 eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum
-						  congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.</div>
-					<div class="informacion-cnt">
-						<div>Numero de contacto: 545 4544</div>
-						<div>Número telefónico: 354 6677</div>
-						<div>Fax: 545 6677</div>
-						<div>Email: marenasa@marenasa.com</div>	
-					</div>
-				</div>	
-				<div  class="derecha-cnt">
 
+			<div class= "izquierda-cnt">
+				<div class="descripcion-cnt">
+					<?php echo $contacto[0]->descripcion ;?>.</div>
+				<div class="informacion-cnt">
+					<div>Numero de contacto: <?php echo $contacto[0]->numero ;?></div>
+					<div>Otro número: <?php echo $contacto[0]->otronumero ;?></div>
+					<div>Fax: <?php echo $contacto[0]->fax ;?></div>
+					<div>Email: <?php echo $contacto[0]->email ;?></div>	
+				</div>
+			</div>	
+			<div  class="derecha-cnt">
 
 			    <div class="correo">
 		            <form method="POST" name="Contacto">
