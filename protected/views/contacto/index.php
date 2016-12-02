@@ -40,7 +40,7 @@ $baseUrl = Yii::app()->baseUrl;
 		                    </div>
 		                    <div class="row1">
 		                        <div class="inputField">
-		                            <input type="text" name="telefono" autocomplete="off" placeholder="Email">
+		                            <input type="text" name="correo" autocomplete="off" placeholder="Correo electrónico">
 		                        </div>
 		                    </div>
 		                    <div class="row2">

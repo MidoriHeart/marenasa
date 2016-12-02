@@ -76,9 +76,9 @@
 								array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 							),
 						),
-						array( 'label' => 'SerVicios', 
+						array( 'label' => 'Servicios', 
 							'items' => array(
-								array( 'label' => 'Pedidos en línea', 'url'=>array('/serVicios')),
+								array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios')),
 								array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
 							),
 						),
@@ -117,21 +117,15 @@
 						array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 					),
 				),
-				array( 'label' => 'SerVicios', 
+				array( 'label' => 'Servicios', 
 					'items' => array(
-						array( 'label' => 'Pedidos en línea', 'url'=>array('/serVicios/index')),
+						array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios/index')),
 						array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
 					),
 				),
 				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
 				array('label'=>'Contacto', 'url'=>array('/contacto')),
 				),
-			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Productos', 'url'=>array('/site/contact')),
-				array('label'=>'Promociones', 'url'=>array('/site/contact')),
-				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-     			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		
 		)); ?>
 	</div>
 	</div><!-- mainmenu -->
@@ -156,7 +150,7 @@
                         </div>
                         <div class="row1">
                             <div class="inputField">
-                                <input type="text" name="telefono"  placeholder="Tel&eacute;fono"autocomplete="off">
+                                <input type="text" name="email"  placeholder="Correo electrónico"autocomplete="off">
                             </div>
                         </div>
                         <div class="row2">
@@ -165,7 +159,7 @@
                             </div>                
                         </div>
                         <div class="row3">
-                            <input class="boton" type="submit" value="enviar" >
+                            <input class="boton" type="submit" value="Enviar" >
                         </div>
                     </div> 
                 </form>
