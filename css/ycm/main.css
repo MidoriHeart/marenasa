@@ -26,10 +26,9 @@ body {
 .navbar.navbar-fixed-top {
   position: inherit;
 }
-.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner 
-{
-    background: #AE1118;
-    border-top: 10px solid #6C1911;
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    background: #E9E9E9;
+    border-bottom: 20px solid #2D72B1;
 }
 div.container
 {
@@ -54,20 +53,17 @@ div.container
 }
 
 .navbar .brand .logo_cemiegeo {
-	height: 85px;
-	width: 170px;
-        box-shadow: 3px 3px 8px #1e130f;
-	background-image: url('../../imagenes/Iconos/madera_okowi_web.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-        position: absolute;
-        top: -10px;
-        left: 45px;
+    height: 65px;
+    width: 140px;
+    background-image: url(../../images/Marenasa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
 }
 .pull-right.nav li > a {
 	padding: 20px 15px;
-	color: #F0E3C9;
+	color: #000000;
 	text-shadow: none;
 	font-weight: bold;
 }
@@ -109,6 +105,16 @@ table.items.table.table-striped.table-bordered.table-condensed > tbody > tr > td
     text-align: center;
     vertical-align: middle;
 }
+.navbar .brand {
+    display: block;
+    float: left;
+    padding: 5px;
+    margin-left: 0;
+}
+.navbar .nav > li {
+    float: left;
+    margin-top: 10px;
+} 
 .required-message {
     padding-bottom: 22px;
 }

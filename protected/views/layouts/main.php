@@ -9,6 +9,7 @@
 	$baseUrl = Yii::app()->baseUrl;
 	$cs = Yii::app()->getClientScript();
 	$cs->registerCoreScript('jquery');
+	$cs->registerScriptFile($baseUrl.'/js/email.js');
 	$cs->registerScriptFile($baseUrl.'/js/plugins/sidr/jquery.sidr.min.js');
 	$cs->registerScriptFile($baseUrl.'/js/sidr-controller.js');
 	$cs->registerCssFile($baseUrl.'/css/plugins/sidr/jquery.sidr.light.css');
@@ -60,13 +61,13 @@
 						array('label'=>'Nosotros', 
 							'items'=> array(
 								array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-								array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+								array( 'label'=> 'Misión y visión', 'url'=>array('/misionVision') )
 							),
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos')),
-								array( 'label' => 'Por marca', 'url' => array('/productos/productoscategoria')),
+								array( 'label' => 'Por categoría', 'url' => array('/productos/productoscategoria')),
+								array( 'label' => 'Por marca', 'url' => array('/productos')),
 								array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
 							),
 						),
@@ -87,9 +88,9 @@
 						),
 				)); 
 			?>          
-            </div>
+            </diV>
 
-               
+                
         </div>
     </div>
 
@@ -101,7 +102,7 @@
 				array('label'=>'Nosotros', 
 					'items'=> array(
 						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-						array( 'label'=> 'Misión y visión', 'url'=>array('/misionvision') )
+						array( 'label'=> 'Misión y Visión', 'url'=>array('/misionVision') )
 					),
 				),
 				array('label'=>'Productos', 
@@ -126,12 +127,6 @@
 				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
 				array('label'=>'Contacto', 'url'=>array('/contacto')),
 				),
-			/*	array('label'=>'Nosotros', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Productos', 'url'=>array('/site/contact')),
-				array('label'=>'Promociones', 'url'=>array('/site/contact')),
-				array('label'=>'Servicios', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-     			array('label'=>'Sucursales', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contactos', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),	*/		
 		)); ?>
 	</div>
 	</div><!-- mainmenu -->
@@ -146,26 +141,26 @@
             <div class= "content-wrapper">
  			<?php if($this->id!='contacto'):?>
                 <div class="correo">
-                <form method="POST" name="Contacto">
+                <form method="POST" name="Contacto" id="correoMarenasa" action="<?php echo $baseUrl ;?>/index.php/contacto/sendCorreo">
                     <div class="rowWraper">
                         <div class="ltitulo1">Escr&iacute;benos</div>
                         <div class="row">
                             <div class="inputField">
-                                <input type="text" name="nombre" placeholder="Nombre" autocomplete="off">
+                                <input class="nombre" type="text" name="nombre" placeholder="Nombre" autocomplete="off">
                             </div>
                         </div>
                         <div class="row1">
                             <div class="inputField">
-                                <input type="text" name="telefono"  placeholder="Tel&eacute;fono"autocomplete="off">
+                                <input class="email" type="text" name="email"  placeholder="Correo electrónico"autocomplete="off">
                             </div>
                         </div>
                         <div class="row2">
                             <div class="inputField">
-                                <textarea name="tasunto" placeholder="Mensaje"  autocomplete="off"></textarea>   
+                                <textarea class="asunto" name="tasunto" placeholder="Mensaje"  autocomplete="off"></textarea>   
                             </div>                
                         </div>
                         <div class="row3">
-                            <input class="boton" type="submit" value="enviar" >
+                            <input class="boton" type="submit" value="Enviar" >
                         </div>
                     </div> 
                 </form>

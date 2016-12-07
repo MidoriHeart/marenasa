@@ -18,12 +18,11 @@
     $imagenProducto = 'background-image: url('.$baseUrl.'/uploads/marenasaproductos/imagen/'.MarenasaProductos::model()->getImagen($ofertaEspecial['id_producto']).')';
 ?>
 <div class="container1">
-    <div class="container11">
-        <label class="titulo1">TITULO SIMULADO</label>
-        <label class="subitutlo1">Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget 
-                    felis porttitor volutpat. </label>
+   <!--  <div class="container11">
+        <label class="titulo1"><?php //echo $titulo[0]->titulo ;?></label>
+        <label class="subitutlo1"><?php // echo $titulo[0]->subtitulo ;?> </label>
         <div class= "botonVer hide"> Ver más</div>	
-    </div>
+    </div>  -->
     <div id="main-carousel">
         <ul>
             <?php foreach($carrusel as $data):?>
@@ -81,7 +80,7 @@
                 <div class="categoriasl">
                     <div class="imagenCat" style="background-image: url('<?php echo $urlImagenCategoria.$data['imagen'];?>')"></div>
                     <div class="categoriasd">
-                        <label class="letreroCat">Categoria 3</label>
+                        <label class="letreroCat"><?php echo $data->categoria; ?></label>
                         <a class="botonVerdeC" href="<?php echo $baseUrl;?>/index.php/productos/index">Ver más</a>
                     </div>
                 </div>

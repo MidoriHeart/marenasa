@@ -19,7 +19,7 @@ class MarenasaPreguntas extends MActiveRecord
     public $nombre_anterior2;
     public $hideCreateAction = false;
     public $hideListAction = true;
-    public $hideDeleteAction = true;  
+    public $hideDeleteAction = false;  
 
     function behaviors() {
         return array(
@@ -44,7 +44,7 @@ class MarenasaPreguntas extends MActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, id_marenasa, pregunta, respuesta', 'required'),
+			array('id_marenasa, pregunta, respuesta', 'required'),
 			array('id, id_marenasa', 'numerical', 'integerOnly'=>true),
 			array('pregunta', 'length', 'max'=>100),
 			array('respuesta', 'length', 'max'=>1000),
@@ -71,8 +71,7 @@ class MarenasaPreguntas extends MActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'id_marenasa' => 'Id Marenasa',
+			'id_marenasa' => 'categoria',
 			'pregunta' => 'Pregunta',
 			'respuesta' => 'Respuesta',
 		);
@@ -120,9 +119,20 @@ class MarenasaPreguntas extends MActiveRecord
     {
         return array
         (
+            array('id_marenasa','chosen'),
             array('pregunta', 'textArea'),
             array('respuesta', 'textArea'),
+
         );
+    }
+    public function id_marenasaChoices(){
+    	$categoriasPreguntas = MarenasaPreguntasCategoria::model()->findAll();
+    	$return = array();
+    	foreach ($categoriasPreguntas as $data) {
+				$return[$data->id]=$data->categoria;
+    		
+    		    	}
+    	return $return;
     }
     public function adminSearch()
     {
@@ -143,4 +153,5 @@ class MarenasaPreguntas extends MActiveRecord
             )
         );
     }
+
 }
