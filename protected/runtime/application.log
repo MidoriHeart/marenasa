@@ -734,3 +734,273 @@ Stack trace:
 REQUEST_URI=/marenasa/index.php/preguntasfrecuentes
 HTTP_REFERER=http://localhost/marenasa/index.php/promociones/index
 ---
+2016/12/07 08:45:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_inicio' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_inicio`.
+in C:\xampp\htdocs\marenasa\protected\models\MarenasaInicio.php (29)
+in C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php (30)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 08:45:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_inicio" for active record class "MarenasaInicio" cannot be found in the database.' in C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(MarenasaInicio))
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaInicio.php(29): CActiveRecord::model('MarenasaInicio')
+#2 C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php(30): MarenasaInicio::model()
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/marenasa/
+---
+2016/12/07 08:46:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_contacto' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_contacto`.
+in C:\xampp\htdocs\marenasa\protected\models\MarenasaContacto.php (126)
+in C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 08:46:46 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_contacto" for active record class "MarenasaContacto" cannot be found in the database.' in C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(MarenasaContacto))
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaContacto.php(126): CActiveRecord::model('MarenasaContact...')
+#2 C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php(31): MarenasaContacto::model()
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/marenasa/
+---
+2016/12/07 08:46:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'marenasa.marenasa_contacto' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `marenasa_contacto`.
+in C:\xampp\htdocs\marenasa\protected\models\MarenasaContacto.php (126)
+in C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 08:46:51 [error] [exception.CDbException] exception 'CDbException' with message 'The table "marenasa_contacto" for active record class "MarenasaContacto" cannot be found in the database.' in C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(MarenasaContacto))
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaContacto.php(126): CActiveRecord::model('MarenasaContact...')
+#2 C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php(31): MarenasaContacto::model()
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/marenasa/
+---
+2016/12/07 08:47:29 [error] [php] Undefined variable: titulo (C:\xampp\htdocs\marenasa\protected\views\site\index.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php(64): SiteController->render()
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\marenasa\index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/
+in C:\xampp\htdocs\marenasa\protected\views\site\index.php (22)
+in C:\xampp\htdocs\marenasa\protected\controllers\SiteController.php (64)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:20:32 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaQuienesomos.imagen" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php(403): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1809): MarenasaQuienesomos->afterFind()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1830): CActiveRecord->populateRecord(Array, true)
+#4 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1297): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\Yii\framework\web\CActiveDataProvider.php(150): CActiveRecord->findAll(Object(CDbCriteria))
+#7 C:\xampp\htdocs\Yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#9 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(314): CBaseListView->init()
+#10 C:\xampp\htdocs\marenasa\protected\modules\ycm\extensions\bootstrap\widgets\TbGridView.php(48): CGridView->init()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(147): TbGridView->init()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#13 C:\xampp\htdocs\marenasa\protected\modules\ycm\views\model\list.php(97): CBaseController->widget('bootstrap.widge...', Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('list', Array, true)
+#18 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php(256): CController->render('list', Array)
+#19 [internal function]: ModelController->actionList('MarenasaQuienes...')
+#20 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModelController), Array)
+#21 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModelController), Object(ReflectionMethod), Array)
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('list')
+#26 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ycm/model/list/...')
+#27 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/marenasa/index.php/ycm/model/list/name/MarenasaQuienesomos
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm
+---
+2016/12/07 09:36:36 [error] [php] include(OkoHistoria.php): failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\base\CComponent.php(606) : eval()'d code(1): spl_autoload_call()
+#1 C:\xampp\htdocs\Yii\framework\base\CComponent.php(606): eval()
+#2 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CDataColumn.php(131): TbDataColumn->evaluateExpression()
+#3 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridColumn.php(144): TbDataColumn->renderDataCellContent()
+#4 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(589): TbDataColumn->renderDataCell()
+#5 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(545): TbGridView->renderTableRow()
+#6 C:\xampp\htdocs\Yii\framework\zii\widgets\grid\CGridView.php(455): TbGridView->renderTableBody()
+#7 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(160): TbGridView->renderItems()
+#8 unknown(0): TbGridView->renderSection()
+#9 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#10 C:\xampp\htdocs\Yii\framework\zii\widgets\CBaseListView.php(128): TbGridView->renderContent()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(173): TbGridView->run()
+#12 C:\xampp\htdocs\marenasa\protected\modules\ycm\views\model\list.php(97): ModelController->widget()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): ModelController->renderInternal()
+#15 C:\xampp\htdocs\Yii\framework\web\CController.php(869): ModelController->renderFile()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(782): ModelController->renderPartial()
+#17 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php(256): ModelController->render()
+#18 unknown(0): ModelController->actionList()
+#19 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#20 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#21 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(286): ModelController->runAction()
+#23 C:\xampp\htdocs\Yii\framework\web\CController.php(265): ModelController->runActionWithFilters()
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): ModelController->run()
+#25 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\marenasa\index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/list/name/MarenasaQuienesomos
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\views\model\list.php (97)
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (256)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:11 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:11 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:12 [error] [php] Undefined variable: nombre_anterior2 (C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php:372)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(286): ModelController->runAction()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(265): ModelController->runActionWithFilters()
+#5 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): ModelController->run()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\marenasa\index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+in C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php (372)
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (418)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:56 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:56 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:43:56 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaQuienesomos.imagen" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php(378): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php(418): MarenasaQuienesomos->extraPhpAfterSaveValidate(Object(MarenasaQuienesomos), Array, Array, Object(YcmModule))
+#3 [internal function]: ModelController->actionUpdate('MarenasaQuienes...', '1')
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModelController), Array)
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModelController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ycm/model/updat...')
+#11 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+---
+2016/12/07 09:46:20 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:46:20 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:46:20 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaQuienesomos.immg_inferior" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('immg_inferior')
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php(382): CActiveRecord->__get('immg_inferior')
+#2 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php(418): MarenasaQuienesomos->extraPhpAfterSaveValidate(Object(MarenasaQuienesomos), Array, Array, Object(YcmModule))
+#3 [internal function]: ModelController->actionUpdate('MarenasaQuienes...', '1')
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModelController), Array)
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModelController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ycm/model/updat...')
+#11 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+---
+2016/12/07 09:46:49 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:46:49 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:46:49 [error] [exception.CException] exception 'CException' with message 'Property "MarenasaQuienesomos.imagen" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('imagen')
+#1 C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php(384): CActiveRecord->__get('imagen')
+#2 C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php(418): MarenasaQuienesomos->extraPhpAfterSaveValidate(Object(MarenasaQuienesomos), Array, Array, Object(YcmModule))
+#3 [internal function]: ModelController->actionUpdate('MarenasaQuienes...', '1')
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ModelController), Array)
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ModelController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ycm/model/updat...')
+#11 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\marenasa\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+HTTP_REFERER=http://localhost/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+---
+2016/12/07 09:47:19 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:47:19 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:47:19 [error] [php] imagepng(C:\xampp\htdocs\marenasa\uploads\marenasaquienesomos\imagen\31173a57f03dfaa0c6b5c5b42b1019ed.png): failed to open stream: No such file or directory (C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php:390)
+Stack trace:
+#0 unknown(0): ModelController->actionUpdate()
+#1 C:\xampp\htdocs\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(286): ModelController->runAction()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(265): ModelController->runActionWithFilters()
+#6 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): ModelController->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\marenasa\index.php(13): CWebApplication->run()
+REQUEST_URI=/marenasa/index.php/ycm/model/update/name/MarenasaQuienesomos/pk/1
+in C:\xampp\htdocs\marenasa\protected\models\MarenasaQuienesomos.php (390)
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (418)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:49:49 [warning] [application] Failed to set unsafe attribute "img_superior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
+2016/12/07 09:49:49 [warning] [application] Failed to set unsafe attribute "img_inferior" of "MarenasaQuienesomos".
+in C:\xampp\htdocs\marenasa\protected\modules\ycm\controllers\ModelController.php (373)
+in C:\xampp\htdocs\marenasa\index.php (13)
