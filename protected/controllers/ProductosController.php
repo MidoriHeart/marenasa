@@ -4,15 +4,14 @@ class ProductosController extends Controller
 {
     public function actionIndex()
     {
-        $marca = MarenasaProductoMarcas::model()->findAll();
+        $marca = MarenasaProductoCategorias::model()->findAll();
         $this->render('index', array('marca'=>$marca));
     }
-      public function actionProductosCategoria()
+    public function actionProductosCategoria()
     {
           $categoria = MarenasaProductoCategorias::model()->findAll();
           $this->render('productoscategoria', array('categoria'=>$categoria));
     }
-
     public function actionbuscador()
     {
         $categorias = MarenasaProductos::model()->id_categoriaChoices();
@@ -48,7 +47,7 @@ class ProductosController extends Controller
         }
         echo json_encode($result);
     }
-     public function actionGetProductosMarca($id)
+    public function actionGetProductosMarca($id)
     {   
         $criteria = new CDbCriteria();
         $criteria->condition='id_categoria ='.(int)$id;
@@ -70,5 +69,10 @@ class ProductosController extends Controller
             $result['result'] = 0;
         }
         echo json_encode($result);
+    }
+    public function actionSubcategorias($id)
+    {
+        $subcategorias = MarenasaSubcategoria::model()->findAll("id_categoria = $id");
+        $this->render('subcategorias', array('subcategorias'=>$subcategorias));
     }
 }
