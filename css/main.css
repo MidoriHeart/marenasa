@@ -336,7 +336,7 @@ div.search-form
         width: 34%;
         margin-right: 6%;
     }
-div.row
+div.row, div.row4
     {
     margin: 0 auto;
     width: 49%;
@@ -344,12 +344,12 @@ div.row
     height: 24px;
     float: left;
     }
-    div.row1
+    div.row1, div.row5
     {
 	    margin: 0 auto;
 	    width: 49%;
 	    margin-bottom: 8px;
-	    height: 34px;
+
 	    float: right;
     }
     div.row2
@@ -358,7 +358,8 @@ div.row
         width: 100%;
         margin-top: 10px;
     }
-    div.row input, div.row1 input
+    div.row input, div.row1 input, div.row4 input, 
+    div.row5 input
     {
     width: 100%;  
     max-width: 160px;
