@@ -27,8 +27,8 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$titulo = MarenasaInicio::model()->findAll();
-		$contacto = MarenasaContacto::model()->findAll();
+		// $titulo = MarenasaInicio::model()->findAll();
+		// $contacto = MarenasaContacto::model()->findAll();
 
             $productosEstrella = Yii::app()->db->createCommand()
                     ->select('id, imagen')
@@ -60,7 +60,7 @@ class SiteController extends Controller
                     'ofertaEspecial' => $ofertaEspecial,
                     'categorias' => $categorias,
                     'ofertasMenores' => $ofertasMenores,
-                    'titulo'=>$titulo,
+                    // 'titulo'=>$titulo,
                 ));
 	}
 
