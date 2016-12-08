@@ -80,10 +80,10 @@ class MarenasaProductoMarcas extends MActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
-			'marca' => 'Marca',
-			'logo' => 'Logo',
-		);
+            return array(
+                    'marca' => 'Marca',
+                    'logo' => 'Logo',
+            );
 	}
 	public function attributeWidgets()
     {

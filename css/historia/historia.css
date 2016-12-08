@@ -55,11 +55,12 @@
     overflow: hidden;
 }
 
-.figura-hist {
+.figura-hist 
+{
     width: 31%;
     height: 350px;
     float: left;
-    background-image: url(../../images/Numero1.png);
+    /*background-image: url(../../images/Numero1.png);*/
     background-size: 56%;
     background-repeat: no-repeat;
     background-position: 100%;

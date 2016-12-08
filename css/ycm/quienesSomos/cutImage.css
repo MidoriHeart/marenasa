@@ -1,0 +1,61 @@
+#preview
+{
+    width: 205px;
+    height: 195px;
+    overflow: hidden;
+    /*margin-bottom: 10px;*/
+    float: left;
+    /*margin-left: 15px;*/
+}
+#image_ToCrop,
+#preview img
+{
+    max-width: none;
+}
+#getimage
+{
+    float: left;
+}
+#fancybox-content
+{
+    background-color: #FFF;
+}
+.fancy-content:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+#getCrop
+{
+    margin-top: 30px;
+}
+#miniPreview
+{
+    width:205px;
+    height:195px;overflow:hidden; 
+    /*margin: 30px 0 20px 230px;*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.jcrop-holder 
+{
+    background-color: transparent !important;
+}
+div.boton2
+{
+    width: 100%;
+    max-width: 133px;
+    margin: 0 auto;
+}
+div.boton1
+{
+    width: 100%;
+    max-width: 133px;
+    margin: 0 auto;
+}
+div.imgQuienes
+{
+    width: 205px;
+    height: 195px;
+}

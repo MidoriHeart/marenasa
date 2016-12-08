@@ -31,7 +31,7 @@
     position: absolute;
     width: 30px;
     height: 45px;
-    top: 200px;
+    top: 48.5%;
     left: 30px;
     background-image: url(../../images/flechaIzqSlider.png);
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     background-image: url(../../images/flechaDerSlider.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 200px;
+    top: 48.5%;
     right: 30px;
     z-index: 9;
 }
