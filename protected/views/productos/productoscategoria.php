@@ -45,6 +45,9 @@ $baseUrl = Yii::app()->baseUrl;
 					</div>
 					<div class="imagen-marca" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasaproductocategorias/imagen/'.$data['imagen'];?>');">
 					</div>	
+					<div class="descripcion">
+						
+					</div>
 				</div>
 			<?php endforeach;?>
 		</div>
