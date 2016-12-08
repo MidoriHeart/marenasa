@@ -169,7 +169,7 @@ div.contenidoMovil > div:last-child > div
 }
 div.principal > div:last-child
 {
-    width: 79.33333333333333%;
+    /*width: 79.33333333333333%;*/
     margin: 0 auto;
     padding-bottom: 39px;
 }

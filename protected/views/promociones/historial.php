@@ -8,36 +8,29 @@
     $cs->registerCssFile($baseUrl.'/css/promociones/historial.css');
     $cs->registerCssFile($baseUrl.'/css/promociones/historialResponsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/promociones/historial.js');
-    $ligaImagen = $baseUrl.'/uploads/marenasaproductos/imagen/';
+    $ligaImagen = $baseUrl.'/uploads/marenasapromociones/imagen/';
     $total  = count($promociones);
+    $date = date('Y-m-d');
 ?>
 <h1><span>Historial de promociones</span></h1>
 <div class="principal">
-    <div class="buscador-historial">
+<!--    <div class="buscador-historial">
         <div>Selecciona un mes:</div>
         <div class="dropdownFecha">
             <select class="buscarFecha">
-                <?php MarenasaPromociones::model()->getMeses();?>
+                <?php // MarenasaPromociones::model()->getMeses();?>
             </select>
         </div>
-    </div>
+    </div>-->
     <div class="contenido">
         <div class="contenidoMovil">
             <?php $i = 0;?>
             <?php foreach($promociones as $data):?>
-                <?php $imagen = MarenasaPromociones::model()->getProductoImagen($data->id_producto);?>
-                <div class="promocion" data-fechaI="<?php echo $data->fecha_final;?>" data-fechaF="<?php echo $data->fecha_inicio;?>">
-                    <div class="promoHeader">
-                        <div class="rightHeader">
-                            <div>OFERTA ESPECIAL</div>
-                            <div><?php echo MarenasaPromociones::model()->getProducto($data->id_producto);?></div>
-                        </div>
-                        <div class="leftHeader">-<?php echo $data->porcentaje;?>%</div>
-                    </div>
-                    <div class="promoImagen" style="background-image: url('<?php echo $ligaImagen.$imagen;?>')">
-                        <a href="">Ver m&aacute;s...</a>
-                    </div>
-                </div>
+                <?php if($data->fecha_final < $date):?>
+                    <?php $style = "background-image: url('$ligaImagen/$data->imagen')"?>
+                    
+                    <div class="promocion" style="<?php echo $style;?>" data-fechaI="<?php echo $data->fecha_final;?>" data-fechaF="<?php echo $data->fecha_inicio;?>"></div>
+                <?php endif;?>
             <?php endforeach;?>
         </div>
     </div>

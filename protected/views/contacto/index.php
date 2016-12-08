@@ -4,14 +4,15 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/contacto/contacto.css');
     $cs->registerCssFile($baseUrl.'/css/contacto/responsivo.css');
-    $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales.css');
-    $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');
-   	$cs->registerScriptFile($baseUrl.'/js/email.js');
+    $cs->registerScriptFile($baseUrl.'/js/email.js');
+    $imagen = MarenasaHeaders::model()->findByPk(2)->imagen;
+    $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
 ?>
-<div class= "superior-cnt">
-   <div class="titulo-cnt">Contacto</div>
-</div>
-<div class ="inferior-cnt">
+	<div class= "superior-cnt" style="<?php echo $headerImage;?>">
+	<div class="titulo-cnt">Contacto</div>
+	</div>
+
+	<div class ="inferior-cnt">
 	<div class = "contenido-wrapper">
 		<div class= "izquierda-cnt">
 			<div class="descripcion-cnt">

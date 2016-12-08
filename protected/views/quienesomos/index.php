@@ -1,7 +1,6 @@
 <?php
 /* @var $this HistoriaController */
-
-$baseUrl = Yii::app()->baseUrl;
+    $baseUrl = Yii::app()->baseUrl;
     $cs = Yii::app()->getClientScript();
     $cs->registerCoreScript('jquery');
     $cs->registerCssFile($baseUrl.'/css/historia/historia.css');
@@ -11,11 +10,12 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/control.js');
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
     $cs->registerScriptFile($baseUrl.'/js/carruselHistoria.js');
+    $imagen = MarenasaHeaders::model()->findByPk(1)->imagen;
     $direccion1 = $baseUrl.'/uploads/marenasaquienesomos/img_superior/'.$somos[0]->img_superior;
     $direccion2 = $baseUrl.'/uploads/marenasaquienesomos/img_inferior/'.$somos[0]->img_inferior;
+    $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
 ?>
-
-<div class="container-historia1">
+<div class="container-historia1" style="<?php echo $headerImage;?>">
     <div class="titulos1"><?php echo $somos[0]->titulo;?></div>
     <div class="subtitulos1"><?php echo $somos[0]->subtitulo;?></div>
 </div>
