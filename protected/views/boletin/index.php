@@ -14,9 +14,11 @@
         <div class="white-container">
         	 <div class="cart-container">
         	 	<div class="titulo1">Boletin informativo</div>
+                 <div class="tira">
         	 	<div class="info10">Fecha</div>
         	 	<div class="info11">Nombre</div>
         	 	<div class="info12">Descargar</div>
+                 </div>
         	 	  <?php foreach($boletin as $data): ?>
         	 	   <div class="tira">
 		        	 	<div class="paquete1"><?php echo $data->fecha;?></div>
