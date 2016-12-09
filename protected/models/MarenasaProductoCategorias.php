@@ -13,7 +13,7 @@
  */
 class MarenasaProductoCategorias extends MActiveRecord
 {
-	public $adminNames=array('Categorías de productos','categoria de prodcto','categorías de productos'); // admin interface, singular, plural
+    public $adminNames=array('Categorías de productos','categoria de prodcto','categorías de productos'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
@@ -66,7 +66,7 @@ class MarenasaProductoCategorias extends MActiveRecord
 			array('categoria, imagen', 'length', 'max'=>100,'message'=>'{attribute} solo puede tener 100 caracter(es)'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, categoria, imagen, descripcion', 'safe', 'on'=>'search'),
+			array('id, categoria, imagen', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -89,8 +89,12 @@ class MarenasaProductoCategorias extends MActiveRecord
 	{
 		return array(
 			'categoria' => 'Categoría',
+<<<<<<< HEAD
 			'imagen' => 'imágen',
             
+=======
+			'imagen' => 'imágen'
+>>>>>>> 2e48b7ef1e4ff924dddd503e500c7adcaaee13c5
 		);
 	}
 
@@ -108,7 +112,10 @@ class MarenasaProductoCategorias extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('categoria',$this->categoria,true);
 		$criteria->compare('imagen',$this->imagen,true);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e48b7ef1e4ff924dddd503e500c7adcaaee13c5
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
