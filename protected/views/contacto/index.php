@@ -7,6 +7,8 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerScriptFile($baseUrl.'/js/email.js');
     $imagen = MarenasaHeaders::model()->findByPk(2)->imagen;
     $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
+        $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales.css');
+    $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');
 ?>
 	<div class= "superior-cnt" style="<?php echo $headerImage;?>">
 	<div class="titulo-cnt">Contacto</div>
