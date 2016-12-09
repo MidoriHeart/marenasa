@@ -5,12 +5,18 @@ class ProductosController extends Controller
     public function actionIndex()
     {
         $marca = MarenasaProductoCategorias::model()->findAll();
+
         $this->render('index', array('marca'=>$marca));
     }
     public function actionProductosCategoria()
     {
           $categoria = MarenasaProductoCategorias::model()->findAll();
           $this->render('productoscategoria', array('categoria'=>$categoria));
+    }
+        public function actionProductosMarca()
+    {
+          $marcaso = MarenasaProductoMarcas::model()->findAll();
+          $this->render('productosmarca', array('marcaso'=>$marcaso));
     }
     public function actionbuscador()
     {

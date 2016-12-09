@@ -66,13 +66,13 @@
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos/productoscategoria')),
-								array( 'label' => 'Por marca', 'url' => array('/productos')),
+								array( 'label' => 'Por categoría', 'url' => array('/productos')),
+								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
 							),
 						),
 						array( 'label' => 'Promociones', 
 							'items' => array(
-								array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
+								array( 'label' => 'Próximas', 'url'=>array('/promociones')),
 								array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 							),
 						),
@@ -105,8 +105,8 @@
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos/productoscategoria')),
-								array( 'label' => 'Por marca', 'url' => array('/productos')),
+								array( 'label' => 'Por categoría', 'url' => array('/productos')),
+								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
 							),
 						),
 						array( 'label' => 'Promociones', 
