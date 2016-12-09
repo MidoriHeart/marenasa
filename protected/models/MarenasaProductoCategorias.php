@@ -89,7 +89,12 @@ class MarenasaProductoCategorias extends MActiveRecord
 	{
 		return array(
 			'categoria' => 'Categoría',
+<<<<<<< HEAD
+			'imagen' => 'imágen',
+            
+=======
 			'imagen' => 'imágen'
+>>>>>>> 2e48b7ef1e4ff924dddd503e500c7adcaaee13c5
 		);
 	}
 
@@ -107,6 +112,10 @@ class MarenasaProductoCategorias extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('categoria',$this->categoria,true);
 		$criteria->compare('imagen',$this->imagen,true);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2e48b7ef1e4ff924dddd503e500c7adcaaee13c5
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
