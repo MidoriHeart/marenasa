@@ -127,8 +127,14 @@ width: 160px !important;
 }
 .container-cc {
     width: 100%;
-    margin: 0 120px;
+
     margin-top: 17px;
+}
+.descripcion {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    background-color: white;
 }
 .contenedor3-p:after,
 .imagen-marca:after,
