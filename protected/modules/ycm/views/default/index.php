@@ -10,14 +10,14 @@
     <?php foreach ($models as $model): 
         if
         (
-            $this->module->getAdminName($model) != 'ContactForm' && 
-            $this->module->getAdminName($model) != 'ContactForm' && 
+            $this->module->getAdminName($model) != 'Productos'  && 
             $this->module->getAdminName($model) != 'ContactForm' && 
             $this->module->getAdminName($model) != 'LoginForm' 
         ):
     ?>
         <div class="btn-toolbar">
         <?php
+//        echo $this->module->getAdminName($model);
             $buttons=array();
             $download=false;
             $downloadItems=array();

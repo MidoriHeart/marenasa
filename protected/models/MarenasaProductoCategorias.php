@@ -66,7 +66,7 @@ class MarenasaProductoCategorias extends MActiveRecord
 			array('categoria, imagen', 'length', 'max'=>100,'message'=>'{attribute} solo puede tener 100 caracter(es)'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, categoria, imagen, descripcion', 'safe', 'on'=>'search'),
+			array('id, categoria, imagen', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -89,8 +89,7 @@ class MarenasaProductoCategorias extends MActiveRecord
 	{
 		return array(
 			'categoria' => 'Categoría',
-			'imagen' => 'imágen',
-            'descripcion' => 'Descripción',
+			'imagen' => 'imágen'
 		);
 	}
 
@@ -108,7 +107,6 @@ class MarenasaProductoCategorias extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('categoria',$this->categoria,true);
 		$criteria->compare('imagen',$this->imagen,true);
-        $criteria->compare('descripcion',$this->descripcion,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -166,11 +164,6 @@ class MarenasaProductoCategorias extends MActiveRecord
                     'type' => 'raw',
                     'value' => 'MarenasaProductoCategorias::model()->imagenWidget($data->imagen)',
                     'filter' => ''
-                ),
-                  array
-                (
-                    'name'=>'descripcion',
-                    'value'=>'$data->descripcion',
                 ),
             )
         );
