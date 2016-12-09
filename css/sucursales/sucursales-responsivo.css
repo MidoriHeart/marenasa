@@ -39,3 +39,10 @@
 		    margin-left: 2%;
 		}
 }
+@media (max-width:320px){
+		.container-sucursales 
+		{
+		    width: 290px;
+		}
+
+}

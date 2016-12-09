@@ -53,3 +53,8 @@
         font-size: 28px;
     }
 }
+@media(max-width: 320px){
+    .derecha-cnt div.rowWraper {
+        width: 227px
+    }
+}
