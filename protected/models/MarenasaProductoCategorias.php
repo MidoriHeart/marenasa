@@ -89,9 +89,7 @@ class MarenasaProductoCategorias extends MActiveRecord
 	{
 		return array(
 			'categoria' => 'Categoría',
-
-			'imagen' => 'imágen'
-
+			'imagen' => 'imágen',
 		);
 	}
 
@@ -109,8 +107,6 @@ class MarenasaProductoCategorias extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('categoria',$this->categoria,true);
 		$criteria->compare('imagen',$this->imagen,true);
-
-
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
