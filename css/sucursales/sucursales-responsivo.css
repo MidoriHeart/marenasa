@@ -39,10 +39,11 @@
 		    margin-left: 2%;
 		}
 }
-@media (max-width:320px){
-		.container-sucursales 
-		{
-		    width: 290px;
-		}
-
+@media(max-width: 340px){
+    .derecha-cnt div.rowWraper {
+        width: 227px;
+    }
+    .container-sucursales {
+        width: 270px;
+    }
 }

@@ -53,8 +53,11 @@
         font-size: 28px;
     }
 }
-@media(max-width: 320px){
+@media(max-width: 340px){
     .derecha-cnt div.rowWraper {
-        width: 227px
+        width: 227px;
+    }
+    .container-sucursales {
+        width: 224px;
     }
 }
