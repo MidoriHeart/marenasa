@@ -14,8 +14,8 @@
     $this->pageTitle=Yii::app()->name;
     $urlImagenProducto = $baseUrl.'/uploads/marenasaproductos/imagen/';
     $urlImagenCategoria = $baseUrl.'/uploads/marenasaproductocategorias/imagen/';
-    $nombreProducto = MarenasaProductos::model()->getNombre($ofertaEspecial['id_producto']);
-    $imagenProducto = 'background-image: url('.$baseUrl.'/uploads/marenasaproductos/imagen/'.MarenasaProductos::model()->getImagen($ofertaEspecial['id_producto']).')';
+    // $nombreProducto = MarenasaProductos::model()->getNombre($ofertaEspecial['id_producto']);
+    // $imagenProducto = 'background-image: url('.$baseUrl.'/uploads/marenasaproductos/imagen/'.MarenasaProductos::model()->getImagen($ofertaEspecial['id_producto']).')';
 ?>
 <div class="container1">
    <!--  <div class="container11">
@@ -60,7 +60,7 @@
                 <div class="ofertaUp">
                     <div class="ofertal">
                         <label class ="subtitulo21">OFERTAS</label>
-                        <label class="subtitulo22"><?php echo $nombreProducto;?></label>
+                        <label class="subtitulo22"><?php //  echo $nombreProducto;?></label>
                     </div>
                     <!-- <div class="letreror">-50%</div> -->
                 </div>
@@ -101,7 +101,7 @@
             <?php foreach($ofertasMenores as $data):?>
                 <div class ="titulares4">
                     <label class="titulo41">OFERTAS</label>
-                    <label class="titulo42"><?php echo MarenasaProductos::model()->getNombre($data['id_producto']);?></label>
+                    <label class="titulo42"><?php // echo MarenasaProductos::model()->getNombre($data['id_producto']);?></label>
                     <div class="image411" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasapromociones/imagen/'.$data['imagen']?>')"></div>
                     <a class="titulo44" href="<?php echo $baseUrl;?>/index.php/promociones/index">Ver más</a>
                 </div>
