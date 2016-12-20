@@ -23,7 +23,7 @@
                         <?php $i = 0;?>
                         <?php foreach($promociones as $data):?>
                             <?php if($data->fecha_final >= $date):?>
-                                <?php $imagen = MarenasaPromociones::model()->getProductoImagen($data->id_producto);?>
+                                <?php // $imagen = MarenasaPromociones::model()->getProductoImagen($data->id_producto);?>
                                 <div class="promocion" style="background-image: url('<?php echo $imagenL.$data['imagen'];?>')"></div>
                                 <?php 
                                     $i++;
