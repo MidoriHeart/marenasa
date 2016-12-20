@@ -10,7 +10,7 @@ class MarenasaHeaders extends CActiveRecord
     public $hideDeleteAction = true;
     public $hideCreateAction = true;
     public $hideListAction = false;
-    public $hideUpdateAction = true;
+    public $hideUpdateAction = false;
     public function tableName()
     {
         return 'marenasa_headers';

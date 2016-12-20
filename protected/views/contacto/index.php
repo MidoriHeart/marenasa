@@ -13,7 +13,6 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');
 ?>
 	<div class= "superior-cnt" style="<?php echo $headerImage;?>">
-	<div class="titulo-cnt">Contacto</div>
 	</div>
 
 	<div class ="inferior-cnt">
