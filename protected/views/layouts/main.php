@@ -39,10 +39,8 @@
 		<div class= "content-wrapper">
 			<div class="logoMarenasa"></div>
 			<div class="social-wrapper">
-				<label class="lheader">¡S&iacute;guenos!</label>
-				<div class="facebook"></div>
-				<div class="twitter"></div>
-				<div class="blogspot"></div>
+				<label class="lheader">¡S&iacute;guenos en Facebook!</label>
+				<a class="facebook" href="https://www.facebook.com/marenasa.mayoreorefaccionario"></a>
 			</div>
 		</div><!-- wrapper -->
 	</div><!-- header -->

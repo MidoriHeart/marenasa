@@ -23,7 +23,7 @@
         	 	   <div class="tira">
 		        	 	<div class="paquete1"><?php echo $data->fecha;?></div>
 		        	 	<div class="paquete2"><?php echo $data->nombre;?></div>
-		        	 	<a class="paquete3" href="<?php echo $baseUrl.'/uploads/marenasaboletin/archivo/'.$data['archivo'];?>" download target="_blank">Descargar</a>
+		        	 	<a class="paquete3" href="<?php echo $baseUrl.'/uploads/marenasaboletin/archivo/'.$data['archivo'];?>" download target="_blank"></a>
 		        	</div>
 		          <?php endforeach;?>
         	 </div>

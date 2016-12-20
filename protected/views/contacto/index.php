@@ -7,7 +7,7 @@ $baseUrl = Yii::app()->baseUrl;
     $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales.css');
     $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');
     $cs->registerScriptFile($baseUrl.'/js/email.js');
-    $imagen = MarenasaHeaders::model()->findByPk(2)->imagen;
+    $imagen = MarenasaHeaders::model()->findByPk(4)->imagen;
     $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
         $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales.css');
     $cs->registerCssFile($baseUrl.'/css/sucursales/sucursales-responsivo.css');

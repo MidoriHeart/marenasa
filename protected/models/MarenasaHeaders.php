@@ -34,7 +34,7 @@ class MarenasaHeaders extends CActiveRecord
         return array
         (
             'id' => 'ID',
-            'seccion' => 'Secci&oacute;n',
+
             'imagen' => 'Imagen'
         );
     }
