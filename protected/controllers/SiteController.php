@@ -41,7 +41,7 @@ class SiteController extends Controller
                     ->from('marenasa_promociones')
 //                    ->where("fecha_inicio < $fecha")
 //                    ->andWhere("fecha_final > $fecha")
-                    ->order('porcentaje DESC')
+                    // ->order('porcentaje DESC')
                     ->queryRow();
             $criteria = new CDbCriteria;
             $criteria->limit = 8;
@@ -50,9 +50,9 @@ class SiteController extends Controller
                     ->from('marenasa_promociones')
 //                    ->where("fecha_inicio <= $fecha")
 //                    ->andWhere("fecha_final > $fecha")
-                    ->andWhere('porcentaje <= 50')
+                    // ->andWhere('porcentaje <= 50')
                     ->limit(4)
-                    ->order('porcentaje DESC')
+                    // ->order('porcentaje DESC')
                     ->queryAll();
             $this->render('index', array
                 (

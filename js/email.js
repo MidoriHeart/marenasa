@@ -36,14 +36,18 @@
 
       /* Alerts the results */
       posting.done(function( data ) {
-                console_log(data);
-        alert('Tu correo se ha enviado exitosamente, a la brevedad nos pondremos en contacto con usted.');
-        $('.nombre').val("");
-        $('.email').val("");
-        $('.asunto').val("");
-        $('.noDcliente').val("");
-        $('.telefono').val("");
-        console_log(data);
+                console.log(data);
+        if(data.result == 1){
+          alert('Tu correo se ha enviado exitosamente, a la brevedad nos pondremos en contacto con usted.');
+          $('.nombre').val("");
+          $('.email').val("");
+          $('.asunto').val("");
+          $('.noDcliente').val("");
+          $('.telefono').val("");
+        }
+        else {
+         alert('Ocurrió un error, por favor, pongase en contacto con el administrador del sistema.'); 
+        }
       });
     });
   });

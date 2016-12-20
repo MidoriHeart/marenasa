@@ -41,16 +41,22 @@
 .nombreN
 {
     width: 100%;
+    text-align: center;
     text-align: justify;
     line-height: 50px;
     color: #3965a9;
     background-color: transparent;
     font-size: 25px;
     font-family: 'Roboto-Regular';
+    min-height: 100px;
 }
 .subcategorias-wraper:after
 {
     display: block;
     content: '';
     clear: both;
+}
+.descripcion {
+    min-height: 160px;
+    text-align: justify;
 }

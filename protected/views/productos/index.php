@@ -13,7 +13,7 @@
     $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
 ?>
 <div class="contenedor1-p" style="<?php echo $headerImage;?>">
-    <div class="Titulo1-p">Productos</div>
+    <!-- <div class="Titulo1-p">Productos</div> -->
 </div>
 <!--<div class="contenedor2-p">
     <div class="contenedor2-1p">

@@ -38,7 +38,7 @@
 <div class="container2">
     <div class="ppContainer">
         <div class="contenedorIzquierdo"> 
-            <div class="letrerosl2">PRODUCTOS ESTRELLA</div>
+            <div class="letrerosl2">PRODUCTOS</div>
             <div class="carousel-wrapper">
                 <a href="#" class="flechaISl2"></a>
                 <div id="second-carousel">
@@ -59,13 +59,13 @@
             <div class ="oferta">
                 <div class="ofertaUp">
                     <div class="ofertal">
-                        <label class ="subtitulo21">OFERTA ESPECIAL</label>
+                        <label class ="subtitulo21">OFERTAS</label>
                         <label class="subtitulo22"><?php echo $nombreProducto;?></label>
                     </div>
-                    <div class="letreror">-50%</div>
+                    <!-- <div class="letreror">-50%</div> -->
                 </div>
                 <div class="ofertaDown">
-                    <div class="imagenOferta" style="<?php echo $imagenProducto;?>"></div>
+                    <div class="imagenOferta" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasapromociones/imagen/'.$ofertaEspecial['imagen']?>"></div>
                     <a class="botonVerde" href="<?php echo $baseUrl;?>/index.php/promociones/index">Ver más...</a>
                 </div>
             </div>
@@ -74,7 +74,7 @@
 </div>
 <div class="container3">
     <div class="ppContainer2">
-        <div class="categoriasTitulo">CATEGOR&Iacute;AS POPULARES</div>
+        <div class="categoriasTitulo">CATEGOR&Iacute;AS</div>
         <div class="contenerdor-tercero">
             <?php foreach($categorias as $data):?>
                 <div class="categoriasl">
@@ -97,14 +97,16 @@
 <div class="container4">
     <div class="content-wrapper">
         <div class="ppContainer2">
+        <?php if(count($ofertasMenores) > 0) : ?>
             <?php foreach($ofertasMenores as $data):?>
                 <div class ="titulares4">
-                    <label class="titulo41">OFERTA MENOR</label>
+                    <label class="titulo41">OFERTAS</label>
                     <label class="titulo42"><?php echo MarenasaProductos::model()->getNombre($data['id_producto']);?></label>
-                    <div class="image411" style="background-image: url('<?php echo $urlImagenProducto.MarenasaProductos::model()->getImagen($data['id_producto'])?>')"></div>
+                    <div class="image411" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasapromociones/imagen/'.$data['imagen']?>')"></div>
                     <a class="titulo44" href="<?php echo $baseUrl;?>/index.php/promociones/index">Ver más</a>
                 </div>
             <?php endforeach;?>
+        <?php endif; ?>
         </div>
     </div>
 </div>

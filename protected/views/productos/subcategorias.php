@@ -8,7 +8,7 @@
 ?>
 <div class="principal">
     <div class="imagenArriba">
-        <div class="tituloImagen">Subcategorias</div>
+        <!-- <div class="tituloImagen">Subcategorias</div> -->
     </div>
     <div class="subcategorias-wraper">
     <?php if(count($subcategorias) > 0):?>

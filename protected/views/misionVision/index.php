@@ -8,7 +8,7 @@
     $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')";
 ?>
 <div class="superior-mv" style="<?php echo $headerImage;?>">
-    <div class="tituloprimero-mv">Misión y Visión</div>
+    <!-- <div class="tituloprimero-mv">Misión y Visión</div> -->
 </div>
 <div class="inferior-mv">
     <div class="content-wrapper">

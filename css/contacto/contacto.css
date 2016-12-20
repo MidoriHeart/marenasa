@@ -89,3 +89,6 @@ input[type="text"], textarea {
     content: '';
     display: block;
 }
+div.ltitulo1 {
+    color: #2E73B2 !important;
+}

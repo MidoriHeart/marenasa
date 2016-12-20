@@ -322,7 +322,7 @@ div.letrerosl2
 .imagenCat 
 {
     background-position: center;
-    background-size: 145px 105px;
+    background-size: 100%;
     width: 170px;
     height: 136px;
     background-repeat: no-repeat;
@@ -360,8 +360,8 @@ label.letreroCat {
     font-size: 25px;
     color: #426688;
     margin:0 auto;
-    margin-top: 30px;    
-
+    margin-top: 10px;
+    text-align: center;
 }
 .botonVerdeC 
 {
@@ -523,6 +523,7 @@ label.titulo43 {
 .categoriasd {
     float: left;
     margin-left: 15px;
+    width: 57%;
 }
 .newflecha
 {
