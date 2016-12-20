@@ -1,0 +1,61 @@
+.imagenArriba
+{
+    width: 100%;
+    height: 125px;
+    background-image: url(../../images/Imagen-Buscador.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.tituloImagen
+{
+    width: 100px;
+    color: white;
+    font-size: 28px;
+    font-family: 'Roboto-Regular';
+    position: relative;
+    top: 85px;
+    left: 100px;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.46);
+}
+.subcategorias-wraper
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.subcategoria
+{
+    width: 350px;
+    border-radius: 10px;
+    margin: 21px;
+    margin-top: 20px;
+    float: left;
+}
+.imagen
+{
+    width: 100%;
+    height: 194px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.nombreN
+{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #3965a9;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: 'Roboto-Regular';
+    min-height: 100px;
+}
+.subcategorias-wraper:after
+{
+    display: block;
+    content: '';
+    clear: both;
+}
+.descripcion {
+    min-height: 160px;
+    text-align: justify;
+}

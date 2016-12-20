@@ -10,9 +10,9 @@
 	div.rowWraper {
 			width: 65%;
 	}
-	 div.row1, div.row{
+/*	 div.row1, div.row{
 	 	 width: 149px;
-	}
+	}*/
 
 	#mainmenu .content-wrapper > ul li {
 		margin: 0 10px;
@@ -134,4 +134,12 @@
 	.info2 {
 		margin-left: 15px;
 	}
+}
+@media (max-width:320px) {
+
+
+div.row1 input {
+    width: 100%;
+    max-width: 120px;
+}
 }

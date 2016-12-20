@@ -57,9 +57,10 @@ class MarenasaProductoMarcas extends MActiveRecord
 		return array(
 			array('marca', 'required','message'=>'{attribute} no puede dejarse vacio'),
 			array('marca, logo', 'length', 'max'=>100,'message'=>'{attribute} solo puede tener 100 caracter(es)'),
+            array('descripcion', 'length', 'max'=>250,'message'=>'{attribute} solo puede tener 250 caracter(es)'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, marca, logo', 'safe', 'on'=>'search'),
+			array('id, marca, logo, descripcion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -80,10 +81,11 @@ class MarenasaProductoMarcas extends MActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
-			'marca' => 'Marca',
-			'logo' => 'Logo',
-		);
+            return array(
+                    'marca' => 'Marca',
+                    'logo' => 'Logo',
+                    'descripcion' => 'Descripcion',
+            );
 	}
 	public function attributeWidgets()
     {
@@ -91,6 +93,7 @@ class MarenasaProductoMarcas extends MActiveRecord
         (
             array('marca', 'textField'),
             array('logo', 'image'),
+            array('descripcion', 'textArea'),
         );
     }
 
@@ -108,7 +111,7 @@ class MarenasaProductoMarcas extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('marca',$this->marca,true);
 		$criteria->compare('logo',$this->logo,true);
-
+        $criteria->compare('descripcion',$this->descripcion,true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
@@ -164,6 +167,11 @@ class MarenasaProductoMarcas extends MActiveRecord
                     'type' => 'raw',
                     'value' => 'MarenasaProductoMarcas::model()->imagenWidget($data->logo)',
                     'filter' => ''
+                ),
+                 array
+                (
+                    'name' => 'descripcion',
+                    'value' => '$data->descripcion',
                 ),
             )
         );

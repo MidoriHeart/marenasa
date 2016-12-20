@@ -114,3 +114,13 @@
     	margin: 0 30px;
 	}
 }
+@media(max-width: 340px){
+	.abajo .linea {
+	    width: 78%;
+	}
+	.preguntas-wraper > ul{
+        	margin: 0 2%;
+	}
+}
+
+}

@@ -70,6 +70,11 @@
         padding-left: 5px;
         font-size: 10px;
     }
+    .tira {
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+}
 /*    .order-title:nth-child(2)
     {
         width: 25%;
@@ -80,5 +85,10 @@
     .blue-ribbon
     {
         min-height: 700px;
+    }
+    .tira {
+    width: 100%;
+    max-width: 206px;
+    margin: 0 auto;
     }
 }

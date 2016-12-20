@@ -1,9 +1,8 @@
 .superior-mv {
-    background-image: url(../../images/myv.jpg);
     width: 100%;
     padding-bottom: 30%;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:100% 100%;
 }
 .inferior-mv {
     width: 100%;

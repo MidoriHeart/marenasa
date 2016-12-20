@@ -29,6 +29,13 @@ class MarenasaCarruselQS extends MActiveRecord
         {
             return 'inicio';
         }
+              function behaviors() {
+    return array(
+        'file' => array(
+            'class'=>'application.modules.ycm.behaviors.FileBehavior',
+           ),
+        );
+    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -40,9 +47,12 @@ class MarenasaCarruselQS extends MActiveRecord
 		return array(
 			array('imagen', 'required'),
 			array('imagen', 'length', 'max'=>100),
+      array('imagen', 'file', 'on'=>'insert', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png', 'maxSize'=>1024*1024*6),
+      array('imagen', 'file', 'on'=>'update', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png', 'maxSize'=>1024*1024*6),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, imagen', 'safe', 'on'=>'search'),
+
 		);
 	}
 

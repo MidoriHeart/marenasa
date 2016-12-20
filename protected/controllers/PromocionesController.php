@@ -12,16 +12,13 @@ class PromocionesController extends Controller
     }
     public function actionIndex()
     {
-        $date = date('Y-m-d');
-        $promociones = MarenasaPromociones::model()->findAll("fecha_final > $date");
+        $promociones = MarenasaPromociones::model()->findAll();
         $this->render('index',array(
             'promociones'=>$promociones,
         ));
     }
     public function actionHistorial()
     {
-        $date = date('Y-m-d');
-//        $promociones = MarenasaPromociones::model()->findAll("fecha_final > $date");
         $promociones = MarenasaPromociones::model()->findAll();
         $this->render('historial',array(
             'promociones'=>$promociones,

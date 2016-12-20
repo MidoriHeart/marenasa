@@ -66,3 +66,10 @@
 		height: 137px
 	}
 }
+@media(max-width:320px){
+	.mision-des, .vision-des 
+	{
+    	max-width: 250px;
+   	}
+
+}

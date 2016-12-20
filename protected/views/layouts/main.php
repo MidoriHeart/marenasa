@@ -66,24 +66,22 @@
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos/productoscategoria')),
-								array( 'label' => 'Por marca', 'url' => array('/productos/buscador')),
-								array( 'label' => 'Buscador', 'url' => array('/productos')),
+								array( 'label' => 'Por categoría', 'url' => array('/productos')),
+								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
 							),
 						),
 						array( 'label' => 'Promociones', 
 							'items' => array(
-								array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
+								array( 'label' => 'Próximas', 'url'=>array('/promociones')),
 								array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
 							),
 						),
 						array( 'label' => 'Servicios', 
 							'items' => array(
-								array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios')),
+								array( 'label' => 'Boletín Informativo', 'url'=>array('/boletin')),
 								array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
 							),
 						),
-						array('label'=>'Sucursales', 'url'=>array('/sucursales')),
 						array('label'=>'Contacto', 'url'=>array('/contacto')),
 						),
 				)); 
@@ -96,38 +94,37 @@
 
 
 
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Inicio', 'url'=>array('/site/index')),
-				array('label'=>'Nosotros', 
-					'items'=> array(
-						array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
-						array( 'label'=> 'Misión y Visión', 'url'=>array('/misionVision') )
-					),
-				),
-				array('label'=>'Productos', 
-					'items'=> array(
-						array( 'label' => 'Por categoría', 'url' => array('/productos')),
-						array( 'label' => 'Por marca', 'url' => array('/productos/productoscategoria')),
-						array( 'label' => 'Buscador', 'url' => array('/productos/buscador')),
-					),
-				),
-				array( 'label' => 'Promociones', 
-					'items' => array(
-						array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
-						array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
-					),
-				),
-				array( 'label' => 'Servicios', 
-					'items' => array(
-						array( 'label' => 'Pedidos en línea', 'url'=>array('/servicios/index')),
-						array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
-					),
-				),
-				array('label'=>'Sucursales', 'url'=>array('/sucursales')),
-				array('label'=>'Contacto', 'url'=>array('/contacto')),
-				),
-		)); ?>
+		  <?php $this->widget('zii.widgets.CMenu',array(
+					'items'=>array(
+						array('label'=>'Inicio', 'url'=>array('/site/index')),
+						array('label'=>'Nosotros', 
+							'items'=> array(
+								array( 'label'=> '¿Quiénes somos?', 'url'=>array('/quienesomos')),
+								array( 'label'=> 'Misión y visión', 'url'=>array('/misionVision') )
+							),
+						),
+						array('label'=>'Productos', 
+							'items'=> array(
+								array( 'label' => 'Por categoría', 'url' => array('/productos')),
+								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
+							),
+						),
+						array( 'label' => 'Promociones', 
+							'items' => array(
+								array( 'label' => 'Próximas', 'url'=>array('/promociones/index')),
+								array( 'label' => 'Historial', 'url'=>array('/promociones/historial')),
+							),
+						),
+						array( 'label' => 'Servicios', 
+							'items' => array(
+								array( 'label' => 'Boletín Informativo', 'url'=>array('/boletin')),
+								array( 'label' => 'Preguntas frecuentes', 'url'=>array('/preguntasfrecuentes')),
+							),
+						),
+						array('label'=>'Contacto', 'url'=>array('/contacto')),
+						),
+				)); 
+			?>  
 	</div>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>

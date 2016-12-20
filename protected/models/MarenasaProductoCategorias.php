@@ -13,7 +13,7 @@
  */
 class MarenasaProductoCategorias extends MActiveRecord
 {
-	public $adminNames=array('Categorías de productos','categoria de prodcto','categorías de productos'); // admin interface, singular, plural
+    public $adminNames=array('Categorías de productos','categoria de prodcto','categorías de productos'); // admin interface, singular, plural
     public $downloadExcel=false; // Download Excel
     public $downloadMsCsv=false; // Download MS CSV
     public $downloadCsv=false; // Download CSV
@@ -107,7 +107,6 @@ class MarenasaProductoCategorias extends MActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('categoria',$this->categoria,true);
 		$criteria->compare('imagen',$this->imagen,true);
-
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
