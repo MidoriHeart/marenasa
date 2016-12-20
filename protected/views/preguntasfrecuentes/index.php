@@ -10,6 +10,8 @@
     $cs->registerScriptFile($baseUrl.'/js/plugins/jCarousel/src/autoscroll.js');
     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes.js');
     $cs->registerScriptFile($baseUrl.'/js/preguntasfrecuentes11.js');
+        $imagen = MarenasaHeaders::model()->findByPk(6)['imagen'];
+    $headerImage = "background-image: url('$baseUrl/uploads/marenasaheaders/imagen/$imagen')"
 ?>
 <div class="principal">
     <div class="content-wrapper">
@@ -65,7 +67,7 @@
             </div>
             <div class="derecha">
                 <div class="container-imagen">
-                    <div class="newImage">
+                    <div class="newImage" style="<?php echo $headerImage;?>" >
                         <div class="titulo-transparente">
                             <div class="titulocat">Preguntas Frecuentes</div>
                         </div>

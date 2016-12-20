@@ -62,14 +62,14 @@ a.paquete3 {
     text-align: center;
     /* text-decoration: underline; */
     background-image: url(../../images/descargar3.png);
-    background-size: 100% 100%;
+    background-size: 100% 87%;
     background-position: 100% 100%;
-    padding-bottom: 10px;
-    padding-top: 16px;
+    background-repeat: no-repeat;
+    padding-bottom: 23px;
+    padding-top: 18px;
     cursor: pointer;
     font-size: 15px;
     margin-left: 80px;
-
 }
 .paquete2 {
     float: left;

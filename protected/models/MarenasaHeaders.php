@@ -68,7 +68,9 @@ class MarenasaHeaders extends CActiveRecord
             '1' => 'Quienes somos',
             '2' => 'Misión y visión',
             '3' => 'Productos',
-            '4' => 'Contacto'
+            '4' => 'Contacto',
+            '5' => 'Marcas',
+            '6' => 'Preguntas frecuentes'
         );
     }
     public function getSeccion($id)
@@ -79,6 +81,8 @@ class MarenasaHeaders extends CActiveRecord
             case 2: return 'Misión y visión'; break;
             case 3: return 'Productos'; break;
             case 4: return 'Contacto'; break;
+            case 5: return 'Marcas'; break;
+            case 6: return 'Preguntas Frecuentes'; break;
         }
     }
     public function imagenWidget($nombre)
