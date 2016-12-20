@@ -50,6 +50,7 @@ class MarenasaQuienesomos extends MActiveRecord
 			array('titulo, subtitulo', 'length', 'max'=>100),
                     array('img_superior, img_inferior', 'file', 'on'=>'insert', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png,bmp', 'maxSize'=>1024*1024*6),
                     array('img_superior, img_inferior', 'file', 'on'=>'update', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png,bmp', 'maxSize'=>1024*1024*6),
+
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, titulo, subtitulo, descripcion, img_superior, img_inferior', 'safe', 'on'=>'search'),

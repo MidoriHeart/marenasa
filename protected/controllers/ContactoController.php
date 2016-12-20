@@ -55,6 +55,11 @@ public function actionSendCorreo() {
         // $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
         $mail->Password = 'FP&r2$2kPe1kWP'; // Contraseña contact@marenasa.com marenasaTepic2016
         $mail->Port = 80; // Puerto a utilizar
+        $mail->SMTPSecure = 'tls';
+        $mail->Host = 'smtp.gmail.com'; // SMTP a utilizar. Por ej. smtp.elserver.com
+        $mail->Username = 'pedidos.marenasa@gmail.com'; // Correo completo a utilizar
+        $mail->Password = 'marenasatepic2016'; // Contraseña
+        $mail->Port = 587; // Puerto a utilizar
         $mail->AddAddress('pedidos.marenasa@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = 'Contacto marenasa.com';	            

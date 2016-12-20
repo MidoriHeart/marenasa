@@ -18,6 +18,7 @@
 <div class="container-historia1" style="<?php echo $headerImage;?>">
     <div class="titulos1"><?php // echo $somos[0]->titulo;?></div>
     <div class="subtitulos1"><?php // echo $somos[0]->subtitulo;?></div>
+
 </div>
 <div class="container-historia2">
     <div class="content-wrapper">

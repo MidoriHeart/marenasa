@@ -1,0 +1,2 @@
+1.- en la tabla de marenasa_quienesomos agregar 2 campos, img_superior, img_inferior varchar (150px) (width: 205px, height: 195px)
+
