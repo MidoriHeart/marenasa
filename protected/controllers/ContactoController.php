@@ -54,7 +54,7 @@ public function actionSendCorreo() {
         $mail->Username = 'contacto@marenasa.com'; // pedidos.marenasa@gmail.com , smtpout.secureserver.net //  Correo completo a utilizar
         // $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
         $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
-        $mail->Port = 465; // Puerto a utilizar
+        $mail->Port = 3535; // Puerto a utilizar
         // $mail->SMTPSecure = 'tls';
         // $mail->Host = 'smtp.gmail.com'; // SMTP a utilizar. Por ej. smtp.elserver.com
         // $mail->Username = 'pedidos.marenasa@gmail.com'; // Correo completo a utilizar
