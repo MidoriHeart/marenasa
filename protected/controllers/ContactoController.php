@@ -49,7 +49,7 @@ public function actionSendCorreo() {
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'TLS';
         // $mail->Host = 'smtp.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
-        $mail->Host = 'smtpout.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
+        $mail->Host = 'localhost';//'smtpout.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
         // $mail->Username = 'contact@marenasa.com'; // pedidos.marenasa@gmail.com //  Correo completo a utilizar
         $mail->Username = 'contacto@marenasa.com'; // pedidos.marenasa@gmail.com , smtpout.secureserver.net //  Correo completo a utilizar
         // $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
