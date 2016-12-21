@@ -47,14 +47,14 @@ public function actionSendCorreo() {
         $mail->IsSMTP();
         $mail->CharSet="UTF-8";
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'TLS';
+        $mail->SMTPSecure = 'ssl';
         // $mail->Host = 'smtp.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
-        $mail->Host = 'localhost';//'smtpout.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
+        $mail->Host = 'smtp.gmail.com';//'smtpout.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
         // $mail->Username = 'contact@marenasa.com'; // pedidos.marenasa@gmail.com //  Correo completo a utilizar
         $mail->Username = 'contacto@marenasa.com'; // pedidos.marenasa@gmail.com , smtpout.secureserver.net //  Correo completo a utilizar
         // $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
         $mail->Password = 'marenasaTepic2016'; // Contraseña contact@marenasa.com marenasaTepic2016
-        $mail->Port = 3535; // Puerto a utilizar
+        $mail->Port = 465; // Puerto a utilizar
         // $mail->SMTPSecure = 'tls';
         // $mail->Host = 'smtp.gmail.com'; // SMTP a utilizar. Por ej. smtp.elserver.com
         // $mail->Username = 'pedidos.marenasa@gmail.com'; // Correo completo a utilizar
