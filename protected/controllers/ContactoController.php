@@ -47,7 +47,7 @@ public function actionSendCorreo() {
         $mail->IsSMTP();
         $mail->CharSet="UTF-8";
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'SSL';
+        $mail->SMTPSecure = 'TLS';
         // $mail->Host = 'smtp.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
         $mail->Host = 'smtpout.secureserver.net'; // SMTP a utilizar. Por ej. smtp.elserver.com
         // $mail->Username = 'contact@marenasa.com'; // pedidos.marenasa@gmail.com //  Correo completo a utilizar
