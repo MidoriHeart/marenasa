@@ -216,8 +216,13 @@
     {
         font-size: 20px;
     }
+     label.letreroCat {
+            font-size: 20px;
+    }
+     .imagen-marca {
+    width: 84%;}
 }
-@media (max-width:320px) 
+@media (max-width:420px) 
 {
     .imagenCat
     {
@@ -235,4 +240,10 @@
         line-height: 30px;
         margin-left: 15px;
     }
+    label.letreroCat {
+            font-size: 15px;
+    }
+    .imagen-marca {
+    width: 84%;}
+
 }
