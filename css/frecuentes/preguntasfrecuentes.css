@@ -243,6 +243,13 @@
     margin: 0;
     padding-right: 20px;
 }
+.imagen-preguntas-frecuentes {
+    background-color: blue;
+    width: 500px;
+    height: 180px;
+    margin-left: 146px;
+    margin-top: 14px;
+}
 .abajo .preguntas-wraper:after,
 .container-rigut-pf:after,
 .container-left-pf:after,

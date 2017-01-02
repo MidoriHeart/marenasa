@@ -125,5 +125,23 @@
 
     font-size: 16px;
 	}
+	.respuestas {
+    margin-left: 37px;
+    margin-right: 34px;
+	}
+	.preguntas, .sidr-class-preguntas {
+    margin-left: 41px;
+	}
+	.preguntas-wraper {
+    margin-bottom: 24%;
+	}
+	.imagen-preguntas-frecuentes {
+    background-color: blue;
+    width: 259px;
+    height: 180px;
+    margin-left: 36px;
+    margin-top: 14px;
+    background-size: 100% 100%;
+}
 
 }

@@ -7,8 +7,8 @@
 */
 #preview 
 {
-    height: 814px;
-    width: 282px;
+    height: 250px;
+    width: 1500px;
     overflow: hidden;
     margin-bottom: 10px;
     float: left;
@@ -42,7 +42,7 @@ margin-top: 30px;
 }
 #miniPreview 
 {
-    width:814px;height:282px;overflow:hidden; margin-left: 30px;
+    width:500px;height:180px;overflow:hidden; margin-left: 30px;
     margin: 0 auto;
 }
 .jcrop-holder {

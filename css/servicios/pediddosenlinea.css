@@ -96,4 +96,5 @@ a.paquete3 {
 }
 .tira {
     width: 100%;
+    float: left;
 }
