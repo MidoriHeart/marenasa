@@ -98,3 +98,9 @@ a.paquete3 {
     width: 100%;
     float: left;
 }
+.white-container:after
+{
+    clear: both;
+    content: '';
+    display: block;
+}
