@@ -64,8 +64,8 @@
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos')),
-								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
+								array( 'label' => 'Categoría', 'url' => array('/productos')),
+								array( 'label' => 'Nuestras Marcas', 'url' => array('/productos/productosmarca')),
 							),
 						),
 						array( 'label' => 'Promociones', 
@@ -103,8 +103,8 @@
 						),
 						array('label'=>'Productos', 
 							'items'=> array(
-								array( 'label' => 'Por categoría', 'url' => array('/productos')),
-								array( 'label' => 'Por marca', 'url' => array('/productos/productosmarca')),
+								array( 'label' => 'Categoría', 'url' => array('/productos')),
+								array( 'label' => 'Nuestras Marcas', 'url' => array('/productos/productosmarca')),
 							),
 						),
 						array( 'label' => 'Promociones', 

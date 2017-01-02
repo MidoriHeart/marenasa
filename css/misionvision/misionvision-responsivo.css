@@ -66,3 +66,11 @@
         font-size: 17px;	
 	}
 }
+@media (max-width:340px){
+	.tituloprimero-mv {
+	    margin-left: 30%;
+	}
+	.mision-des, .vision-des {
+		max-width: 233px;	
+	}
+}

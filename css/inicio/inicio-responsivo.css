@@ -247,3 +247,9 @@
     width: 84%;}
 
 }
+@media (max-width:340px) 
+{
+.image1-carousel {
+    padding-bottom: 38.57%;
+}
+}

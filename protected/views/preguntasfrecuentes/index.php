@@ -96,6 +96,8 @@
                                     <div class="respuestas">
                                         <?php echo $data->respuesta; ?>
                                     </div>
+                                    <div class="imagen-preguntas-frecuentes" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasapreguntas/imagen/'.$data['imagen'];?>');">
+                                </div>
                                 </div>
                             </div>
                         <?php endforeach;?>
@@ -189,6 +191,8 @@
                                 </div>
                                 <div class="respuestas">
                                     <?php echo $data->respuesta; ?>
+                                </div>
+                                <div class="imagen-preguntas-frecuentes" style="background-image: url('<?php echo $baseUrl.'/uploads/marenasapreguntas/imagen/'.$data['imagen'];?>');">
                                 </div>
                             </div>
                         </div>
