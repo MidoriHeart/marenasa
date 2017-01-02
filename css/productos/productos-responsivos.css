@@ -84,3 +84,12 @@ div.menuOpciones > div {
 }
 
 }
+
+@media (max-width:340px){
+	.buscador-producto {
+	    width: 270px;
+	}
+	.Titulo1-p {
+	    top: 45px;
+	}
+}

@@ -121,6 +121,9 @@
 	.preguntas-wraper > ul{
         	margin: 0 2%;
 	}
-}
+.tipo-letra-cat, .sidr-class-tipo-letra-cat {
+
+    font-size: 16px;
+	}
 
 }
