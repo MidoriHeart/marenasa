@@ -19,6 +19,13 @@
 
 
 }
+@media (max-width:960px){
+.imagen-preguntas-frecuentes {
+
+    margin-left: 44px;
+
+}
+
 @media (max-width:768px){
 	.chico
 	{
@@ -113,6 +120,11 @@
      	max-width: 144px;
     	margin: 0 30px;
 	}
+	.imagen-preguntas-frecuentes {
+    margin-left: 60px;
+    width: 360px;
+    height: 206px;
+}
 }
 @media(max-width: 340px){
 	.abajo .linea {
@@ -142,6 +154,11 @@
     margin-left: 36px;
     margin-top: 14px;
     background-size: 100% 100%;
+}
+.imagen-preguntas-frecuentes {
+    margin-left: 60px;
+    width: 250px;
+    height: 136px;
 }
 
 }
