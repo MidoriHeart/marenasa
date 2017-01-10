@@ -249,7 +249,11 @@
     height: 180px;
     margin-left: 146px;
     margin-top: 14px;
+        background-position: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
+
 .abajo .preguntas-wraper:after,
 .container-rigut-pf:after,
 .container-left-pf:after,
