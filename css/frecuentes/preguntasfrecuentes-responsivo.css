@@ -23,6 +23,7 @@
 .imagen-preguntas-frecuentes {
 
     margin-left: 44px;
+        width: 434px;
 
 }
 
@@ -131,6 +132,11 @@
     padding-bottom: 30px;
     margin: auto 7%;
 }
+.tipo-letra-cat{
+    font-size: 17px;
+}
+
+
 }
 @media(max-width: 340px){
 	.abajo .linea {
