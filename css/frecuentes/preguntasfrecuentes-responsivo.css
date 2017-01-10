@@ -172,5 +172,8 @@
     width: 250px;
     height: 136px;
 	}
+	 .categoria-wraper{
+	   line-height: 27px;
+	}
 
 }
