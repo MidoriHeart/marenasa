@@ -15,7 +15,7 @@ $(document).ready(function()
         },
         onComplete:function()
         {
-            jcrop_api.setSelect([0,0,500,180]);
+            jcrop_api.setSelect([0,0,500,286]);
             var w_width = $(window).width()-($(window).width()*0.15)-255;
             if($('#selected_image').width()<w_width )
                 w_width=$('#selected_image').width();
@@ -70,7 +70,7 @@ $(document).ready(function()
         if (parseInt(c.w) > 0)
         {
             var rx = 500 / c.w;
-            var ry = 180 / c.h;
+            var ry = 286 / c.h;
             $('#preview').css(
             {
                 width: Math.round(rx * boundx) + 'px',
@@ -108,7 +108,7 @@ $(document).ready(function()
                     boxHeight: $(window).height()-($(window).height()*0.20),
                     onChange: updatePreview,
                     onSelect: updatePreview,
-                    aspectRatio: 25/9
+                    aspectRatio: 7/4
                 },function()
                 {
                     var bounds = this.getBounds();

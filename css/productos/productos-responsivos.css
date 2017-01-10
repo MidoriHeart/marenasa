@@ -74,6 +74,13 @@ div.menuOpciones > div {
  		max-width: 320px;	
  	}
 
+.buscador-producto {
+    width: 297px;
+}
+.titulo-pm {
+    line-height: 30px;
+}
+
 }
 @media(max-width:320px){
 	.Titulo1-p {

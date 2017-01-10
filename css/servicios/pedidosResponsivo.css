@@ -74,6 +74,10 @@
     margin: 0 auto;
     }
 
+    a.paquete3{
+            margin-left: 30px
+    }
+
 }
 @media(max-width: 353px){
     .blue-ribbon

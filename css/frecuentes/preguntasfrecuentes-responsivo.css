@@ -19,6 +19,14 @@
 
 
 }
+@media (max-width:960px){
+.imagen-preguntas-frecuentes {
+
+    margin-left: 44px;
+        width: 434px;
+
+}
+
 @media (max-width:768px){
 	.chico
 	{
@@ -92,7 +100,9 @@
 	}
 	.preguntas
 	{
-		 padding-top: 20px;
+		padding-top: 20px;
+    	margin: auto 5% 10px;
+    	text-align: center;
 	}
 	.respuestas
 	{
@@ -113,6 +123,20 @@
      	max-width: 144px;
     	margin: 0 30px;
 	}
+	.imagen-preguntas-frecuentes {
+    margin-left: 10px;
+    width: 360px;
+    height: 206px;
+}
+.respuestas {
+    padding-bottom: 30px;
+    margin: auto 7%;
+}
+.tipo-letra-cat{
+    font-size: 17px;
+}
+
+
 }
 @media(max-width: 340px){
 	.abajo .linea {
@@ -143,5 +167,13 @@
     margin-top: 14px;
     background-size: 100% 100%;
 }
+.imagen-preguntas-frecuentes {
+    margin-left: 60px;
+    width: 250px;
+    height: 136px;
+	}
+	 .categoria-wraper{
+	   line-height: 27px;
+	}
 
 }
