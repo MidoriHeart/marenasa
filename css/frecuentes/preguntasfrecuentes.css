@@ -47,7 +47,7 @@
     margin-left: 93px;
     margin-right: 99px;
     text-align: justify;
-    font-family: 'roboto-thin';
+    font-family: 'Roboto-Regular';
 }
 #content {
     padding: 0px;
@@ -135,7 +135,7 @@
     list-style-type: none;
     height: 50px;
     width: 240px;
-    line-height: 39px;
+    line-height: 50px;
     font-family: 'roboto-thinitalic';
     font-size: 16px;
 }
